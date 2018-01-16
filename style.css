@@ -496,6 +496,15 @@ footer p{
     .thumbGallery {
         display: none;
     }
+    .gig2{
+        padding-bottom: 2em;
+    }
+    .tableshania th{
+        color: #fff;
+    }
+    .table-body td{
+        color: #ffffffb5;
+    }
 
     @media (max-width: 500px) {
         h1 {
