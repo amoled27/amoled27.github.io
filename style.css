@@ -10,9 +10,10 @@
 }
 .head-background{
     background: url(/img/shania-head.png);
-    height: 35em;
+    height:  100vh;
     background-size: cover;
     background-repeat: no-repeat;
+   
 }
 .about{
     background-color: #212237;
@@ -505,7 +506,10 @@ footer p{
     .table-body td{
         color: #ffffffb5;
     }
-
+    .social img{
+        width: 35px;
+        padding: 5px;
+    }
     @media (max-width: 500px) {
         h1 {
             font-size: 30px;
