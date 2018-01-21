@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+/* @import url('https://fonts.googleapis.com/css?family=Indie+Flower'); */
 .body{
-
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    /* font-family: 'Indie Flower', cursive; */
     font-size: 14px;
     line-height: 1.42857143;
     color:#fff
@@ -135,6 +137,19 @@ body {margin:2rem;}
 
 .follow{
  background-image: url("./")
+}
+
+
+#text{
+display:none;
+}
+
+a:active{
+  color:#ffd323;
+}
+
+a#toggle{
+    color: #e97588;
 }
 
 /* ===========
@@ -329,108 +344,7 @@ footer p{
     white-space: nowrap;
 }
 
-.portfolio-filter {
-  margin-bottom: 40px;
-  text-align: center;
-}
 
-.portfolio-filter button {
-  border: none;
-  outline: none;
-  border: 1px solid rgba(236, 239, 241, 0.07);
-  background: transparent;
-  display: inline-block;
-  font-size: 16px;
-  padding: 6px 20px;
-  font-weight: 700;
-  color: #737f8a;
-  -webkit-transition: .3s all;
-  transition: .3s all;
-}
-
-.portfolio-filter button.mixitup-control-active {
-  border: 1px solid #57cbcc;
-  color: #57cbcc;
-}
-
-.portfolio-items-wrapper .mix {
-  padding: 5px;
-}
-
-.portfolio-block {
-  position: relative;
- 
-}
-
-.portfolio-block:before {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background: white;
-  opacity: 0;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  position: absolute;
-  content: '';
-}
-
-.portfolio-block img {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-block:hover:before {
-  
-  opacity: 0.7;
-  
-
-}
-
-.portfolio-block:hover .caption h4 {
-  top: 45%;
-}
-
-.portfolio-block:hover .caption {
-  opacity: 1;
-  top: 55%;
-}
-
-.portfolio-block .caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 9;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  text-align: center;
-}
-
-.portfolio-block .caption h4 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.portfolio-block .caption h4 a {
-  color: #555;
-}
-
-.portfolio-block .caption .search-icon {
-  background: #57cbcc;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 30px;
-}
-
-.portfolio-block .caption .search-icon i {
-  line-height: 50px;
-}
 /* ============= */
 #wrapper {
         padding: 20px;
@@ -438,12 +352,6 @@ footer p{
         width: 100%;
         margin: auto;
     }
-
-    /* h1 {
-        text-align: center;
-        font-size: 60px;
-        font-family: 'Lobster', cursive;
-    } */
 
     label {
         color: white;
@@ -524,12 +432,8 @@ footer p{
     }
 /* =============== */
 
-#thumbGallery{
-        margin-bottom: 0px !important;
-}
-.gallary{
-    padding-bottom: 3em;
-}
+
+
 
 @media (max-width: 1020px){
 
@@ -556,7 +460,11 @@ footer p{
     .card{
         width: 100%;
     }
+    .col-md-6.dj-image{
+        padding-top: 13em;
+    }
 }
+
 @media(max-width:767px){
     .card{
        width: 25%;
