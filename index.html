@@ -53,17 +53,18 @@
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="#shaniagigs">Gigs</a>
+                    <a class="nav-link " href="#gigs">Gigs</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link n-link" href="#shaniatracks">Tracks</a>
+                    <a class="nav-link n-link" href="#gallary">Gallery</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link n-link" href="#shaniavideo">Video</a>
+                    <a class="nav-link n-link" href="#tracks">Tracks</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link n-link" href="#shaniagallary">Gallery</a>
+                    <a class="nav-link n-link" href="#video">Video</a>
                 </li>
+               
                 <li class="nav-item ">
                     <a class="nav-link n-link" href="#">Contact</a>
                 </li>
@@ -123,7 +124,7 @@
     </section>
 
 
-    <section class="gigs" id="shaniagigs">
+    <section class="gigs" id="gigs">
         <div class="container">
             <div class="row table-row">
             <div class="col-xs-0 col-sm-3 col-md-1 col-lg-1  topping gig-hr-top">
@@ -176,7 +177,7 @@
     </section>
 
 
-<section class="follow" id="followshania">
+<section class="follow" id="follow">
   <div class="container">
     <div class="row">
         <div class="col-xs-0 col-sm-3 col-md-1 col-lg-1  topping gig-hr-top">
@@ -196,7 +197,7 @@
 </section>
 
 
-<section class="tracks" id="shaniatracks"> 
+<section class="tracks" id="tracks"> 
     <div class="container">
         <div class="row">
             <div class="col-xs-0 col-sm-3 col-md-1 col-lg-1  topping gig-hr-top">
@@ -225,7 +226,7 @@
         </div>
 </section>
 
-<section class="videos" id="shaniavideo">
+<section class="videos" id="video">
     <div class="container">
         <div class="row">
             <div class="col-xs-0 col-sm-3 col-md-1 col-lg-1  topping gig-hr-top">
@@ -295,88 +296,7 @@
     
 
 
-    <script>$(document).ready(function () {
-
-            // Gets the video src from the data-src on each button
-            var $imageSrc;
-            $('.gallery img').click(function () {
-                $imageSrc = $(this).data('bigimage');
-            });
-           
-
-
-
-            // when the modal is opened autoplay it  
-            $('#myModal').on('shown.bs.modal', function (e) {
-
-                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-
-                $("#image").attr('src', $imageSrc);
-            })
-
-
-            // reset the modal image
-            $('#myModal').on('hide.bs.modal', function (e) {
-                // a poor man's stop video
-                $("#image").attr('src', '');
-            })
-
-
-
-
-
-
-            // document ready  
-        });
-
-
-
-
-    </script>
-    
-    <script>
-
-        var isIframe = function () {
-                var a = !1;
-                try {
-                    self.location.href != top.location.href && (a = !0)
-                } catch (b) {
-                    a = !0
-                }
-                return a
-            };
-            if (!isIframe()) {
-                var logo = $("<a href='http://pupunzi.com/#mb.components/components.html' style='position:absolute;top:0;z-index:1000'><img id='logo' border='0' src='http://pupunzi.com/images/logo.png' alt='mb.ideas.repository'></a>");
-                $("#wrapper").prepend(logo), $("#logo").fadeIn()
-            }
-
-            /* Extend or modify effects */
-            /* Initialize the mbGallery */
-            var myGallery = jQuery("#thumbGallery").mbGallery();
-
-            /* customizer */
-            jQuery("#effect").on("change", function () {
-                var x = $(this).val();
-                myGallery.data("nav_effect", x);
-
-            });
-
-            jQuery("#delay").on("change", function () {
-                var x = parseFloat($(this).val());
-                myGallery.data("nav_delay", x);
-            });
-
-            jQuery("#timing").on("change", function () {
-                var x = parseFloat($(this).val());
-                myGallery.data("nav_timing", x);
-            });
-
-            if (jQuery.isMobile) {
-                jQuery("body").css({
-                    marginBottom: 140
-                })
-            }
-    </script>
+   
     <script>
       autoPlayYouTubeModal();
 
@@ -396,24 +316,34 @@
     </script>
 
 
-<script>
-    $(document).ready(function () {
-            $("#toggle").click(function () {
-                var elem = $("#toggle").text();
-                if (elem == "Read More") {
-                    //Stuff to do when btn is in the read more state
-                    $("#toggle").text("Read Less");
-                    $("#text").slideDown();
-                } else {
-                    //Stuff to do when btn is in the read less state
-                    $("#toggle").text("Read More");
-                    $("#text").slideUp();
-                }
+
+   
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
             });
         });
-</script>
-   
-    
+        </script>
    
 
 </body>
