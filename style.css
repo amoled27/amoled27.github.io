@@ -21,6 +21,13 @@
 .gallary{
     background-color: #212237;
 }
+.gallery-widget{
+    padding-top: 3em;
+    padding-bottom: 3em;
+     align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
 .title h3{
     font-size: 20px;
