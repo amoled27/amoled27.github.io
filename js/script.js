@@ -33,53 +33,6 @@
         });
 
 
-
-
-      
-
-     
-
-        var isIframe = function () {
-                var a = !1;
-                try {
-            self.location.href != top.location.href && (a = !0)
-        } catch (b) {
-            a = !0
-        }
-        return a
-            };
-            if (!isIframe()) {
-                var logo = $("<a href='http://pupunzi.com/#mb.components/components.html' style='position:absolute;top:0;z-index:1000'><img id='logo' border='0' src='http://pupunzi.com/images/logo.png' alt='mb.ideas.repository'></a>");
-                $("#wrapper").prepend(logo), $("#logo").fadeIn()
-            }
-
-            /* Extend or modify effects */
-            /* Initialize the mbGallery */
-            var myGallery = jQuery("#thumbGallery").mbGallery();
-
-            /* customizer */
-            jQuery("#effect").on("change", function () {
-                var x = $(this).val();
-                myGallery.data("nav_effect", x);
-
-            });
-
-            jQuery("#delay").on("change", function () {
-                var x = parseFloat($(this).val());
-                myGallery.data("nav_delay", x);
-            });
-
-            jQuery("#timing").on("change", function () {
-                var x = parseFloat($(this).val());
-                myGallery.data("nav_timing", x);
-            });
-
-            if (jQuery.isMobile) {
-                jQuery("body").css({
-                    marginBottom: 140
-                })
-            }
-      
          
             autoPlayYouTubeModal();
 

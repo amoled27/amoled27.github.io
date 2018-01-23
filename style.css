@@ -308,7 +308,7 @@ a#toggle{
 }
 
 footer{
-    background-color: #171726;
+    background-color: #212237;
     text-align: center;
     color: #fff;
     
@@ -342,8 +342,11 @@ footer p{
 .line{
     overflow: hidden;
     white-space: nowrap;
+   
 }
-
+.line p{
+    padding-top: 16px;
+}
 
 /* ============= */
 #wrapper {
@@ -422,7 +425,7 @@ footer p{
         color: #ffffffb5;
     }
     .social img{
-        width: 35px;
+        width: 50px;
         padding: 5px;
     }
     @media (max-width: 500px) {
