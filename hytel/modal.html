@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hytel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+   
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/ubislider.min.js"></script>
+
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/ubislider.css">
+    <link rel="stylesheet" href="css/product.scss">
+    
+
+
+</head>
+<div class="container">
+    <h2>Large Modal</h2>
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open modal
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">IP Video Phone VP530</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+            <div class="container">
+            
+                <!-- Gallery -->
+                <div id="js-gallery" class="gallery">
+            
+                    <!--Gallery Hero-->
+                    <div class="gallery__hero main-img d-flex justify-content-center">
+                        <a href="" class="gallery__hero-enlarge ir" data-gallery="zoom"></a>
+            
+                        <img class="img-fluid" src="https://public-619e3.firebaseapp.com/Product-Gallery/products/normal/product-01_view-01.jpg">
+                    </div>
+                    <!--Gallery Hero-->
+            
+                    <!--Gallery Thumbs-->
+                    <div class="gallery__thumbs d-flex justify-content-center">
+                        <a href="https://public-619e3.firebaseapp.com/Product-Gallery/products/normal/product-01_view-01.jpg" data-gallery="thumb"
+                            class="is-active">
+                            <img class="img-fluid sub-img" src="https://public-619e3.firebaseapp.com/Product-Gallery/products/thumb/product-01_view-01.jpg">
+                        </a>
+                        <a href="https://public-619e3.firebaseapp.com/Product-Gallery/products/normal/product-01_view-02.jpg" data-gallery="thumb">
+                            <img  class="img-fluid sub-img" src="https://public-619e3.firebaseapp.com/Product-Gallery/products/thumb/product-01_view-02.jpg">
+                        </a>
+                        <a href="https://public-619e3.firebaseapp.com/Product-Gallery/products/normal/product-01_view-03.jpg" data-gallery="thumb">
+                            <img  class="img-fluid sub-img" src="https://public-619e3.firebaseapp.com/Product-Gallery/products/thumb/product-01_view-03.jpg">
+                        </a>
+                    </div>
+
+
+                    <!--Gallery Thumbs-->
+            
+                </div>
+                <!--.gallery-->
+                <!-- Gallery -->
+
+            <div class="product-info container">
+                <h3>IP Video Phone VP530</h3>
+                 <p>The Yealink VP530 is a further innovation of our advanced, executive-level IP Video Phone. With integrated audio, video and
+                applications, the VP530 is a very powerful business video phone. Its large display and easy use make it an ideal all-in-one
+                tool for today’s busy business leaders, regardless of where they happen to be. With excellent performance and rich business
+                features, the VP530 offers an all-round, face-to-face network experience that allows users to interact and communicate like
+                never before. Features include:</p>
+                <p>
+                     <li>Integrated intelligent features that make it exceptionally easy to operate </li>
+                     <li>Maximum productivity for managers and executives</li>
+                    <li>Efficient person-to-person contact by video call or video conferencing, leading to lower travel costs and faster decision-making</li>
+                    <li>Easy to install and simple to administer, upgrade and maintain </li>
+                    <li>A reduced carbon footprint with energy-saving PoE for
+                    a greener world * Highly customizable and expandable service features</li>
+                </p>
+            </div>
+            </div>
+            <!--.container-->
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+    </body>
+    <script>
+  var App = (function () {
+
+        //=== Use Strict ===//
+        'use strict';
+
+        //=== Private Variables ===//
+        var gallery = $('#js-gallery');
+
+        //=== Gallery Object ===//
+        var Gallery = {
+            zoom: function (imgContainer, img) {
+                var containerHeight = imgContainer.outerHeight(),
+                    src = img.attr('src');
+
+                if (src.indexOf('/products/normal/') != -1) {
+                    // Set height of container
+                    imgContainer.css("height", containerHeight);
+
+                    // Switch hero image src with large version
+                    img.attr('src', src.replace('/products/normal/', '/products/zoom/'));
+
+                    // Add zoomed class to gallery container
+                    gallery.addClass('is-zoomed');
+
+                    // Enable image to be draggable
+                    img.draggable({
+                        drag: function (event, ui) {
+                            ui.position.left = Math.min(100, ui.position.left);
+                            ui.position.top = Math.min(100, ui.position.top);
+                        }
+                    });
+                } else {
+                    // Ensure height of container fits image
+                    imgContainer.css("height", "auto");
+
+                    // Switch hero image src with normal version
+                    img.attr('src', src.replace('/products/zoom/', '/products/normal/'));
+
+                    // Remove zoomed class to gallery container
+                    gallery.removeClass('is-zoomed');
+                }
+            },
+            switch: function (trigger, imgContainer) {
+                var src = trigger.attr('href'),
+                    thumbs = trigger.siblings(),
+                    img = trigger.parent().prev().children();
+
+                // Add active class to thumb
+                trigger.addClass('is-active');
+
+                // Remove active class from thumbs
+                thumbs.each(function () {
+                    if ($(this).hasClass('is-active')) {
+                        $(this).removeClass('is-active');
+                    }
+                });
+
+                // Reset container if in zoom state
+                if (gallery.hasClass('is-zoomed')) {
+                    gallery.removeClass('is-zoomed');
+                    imgContainer.css("height", "auto");
+                }
+
+                // Switch image source
+                img.attr('src', src);
+            }
+        };
+
+        //=== Public Methods ===//
+        function init() {
+
+            // Listen for clicks on anchors within gallery
+            gallery.delegate('a', 'click', function (event) {
+                var trigger = $(this);
+                var triggerData = trigger.data("gallery");
+
+                if (triggerData === 'zoom') {
+                    var imgContainer = trigger.parent(),
+                        img = trigger.siblings();
+                    Gallery.zoom(imgContainer, img);
+                } else if (triggerData === 'thumb') {
+                    var imgContainer = trigger.parent().siblings();
+                    Gallery.switch(trigger, imgContainer);
+                } else {
+                    return;
+                }
+
+                event.preventDefault();
+            });
+
+        }
+
+        //=== Make Methods Public ===//
+        return {
+            init: init
+        };
+
+    })();
+
+    App.init();</script>
+
+</html>

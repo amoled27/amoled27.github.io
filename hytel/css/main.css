@@ -108,11 +108,14 @@ display:none;
 .card-c {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 70%;
+    width: 95%;
+    border-radius: 8px;
 }
 .card-c .one{
   background-color: #bb3232;   
     color: #fff;
+        border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
 }
 .card-c .one h6{
   padding: 9px;
@@ -128,6 +131,107 @@ display:none;
 }
 .ml{
       padding-top: 11px !important;
+}
+.contact-card {
+    margin-top: 80px;
+    padding: 20px;
+}
+.heading-text{
+  color:#cc1b21;
+}
+.contact-card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+}
+.head-back{
+  background: url(../img/banncopy.png);
+  height: 42em;
+    background-size: 100% 100%;
+}
+.about-hytel{
+  padding-bottom: 10px;
+}
+.justified-text{
+  text-align:justify;
+}
+.service-off{
+  padding-top: 45px;
+}
+.foo{background: url(../img/fo.png);
+    min-height: 13em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.foot{
+  background-color: #070707;
+  padding-top: 4em;
+  color:#fff;
+}
+
+.main-img img{
+  width:60%;
+  height:60%;
+}
+.product-info{
+  margin-top:2em;
+}
+.ic img{
+  width: 80%;
+}
+.ic-text{
+  padding-top: 27px;
+}
+.ic-card{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ul.point-values{
+  list-style-image: url(../img/next.svg);
+}
+.b-text{
+  padding-top: 0px;
+  padding-bottom: 15px;
+}
+ul.point-services{
+  list-style-image: url(../img/cogwheel.svg);
+}
+
+/* ============= */
+
+/* ================= */
+@media(min-width:2000px){
+.foo{
+    min-height: 21em;
+    background-repeat: no-repeat;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .foo{
+    min-height: 10em;
+    background-repeat: no-repeat;
+}
+
+} 
+@media (max-width: 767px ){
+   .foo{
+    min-height: 8em;
+    background-repeat: no-repeat;
+}
+
+}
+@media(min-width:455px) and (max-width:619px){
+  .foo{
+    min-height: 6em;
+    background-repeat: no-repeat;
+}
+}
+
+@media(min-width:320px) and (max-width:454px){
+  .foo{
+    min-height: 4em;
+    background-repeat: no-repeat;
+}
 }
  /* animation */
  @-webkit-keyframes phone {
