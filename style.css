@@ -255,7 +255,7 @@ a#toggle{
             padding: 10px;
         }
         .videos{
-            background-color: #171726;
+            background-color:  #212237;
         }
         .vid{
             padding: 10px;
@@ -308,10 +308,10 @@ a#toggle{
 }
 
 footer{
-    background-color: #212237;
+    background-color: #171726;
     text-align: center;
     color: #fff;
-    
+    min-height: 16em;
 }
 footer h5{
     font-weight: 200;
@@ -351,6 +351,9 @@ footer p{
 .navbar-b{
     border-color:rgb(233, 117, 136) !important;
     border-width: 3px;
+}
+.designedby{
+    background-color: #212237;
 }
 
 /* ============= */
@@ -423,9 +426,7 @@ footer p{
     .gig2{
         padding-bottom: 2em;
     }
-    .tableshania th{
-        color: #fff;
-    }
+    
     .table-body td{
         color: #ffffffb5;
     }
@@ -466,7 +467,9 @@ footer p{
     background-color: #e08897e6;
 }
 }
-
+.theadx{
+    color:#e97688;
+}
 @media(max-width:991px) and (min-width:768px){
     .card{
         width: 100%;
