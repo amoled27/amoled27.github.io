@@ -347,9 +347,7 @@ footer p{
 .line p{
     padding-top: 16px;
 }
-.navbar-small{
-    background-color: #e08897e6
-}
+
 .navbar-b{
     border-color:rgb(233, 117, 136) !important;
     border-width: 3px;
@@ -463,6 +461,9 @@ footer p{
 
 .logo img{
     width: 9em;
+}
+.navbar-small {
+    background-color: #e08897e6;
 }
 }
 
