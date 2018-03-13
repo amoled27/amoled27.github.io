@@ -1,0 +1,278 @@
+
+
+.link-nav{
+    margin-top: 1em;
+}
+.contact-nav p{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.contact-nav h5{
+    margin-top: 5px;
+}
+.li.nav-item{
+    padding-right: 8px;
+}
+.owl-demo .owl-item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.nav-fix{
+      color: #fff;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo-main .img-fluid{ 
+    max-width: 75%;
+}
+.navbar-brand{
+    width: 25% !important;
+}
+.nav-dark{
+    background: #242038;
+}
+.logo-main-scroll .img-fluid{
+    max-width: 45%;
+}
+.nav-link1{
+    color: #fff;
+}
+.nav-link{
+    color: #8D86C9;
+}
+.foo{
+    background: #242038;
+}
+.form-text label{
+    color:#fff;
+}
+.f-icon i{
+    font-size: 3em;
+    color: #fff;
+    padding: 13px;
+}
+.f-icon i:hover{
+    color:#8D86C9;
+    
+}
+.social-div{
+    padding-top: 4em;
+}
+.bottom-foo{
+    background: #1f1b2f;
+}
+.foo-logo img{
+ width: 13em;
+ height: auto;
+
+}
+.foo-head{
+    color:#8D86C9;
+}
+.light-cb{
+    background:#8D86C9;
+}
+.head-border{
+    background:#FCDE9C;
+    height: 5px;
+    width: 85px;
+    border-radius: 3px;
+}
+.social-icons{
+    padding-top: 5em;
+}
+.t-head{
+    color: #242038;
+}
+.about-text h4{
+    padding-top: 1em;
+    color: #8D86C9;
+}
+.about-text p{
+    text-align: justify;
+}
+.google-map #map-canvas {
+  height: 250px;
+}
+.c-svg img{
+    width: 28px;
+}
+.pad{
+    padding: 10px;
+    background: #968fd629;
+}
+.testim img{
+    width:20px !important;
+}
+.we-here{
+    background: #c3bef529;
+    padding-bottom: 3em;
+    padding-top: 2em;
+}
+   
+.seperator{
+    padding-top: 4em;
+}
+.shaadi{
+    background: #c3bef585;
+    padding-bottom: 2em;
+}
+.shaadi2{
+    background: #c3bef529;
+    padding-bottom: 2em;
+}
+.seperator img{
+    padding: 1em;
+}
+.bday-bg{
+         background-image: url('../img/bday-back.jpg');
+         height: 30em;
+        margin-top: 8em;
+        margin-bottom: 8em;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.bday-back-card {
+  background-color:#8D86C9;
+  margin-top: -3em;
+  line-height: 2em;
+  font-size: 20px;
+  padding: 1em;
+}
+/* animation */
+ @-webkit-keyframes phone {
+  0% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+
+  2% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  4% {
+    -webkit-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+
+  6% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(22deg);
+    transform: rotate(22deg);
+  }
+
+  12% {
+    -webkit-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+
+  14% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+
+  16% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes phone {
+  0% {
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+
+  2% {
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  4% {
+    -webkit-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+
+  6% {
+    -webkit-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+    transform: rotate(22deg);
+  }
+
+  12% {
+    -webkit-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+
+  14% {
+    -webkit-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+
+  16% {
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.faa-phone.animated,
+.faa-phone.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-phone {
+  -webkit-animation: phone 2s ease infinite;
+  animation: phone 2s ease infinite;
+  transform-origin-x: 50%;
+  transform-origin-y: 0px;
+  transform-origin-z: initial;
+}
