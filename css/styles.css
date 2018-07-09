@@ -901,7 +901,7 @@ Features Slider
 
 .features-slider li p {
     color: #fff;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .features-intro-img {
@@ -1012,15 +1012,16 @@ Showcase
 }
 
 .showcase h1 {
-    margin: 0 0 20px 0;
+    margin: 85px 0 20px 0;
     color: #fff;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .showcase p {
     margin-bottom: 25px;
     color: #fff;
+    font-size: 18px;
 }
 
 .device {
@@ -1068,7 +1069,7 @@ Screenshots Intro
 
 .screenshots-intro {
     padding: 170px 0 100px 0;
-    background-color: #f6f7f9;
+    background-color: #292828;
 }
 
 .screenshots-intro h1 {
@@ -1442,7 +1443,7 @@ footer {
 }
 
 .contact-head h2 {
-    color: #f33838;
+    /* color: #f33838; */
     font-size: 2em !important;
 }
 
@@ -1487,11 +1488,11 @@ slides p {
 
 .card-nav {
     background: #c10505;
-    margin: 25px;
-    min-height: 14em;
+    min-height: 10em;
     display: flex;
     justify-content: center;
     border: 3px solid #fff;
+    margin-top: 1em;
 }
 
 .fav {
@@ -1500,7 +1501,7 @@ slides p {
 }
 
 .ic {
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 80px;
     color: #fff
 }
@@ -1613,6 +1614,16 @@ slides p {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-.btn-blk :focus{
+
+.btn-blk :focus {
     background: #000 !important;
+}
+
+.darken {
+    background: #00000078;
+}
+
+.belowhead {
+    min-height: 5em;
+    background: #212020f5;
 }
