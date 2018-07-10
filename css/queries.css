@@ -105,6 +105,9 @@
     .logo-kele {
         width: 27% !important;
     }
+    .navicon {
+        margin-top: 50px;
+    }
 }
 
 @media(max-width:767px) {
@@ -118,5 +121,63 @@
     }
     .navbar-collapse {
         background: #f33838;
+    }
+    .navicon {
+        top: 59px;
+    }
+}
+
+@media(max-width:991px) {
+    .features-slider {
+        padding: 11% 82px 0% 94px;
+    }
+    .kele-logo1 {
+        width: 60%;
+    }
+    .flickity-page-dots {
+        margin-top: 0px !important;
+    }
+}
+
+@media(max-width:520px) {
+    .navicon {
+        top: 44px;
+    }
+    .kele-logo1 {
+        width: 70%;
+    }
+    .hero {
+        min-height: 0px !important;
+    }
+    .texture-overlay {
+        height: 114%;
+    }
+    .text h2 {
+        font-size: 1em !important;
+    }
+    .display7 h1 {
+        font-size: 1.5em;
+    }
+    .features-slider{
+        padding: 35px !important;
+    }
+}
+
+@media(max-width:420px) {
+    .hero h1 {
+        font-size: 40px;
+        margin: 200px 0 45px 0 !important;
+    }
+    .kele-logo1 {
+        width: 90%;
+    }
+}
+
+@media(max-width:350px) {
+    .kele-logo1 {
+        width: 100%;
+    }
+    .navicon {
+        top: 28px;
     }
 }

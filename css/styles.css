@@ -801,6 +801,11 @@ hero .contact
     background-size: cover;
 }
 
+.hero-automation {
+    background: rgb(231, 231, 231) url('../img/homeauto.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 /* ==========================================================================
 Video
 ========================================================================== */
@@ -848,13 +853,12 @@ Custom Slider Controls (Flickity)
     height: 13px;
     opacity: 1;
     background: transparent;
-    border: 2px solid white;
     -webkit-transition: background 0.3s;
     transition: background 0.3s;
 }
 
 .flickity-page-dots .dot.is-selected {
-    background: white;
+    background: #ffffff00;
 }
 
 /* ==========================================================================
@@ -1626,4 +1630,9 @@ slides p {
 .belowhead {
     min-height: 5em;
     background: #212020f5;
+}
+
+.hero-main h1 {
+    font-size: 55px;
+    margin: 320px 0 45px 0;
 }
