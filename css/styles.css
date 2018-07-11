@@ -745,7 +745,7 @@ Hero
 }
 
 .hero-main {
-    background: rgb(40, 70, 102) url('../img/kele-landing-main.jpg') no-repeat center center;
+    background: rgb(40, 70, 102) url('../img/landing-kele-image.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -784,7 +784,7 @@ hero .contact
 }
 
 .hero-about {
-    background: rgb(231, 231, 231) url('../img/aboutus2.jpg') no-repeat center center;
+    background: rgb(231, 231, 231) url('../img/kele-aboutus-image.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -794,7 +794,7 @@ hero .contact
 }
 
 .hero-log {
-    background: rgb(231, 231, 231) url('../img/logistics.jpg') no-repeat center center;
+    background: rgb(231, 231, 231) url('../img/logistics-kele-image.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -1317,7 +1317,7 @@ Nav Overlay
     min-width: 190px;
     border: 2px solid #fff;
     border-radius: 3px;
-    background-color: #c10505;
+    background-color: #ff4141;
     ;
     color: #fff;
     text-transform: uppercase;

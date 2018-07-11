@@ -77,7 +77,7 @@
 			<div class="row">
 				<div class="col-md-2 col-lg-2 col-sm-2"></div>
 				<div class="col-md-8 col-lg-8 col-sm-8">
-					<div class="about-font" id="about">
+					<div class="about-font justif" id="about">
 						<h2>HOME AUTOMATION</h2>
 						<p> No more buying smart appliances, lets make existing appliance smart !
 						
@@ -206,18 +206,88 @@
 				</div>
 			</div>
 		</footer>
-		<div class="overlay overlay-boxify">
-			<nav>
-				<ul>
-					<li><a href="#about"><i class="fa fa-heart"></i>About</a></li>
-					<li><a href="#features"><i class="fa fa-flash"></i>Features</a></li>
-				</ul>
-				<ul>
-					<li><a href="#screenshots"><i class="fa fa-desktop"></i>Screenshots</a></li>
-					<li><a href="#download"><i class="fa fa-download"></i>Download</a></li>
-				</ul>
-			</nav>
-		</div>
+			<div class="modal fade" id="keleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog mdl1" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true" style="color: #fff">&times;</span>
+							</button>
+							<h2 class="modal-title" id="myModalLabel">Solutions</h2>
+						</div>
+						<div class="modal-body modal-nav">
+							<ul>
+			
+								<li>
+									<a href="/automation.html">
+										<h3>Automation</h3>
+									</a>
+								</li>
+								<hr>
+								<li>
+									<a href="/chatbots.html">
+										<h3>Chatbots</h3>
+									</a>
+								</li>
+			
+								<hr>
+								<li>
+									<a href="/epa.html">
+										<h3>EPA</h3>
+									</a>
+								</li>
+								<hr>
+								<li>
+									<a href="/epod.html">
+										<h3>ePOD</h3>
+									</a>
+								</li>
+								<hr>
+								<li>
+									<a href="/iot.html">
+										<h3>IOT</h3>
+									</a>
+								</li>
+								<hr>
+								<li>
+									<a href="/logistics.html">
+										<h3>Logistics</h3>
+									</a>
+								</li>
+			
+			
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="overlay overlay-boxify">
+				<nav>
+					<ul>
+						<li>
+							<a href="aboutus.html">
+								<i class="fa fa-heart"></i>About Us</a>
+						</li>
+						<li>
+							<a data-toggle="modal" data-target="#keleModal">
+								<i class="fa fa-flash"></i>Solutions</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="/services.html">
+								<i class="fa fa-desktop"></i>Services</a>
+						</li>
+						<li>
+							<a href="/contactus.html">
+								<i class="fa fa-phone"></i>Contact Us</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/min/toucheffects-min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
