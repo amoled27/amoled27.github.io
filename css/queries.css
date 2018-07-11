@@ -105,6 +105,16 @@
     .logo-kele {
         width: 27% !important;
     }
+    .mdl1 {
+        width: 40%;
+    }
+    .logo-abt {
+        padding: 13px;
+        margin-top: 12px;
+    }
+    .text-abt p {
+        margin-top: 28px;
+    }
 }
 
 @media(max-width:767px) {
@@ -121,6 +131,33 @@
     }
     .navicon {
         top: 59px;
+    }
+    .mdl1 {
+        width: 100%;
+    }
+    .logo-abt img {
+        max-width: 50%;
+    }
+    .text-abt p {
+        line-height: 4em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-iot {
+        min-height: 7.5em !important;
+    }
+    .card-autom {
+        min-height: 8.5em;
+    }
+}
+
+@media(max-width:1199px) and (min-width:992px) {
+    .card-small {
+        min-height: 8.5em;
+    }
+    .card-autom {
+        min-height: 12em;
     }
 }
 
@@ -146,7 +183,7 @@
     .hero {
         min-height: 0px !important;
     }
-    .texture-overlay {
+    .main-page-overlay {
         height: 114%;
     }
     .text h2 {
@@ -155,7 +192,7 @@
     .display7 h1 {
         font-size: 1.5em;
     }
-    .features-slider{
+    .features-slider {
         padding: 35px !important;
     }
 }
@@ -167,6 +204,12 @@
     }
     .kele-logo1 {
         width: 90%;
+    }
+    .text-abt p {
+        line-height: 2em;
+    }
+    .card-small {
+        min-height: 5.5em;
     }
 }
 

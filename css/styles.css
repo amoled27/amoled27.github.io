@@ -808,6 +808,21 @@ hero .contact
     background-size: cover;
 }
 
+.hero-epod {
+    background: rgb(231, 231, 231) url('../img/epod.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-epa {
+    background: rgb(231, 231, 231) url('../img/epa.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-services {
+    background: rgb(231, 231, 231) url('../img/services-head.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 /* ==========================================================================
 Video
 ========================================================================== */
@@ -1539,9 +1554,8 @@ slides p {
     transition: 0.3s;
     min-height: 6.5em;
     margin-bottom: 1em;
-    width: 19em;
-    margin-right: 7px;
     background: #ffc4c438;
+    padding: 0 1em 0 1em;
 }
 
 .card-small:hover {
@@ -1642,4 +1656,58 @@ slides p {
 .align-middle {
     display: flex;
     justify-content: center;
+}
+
+.mdl1 {
+    width: 30%;
+    margin-top: 6em;
+}
+
+.modal-nav ul {
+    list-style-type: none;
+}
+
+.modal-nav li {
+    line-height: 0px;
+}
+
+.modal-nav h3 {
+    font-size: 1.3em;
+    margin: 0px;
+    color: #fff;
+}
+
+.modal-body {
+    margin-top: 0px;
+    padding-top: 0px !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #f33838 !important;
+}
+
+.modal-header h2 {
+    color: #f33838;
+}
+
+.modal-content {
+    background: #383535;
+}
+
+.justif {
+    text-align: justify;
+}
+
+.logi h3 {
+    font-size: 1.3em;
+    color: #f33838;
+}
+
+.chatb ul {
+    list-style-type: none;
+}
+
+.epa h3 {
+    font-size: 1.57em;
+    color: #f33838;
 }
