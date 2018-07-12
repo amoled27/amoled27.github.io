@@ -819,7 +819,7 @@ hero .contact
 }
 
 .hero-services {
-    background: rgb(231, 231, 231) url('../img/services-head.jpg') no-repeat center center;
+    background: rgb(231, 231, 231) url('../img/kele-services.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -1711,3 +1711,11 @@ slides p {
     font-size: 1.57em;
     color: #f33838;
 }
+
+.loggg {
+    color: #e43c3c;
+}
+
+/* .red-txt{
+    color: #f33838;
+} */
