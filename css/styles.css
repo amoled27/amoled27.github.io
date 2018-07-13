@@ -1716,6 +1716,14 @@ slides p {
     color: #e43c3c;
 }
 
+.nav-toggle {
+    z-index: 2;
+}
+
 /* .red-txt{
     color: #f33838;
 } */
+
+.centr{
+    text-align: center
+}

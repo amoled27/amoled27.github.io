@@ -150,6 +150,12 @@
     .card-autom {
         min-height: 8.5em;
     }
+    .card-chtbt {
+        min-height: 7.5em;
+    }
+    .card-serv {
+        min-height: 8em;
+    }
 }
 
 @media(max-width:1199px) and (min-width:992px) {
@@ -158,6 +164,12 @@
     }
     .card-autom {
         min-height: 12em;
+    }
+    .card-chtbt {
+        min-height: 8.5em;
+    }
+    .card-serv {
+        min-height: 9em;
     }
 }
 
@@ -223,5 +235,4 @@
     .logo-abt {
         height: 5em;
     }
-
 }
