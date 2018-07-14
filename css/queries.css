@@ -183,6 +183,9 @@
     .flickity-page-dots {
         margin-top: 0px !important;
     }
+    .hero h1 {
+        margin: 130px 0 45px 0;
+    }
 }
 
 @media(max-width:520px) {
@@ -207,12 +210,18 @@
     .features-slider {
         padding: 35px !important;
     }
+    .hero h1 {
+        margin: 13px 0 45px 0;
+        font-size: 35px;
+    }
 }
 
 @media(max-width:420px) {
     .hero h1 {
+        /* font-size: 40px;
+        margin: 200px 0 45px 0 !important; */
         font-size: 40px;
-        margin: 200px 0 45px 0 !important;
+        margin: 25px 0 45px 0 !important;
     }
     .kele-logo1 {
         width: 90%;

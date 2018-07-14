@@ -885,7 +885,7 @@ Features Slider
 .features-bg {
     position: relative;
     min-height: 400px;
-    background: url('../img/kele-landing-2.jpg') no-repeat center center;
+    background: url('../img/kele-landing-3.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -1089,7 +1089,7 @@ Screenshots Intro
 ========================================================================== */
 
 .screenshots-intro {
-    padding: 170px 0 100px 0;
+    padding: 100px 0 100px 0;
     background-color: #292828;
 }
 
@@ -1271,7 +1271,7 @@ Nav Overlay
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(109, 12, 12, 0.72);
+    background: rgba(43, 31, 31, 0.72);
 }
 
 /* Menu style */
@@ -1329,8 +1329,8 @@ Nav Overlay
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: #520101;
+    color: #480000;
 }
 
 /* Effects */
@@ -1420,6 +1420,10 @@ Waypoints
 
 .navbar a {
     color: #fff;
+}
+
+.navbar-brand {
+    height: 140px !important;
 }
 
 .navbar a :active {
@@ -1650,7 +1654,7 @@ slides p {
 
 .hero-main h1 {
     font-size: 62px;
-    margin: 320px 0 45px 0;
+    margin: 240px 0 45px 0;
 }
 
 .align-middle {
@@ -1724,6 +1728,17 @@ slides p {
     color: #f33838;
 } */
 
-.centr{
+.centr {
     text-align: center
+}
+
+.div-center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-rd {
+    background: #f33838;
+    width: 100px;
+    color: #fff;
 }
