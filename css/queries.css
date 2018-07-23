@@ -160,10 +160,21 @@
         padding: 35px;
     }
     .adjus {
-        margin-top : 58px;
+        margin-top: 58px;
     }
-    .features-list{
+    .features-list {
         padding: 0;
+    }
+    #myFooter img {
+        width: 28%;
+    }
+    footer li {
+        display: block;
+        text-align: left;
+        padding: 20px 0;
+        border-bottom: dashed 1px #c7cacc;
+        margin-right: 0 !important;
+        float: none;
     }
 }
 
@@ -195,7 +206,6 @@
     .card-serv {
         min-height: 9em;
     }
-  
 }
 
 @media(max-width:991px) {
