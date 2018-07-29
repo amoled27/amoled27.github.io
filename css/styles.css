@@ -1231,8 +1231,6 @@ Download Now
 Footer
 ========================================================================== */
 
-
-
 footer p {
     color: #c7cacc;
     font-size: 12px;
@@ -1880,4 +1878,12 @@ ul.bullet li:before {
 #myFooter {
     flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
+}
+
+.contactx p {
+    font-size: 16px;
+}
+
+.contactx h5 {
+    margin-bottom: 0px;
 }
