@@ -16,6 +16,8 @@
 	<meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design" />
 	<meta name="author" content="" />
 	<!-- Bootstrap -->
+		<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
 	<script src="js/modernizr.custom.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/jquery.fancybox.css" rel="stylesheet">
@@ -191,7 +193,7 @@
 				</div>
 				<div class="col-sm-3 contactx">
 					<h5>email: </h5>
-					<p>Enquiry@keletech.co.za</p>
+					<p>enquiry@keletech.co.za</p>
 				</div>
 				<div class="col-sm-3 contactx">
 					<h5>Phone: </h5>
@@ -233,8 +235,9 @@
 			<div class="row">
 				<!-- Here we use the Google Embed API to show Google Maps. -->
 				<!-- In order for this to work in your project you will need to generate a unique API key.  -->
-				<iframe style="width:100%; height: 20em" id="map-container" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJSVvQko90lR4Rx8gMfL2f3HY&key=AIzaSyAl9TPUiDXLwcUsB8r4jQHe8w4dyN3U1s4">
-				</iframe>
+				<div class="google-map">
+					<div id="map-canvas" style="height: 20em; position: relative"></div>
+				</div>
 			</div>
 		</div>
 		<div class="social-networks">
@@ -254,6 +257,7 @@
 	</footer>
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
 	<script src="js/min/toucheffects-min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/flickity.pkgd.min.js"></script>
@@ -263,6 +267,11 @@
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/min/scripts-min.js"></script>
+	<!-- Google Map API -->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAl9TPUiDXLwcUsB8r4jQHe8w4dyN3U1s4"></script>
+
+	<script type="text/javascript" src="/js/maps.js"></script>
+
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<script>
 		(function (b, o, i, l, e, r) {

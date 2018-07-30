@@ -12,7 +12,9 @@
 		<meta name="description" content="A free HTML5/CSS3 template made exclusively for Codrops" />
 		<meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design" />
 		<meta name="author" content="" />
+		<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 		<!-- Bootstrap -->
+
 		<script src="js/modernizr.custom.js"></script>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/jquery.fancybox.css" rel="stylesheet">
@@ -39,59 +41,70 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+	<body >
 		<!--[if lt IE 7]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 		<!-- open/close -->
-		<header>
-			<section class="hero hero-main">
-				<div class="texture-overlay darken main-page-overlay"></div>
-				<div class="container">
-					<div class="row nav-wrapper">
-						<div class="col-md-6 col-sm-6 col-xs-6 text-left">
-							<a href="" class="navbar-brand"><img class="img-responsive kele-logo1" src="img/logo-white.png" alt="Boxify Logo"></a>
+		<div>
+			<header>
+			
+				<section class="hero hero-main">
+					<div class="texture-overlay darken main-page-overlay"></div>
+					<div class="container">
+						<div class="row nav-wrapper">
+							<div class="col-md-6 col-sm-6 col-xs-6 text-left">
+								<a href="" class="navbar-brand">
+									<img class="img-responsive kele-logo1" src="img/logo-white.png" alt="Boxify Logo">
+								</a>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+								<p>MENU</p>
+								<a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#">
+									<span></span>
+								</a>
+							</div>
 						</div>
-						<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
-							<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+						<div class="row hero-content">
+							<div class="col-md-12 align-middle">
+								<h1 class="animated fadeInDown">Business solutions simplified</h1>
+								<!-- <a href="http://tympanus.net/codrops/?p=22554" class="use-btn animated fadeInUp">About us</a>
+										 <a href="#about" class="learn-btn animated fadeInUp">Learn more</a> -->
+							</div>
 						</div>
 					</div>
-					<div class="row hero-content">
-						<div class="col-md-12 align-middle">
-							<h1 class="animated fadeInDown">Business solutions simplified</h1>
-							<!-- <a href="http://tympanus.net/codrops/?p=22554" class="use-btn animated fadeInUp">About us</a>
-							 <a href="#about" class="learn-btn animated fadeInUp">Learn more</a> -->
+				</section>
+			</header>
+			<section class="belowhead">
+			
+			</section>
+			<section class="features-intro">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 nopadding features-intro-img">
+							<div class="features-bg">
+								<div class="texture-overlay"></div>
+								<div class="features-img wp1">
+									<!-- <img src="img/html5-logo.png" alt="HTML5 Logo"> -->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 nopadding">
+							<div class="features-slider justif-res">
+								<h1>The Forefront of Technology</h1>
+								<p>The technological world is moving at an incredibly fast pace... Are you keeping up? Kele Tech was founded with a pure
+									aim of delivering instant gratification and convenience to your business and personal life. Our products and services
+									will ensure that you are ahead of the pack, that your business capitalises on ...</p>
+								<p>
+									<a href="/aboutus.html" class="arrow-btn">Read more
+										<i class="fa fa-long-arrow-right"></i>
+									</a>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-		</header>
-	<section class="belowhead">
-
-	</section>
-		<section class="features-intro">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6 nopadding features-intro-img">
-						<div class="features-bg">
-							<div class="texture-overlay"></div>
-							<div class="features-img wp1">
-								<!-- <img src="img/html5-logo.png" alt="HTML5 Logo"> -->
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 nopadding">
-						<div class="features-slider justif-res">
-										<h1>The Forefront of Technology</h1>
-										<p>The technological world is moving at an incredibly fast pace... Are you keeping up? Kele Tech was founded with a pure aim
-										of delivering instant gratification and convenience to your business and personal life. Our products and services will ensure
-										that you are ahead of the pack, that your business capitalises on ...</p>
-										<p><a href="/aboutus.html" class="arrow-btn">Read more<i class="fa fa-long-arrow-right"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 			<section class="service-home">
 				<div class="container">
 					<div class="row service-home-in">
@@ -157,7 +170,7 @@
 							<div class="row">
 								<div class="col-md-1 collg-1 col-sm-1 col-xs-2 no4">
 									<li class="no">
-							
+			
 									</li>
 								</div>
 								<div class="col-md-11 col-lg-11 col-sm-11 col-xs-10">
@@ -171,7 +184,7 @@
 							<div class="row">
 								<div class="col-md-1 collg-1 col-sm-1 col-xs-2 no4">
 									<li class="no">
-							
+			
 									</li>
 								</div>
 								<div class="col-md-11 col-lg-11 col-sm-11 col-xs-10">
@@ -187,434 +200,459 @@
 					</div>
 				</div>
 			</section>
-		<section style="">
-		<!-- <div class="row">
-			<div class="col-md-1 col-lg-1 col-sm-1"></div>
-			<div class="col-md-10 col-lg-10 col-sm-10">
-					<h2>We expertise in variety of services</h2>
-					<ul>
-						<li>Custom Software Development</li>
-						<li>Rapid Mobile/web App Development</li>
-						<li>Infrastructure Management Services</li>
-						<li> Artificial Intelligence read</li>
-					</ul>
-					  
-			</div>
-			<div class="col-md-1 col-lg-1 col-sm-1"></div>
-		</div> -->
-		</section>
-		<!-- <section class="features-list" id="features">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-
-						<div class="col-md-4 feature-1 wp2">
-							<div class="feature-icon">
-								<i class="fa fa-desktop"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Responsive</h1>
-								<p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap.</p>
-								<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+			<section style="">
+				<!-- <div class="row">
+						<div class="col-md-1 col-lg-1 col-sm-1"></div>
+						<div class="col-md-10 col-lg-10 col-sm-10">
+								<h2>We expertise in variety of services</h2>
+								<ul>
+									<li>Custom Software Development</li>
+									<li>Rapid Mobile/web App Development</li>
+									<li>Infrastructure Management Services</li>
+									<li> Artificial Intelligence read</li>
+								</ul>
+								  
+						</div>
+						<div class="col-md-1 col-lg-1 col-sm-1"></div>
+					</div> -->
+			</section>
+			<!-- <section class="features-list" id="features">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+			
+									<div class="col-md-4 feature-1 wp2">
+										<div class="feature-icon">
+											<i class="fa fa-desktop"></i>
+										</div>
+										<div class="feature-content">
+											<h1>Responsive</h1>
+											<p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap.</p>
+											<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+										</div>
+									</div>
+									<div class="col-md-4 feature-2 wp2 delay-05s">
+										<div class="feature-icon">
+											<i class="fa fa-flash"></i>
+										</div>
+										<div class="feature-content">
+											<h1>Multi-Purpose</h1>
+											<p>Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income.</p>
+											<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+										</div>
+									</div>
+									<div class="col-md-4 feature-3 wp2 delay-1s">
+										<div class="feature-icon">
+											<i class="fa fa-heart"></i>
+										</div>
+										<div class="feature-content">
+											<h1>Absolutely Free</h1>
+											<p>As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me, simply <a href="#">buy me a beer</a>. </p>
+											<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+										</div>
+									</div>
+			
+								</div>
 							</div>
 						</div>
-						<div class="col-md-4 feature-2 wp2 delay-05s">
-							<div class="feature-icon">
-								<i class="fa fa-flash"></i>
+					</section> -->
+			<section class="showcase">
+				<div class="showcase-wrap">
+					<div class="texture-overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="device wp3">
+									<div class="device-content">
+										<div class="showcase-slider">
+											<ul class="slides" id="showcaseSlider">
+												<li>
+													<img src="img/screen1.png" alt="Device Content Image">
+												</li>
+												<li>
+													<img src="img/screen1.png" alt="Device Content Image">
+												</li>
+												<li>
+													<img src="img/screen3.jpg" alt="Device Content Image">
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="feature-content">
-								<h1>Multi-Purpose</h1>
-								<p>Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income.</p>
-								<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+							<div class="col-md-6 justif">
+								<h1>We offer solutions to your Business</h1>
+								<p>How many mobile apps are we going to download to get information 2, 20, 200? We build a variety of solutions to address
+									your problem but we connect it to the platform on which you want to see it... You name it.</p>
+			
+								<a href="/epa.html" class="download-btn">Know More!
+									<i class="fa fa-arrow"></i>
+								</a>
 							</div>
 						</div>
-						<div class="col-md-4 feature-3 wp2 delay-1s">
-							<div class="feature-icon">
-								<i class="fa fa-heart"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Absolutely Free</h1>
-								<p>As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me, simply <a href="#">buy me a beer</a>. </p>
-								<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-							</div>
-						</div>
-
 					</div>
 				</div>
-			</div>
-		</section> -->
-		<section class="showcase">
-			<div class="showcase-wrap">
-				<div class="texture-overlay"></div>
+			</section>
+			
+			<section class="screenshots-intro">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="device wp3">
-								<div class="device-content">
-									<div class="showcase-slider">
-										<ul class="slides" id="showcaseSlider">
-											<li>
-												<img src="img/screen1.png" alt="Device Content Image">
-											</li>
-											<li>
-												<img src="img/screen1.png" alt="Device Content Image">
-											</li>
-											<li>
-												<img src="img/screen3.jpg" alt="Device Content Image">
-											</li>
-										</ul>
-									</div>
-								</div>
+						<div class="col-md-12">
+			
+			
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section class="screenshots" id="screenshots">
+						<div class="container-fluid">
+							<div class="row">
+								<ul class="grid">
+									<li>
+										<figure>
+											<img src="img/01-screenshot.jpg" alt="Screenshot 01">
+											<figcaption>
+											<div class="caption-content">
+												<a href="img/large/01.jpg" class="single_image">
+													<i class="fa fa-search"></i><br>
+			
+												</a>
+											</div>
+											</figcaption>
+										</figure>
+									</li>
+									<li>
+										<figure>
+											<img src="img/02-screenshot.jpg" alt="Screenshot 01">
+											<figcaption>
+											<div class="caption-content">
+												<a href="img/large/02.jpg" class="single_image">
+													<i class="fa fa-search"></i><br>
+			
+												</a>
+											</div>
+											</figcaption>
+										</figure>
+									</li>
+									<li>
+										<figure>
+											<img src="img/03-screenshot.jpg" alt="Screenshot 01">
+											<figcaption>
+											<div class="caption-content">
+												<a href="img/large/03.jpg" class="single_image">
+													<i class="fa fa-search"></i><br>
+			
+												</a>
+											</div>
+											</figcaption>
+										</figure>
+									</li>
+									<li>
+										<figure>
+											<img src="img/04-screenshot.jpg" alt="Screenshot 01">
+											<figcaption>
+											<div class="caption-content">
+												<a href="img/large/04.jpg" class="single_image">
+													<i class="fa fa-search"></i><br>
+			
+												</a>
+											</div>
+											</figcaption>
+										</figure>
+									</li>
+								</ul>
+							</div>
+							<div class="row">
+								<ul class="grid">
+									<li>
+										<figure>
+											<img src="img/05-screenshot.jpg" alt="Screenshot 01">
+											<figcaption>
+											<div class="caption-content">
+												<a href="img/large/05.jpg" class="single_image">
+													<i class="fa fa-search"></i><br>
+			
+												</a>
+											</div>
+											</figcaption>
+										</figure>
+									</li>
+									<li>
+										<figure>
+											<img src="img/06-screenshot.jpg" alt="Screenshot 01">
+											<figcaption>
+											<div class="caption-content">
+												<a href="img/large/06.jpg" class="single_image">
+													<i class="fa fa-search"></i><br>
+			
+												</a>
+											</div>
+											</figcaption>
+										</figure>
+									</li>
+									<li>
+										<figure>
+											<img src="img/07-screenshot.jpg" alt="Screenshot 01">
+											<figcaption>
+											<div class="caption-content">
+												<a href="img/large/07.jpg" class="single_image">
+													<i class="fa fa-search"></i><br>
+			
+												</a>
+											</div>
+											</figcaption>
+										</figure>
+									</li>
+									<li>
+										<figure>
+											<img src="img/08-screenshot.jpg" alt="Screenshot 01">
+											<figcaption>
+											<div class="caption-content">
+												<a href="img/large/08.jpg" class="single_image">
+													<i class="fa fa-search"></i><br>
+			
+												</a>
+											</div>
+											</figcaption>
+										</figure>
+									</li>
+								</ul>
 							</div>
 						</div>
-						<div class="col-md-6 justif">
-							<h1>We offer solutions to your Business</h1>
-							<p>How many mobile apps are we going to download to get information 2, 20, 200? We build a variety of solutions to address
-							your problem but we connect it to the platform on which you want to see it... You name it.</p>
-						
-							<a href="/epa.html" class="download-btn">Know More! <i class="fa fa-arrow"></i></a>
+					</section> -->
+			<section class="download" id="download">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center wp4">
+							<h1>What’s Your Story?</h1>
+							<a href="/contactus.html" class="download-btn btn-blk">Tell Us </a>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section class="screenshots-intro">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- <section class="screenshots" id="screenshots">
-			<div class="container-fluid">
-				<div class="row">
-					<ul class="grid">
-						<li>
-							<figure>
-								<img src="img/01-screenshot.jpg" alt="Screenshot 01">
-								<figcaption>
-								<div class="caption-content">
-									<a href="img/large/01.jpg" class="single_image">
-										<i class="fa fa-search"></i><br>
-
-									</a>
-								</div>
-								</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/02-screenshot.jpg" alt="Screenshot 01">
-								<figcaption>
-								<div class="caption-content">
-									<a href="img/large/02.jpg" class="single_image">
-										<i class="fa fa-search"></i><br>
-
-									</a>
-								</div>
-								</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/03-screenshot.jpg" alt="Screenshot 01">
-								<figcaption>
-								<div class="caption-content">
-									<a href="img/large/03.jpg" class="single_image">
-										<i class="fa fa-search"></i><br>
-
-									</a>
-								</div>
-								</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/04-screenshot.jpg" alt="Screenshot 01">
-								<figcaption>
-								<div class="caption-content">
-									<a href="img/large/04.jpg" class="single_image">
-										<i class="fa fa-search"></i><br>
-
-									</a>
-								</div>
-								</figcaption>
-							</figure>
-						</li>
-					</ul>
-				</div>
-				<div class="row">
-					<ul class="grid">
-						<li>
-							<figure>
-								<img src="img/05-screenshot.jpg" alt="Screenshot 01">
-								<figcaption>
-								<div class="caption-content">
-									<a href="img/large/05.jpg" class="single_image">
-										<i class="fa fa-search"></i><br>
-
-									</a>
-								</div>
-								</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/06-screenshot.jpg" alt="Screenshot 01">
-								<figcaption>
-								<div class="caption-content">
-									<a href="img/large/06.jpg" class="single_image">
-										<i class="fa fa-search"></i><br>
-
-									</a>
-								</div>
-								</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/07-screenshot.jpg" alt="Screenshot 01">
-								<figcaption>
-								<div class="caption-content">
-									<a href="img/large/07.jpg" class="single_image">
-										<i class="fa fa-search"></i><br>
-
-									</a>
-								</div>
-								</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="img/08-screenshot.jpg" alt="Screenshot 01">
-								<figcaption>
-								<div class="caption-content">
-									<a href="img/large/08.jpg" class="single_image">
-										<i class="fa fa-search"></i><br>
-
-									</a>
-								</div>
-								</figcaption>
-							</figure>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section> -->
-		<section class="download" id="download">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center wp4">
-						<h1>What’s Your Story?</h1>
-						<a href="/contactus.html" class="download-btn btn-blk">Tell Us </a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- <div class="modal fade" id="keleModal" role="dialog">
-			<div class="modal-dialog">
-		
-				Modal content
-				<div class="modal-content">
-					<div class="modal-body modl"> -->
-						<!-- <div class="row">
-							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-									<a href="/iot.html">
-										<div class="card-nav">
-											<i class="fa fa-heart ic">
-												<p>IOT </p>
-											</i>
+			</section>
+			
+			<!-- <div class="modal fade" id="keleModal" role="dialog">
+						<div class="modal-dialog">
+					
+							Modal content
+							<div class="modal-content">
+								<div class="modal-body modl"> -->
+			<!-- <div class="row">
+										<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+												<a href="/iot.html">
+													<div class="card-nav">
+														<i class="fa fa-heart ic">
+															<p>IOT </p>
+														</i>
+													</div>
+												</a>
 										</div>
+										<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+											<a href="/iot.html">
+												<div class="card-nav">
+													<i class="fa fa-heart ic">
+														<p>Automation</p>
+													</i>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+											<a href="/">
+												<div class="card-nav">
+													<i class="fa fa-heart ic">
+														<p>EPA</p>
+													</i>
+												</div>
+											</a>
+										</div>
+									</div> -->
+			<!-- <div class="row">
+										<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+											<a href="/logistics.html">
+												<div class="card-nav">
+													<i class="fa fa-clipboard ic">
+														<p>Logistics</p>
+													</i>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+											<a href="/chatbots.html">
+												<div class="card-nav">
+													<i class="fa fa-heart ic">
+														<p>Chatbots</p>
+													</i>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+											<a href="/chatbots.html">
+												<div class="card-nav">
+													<i class="fa fa-heart ic">
+														<p>ePOD</p>
+													</i>
+												</div>
+											</a>
+										</div>
+									</div>  -->
+			<!-- 						
+								</div>
+							</div>
+					
+						</div>
+					</div> -->
+			
+			<div class="modal fade" id="keleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog mdl1" role="document">
+					<div class="modal-content centr ">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true" style="color: #fff">&times;</span>
+							</button>
+							<h2 class="modal-title" id="myModalLabel">Solutions</h2>
+						</div>
+						<div class="modal-body modal-nav">
+							<ul>
+			
+			
+								<li>
+									<a href="/chatbots.html">
+										<h3>Chatbots</h3>
 									</a>
-							</div>
-							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-								<a href="/iot.html">
-									<div class="card-nav">
-										<i class="fa fa-heart ic">
-											<p>Automation</p>
-										</i>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-								<a href="/">
-									<div class="card-nav">
-										<i class="fa fa-heart ic">
-											<p>EPA</p>
-										</i>
-									</div>
-								</a>
-							</div>
-						</div> -->
-						<!-- <div class="row">
-							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-								<a href="/logistics.html">
-									<div class="card-nav">
-										<i class="fa fa-clipboard ic">
-											<p>Logistics</p>
-										</i>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-								<a href="/chatbots.html">
-									<div class="card-nav">
-										<i class="fa fa-heart ic">
-											<p>Chatbots</p>
-										</i>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-								<a href="/chatbots.html">
-									<div class="card-nav">
-										<i class="fa fa-heart ic">
-											<p>ePOD</p>
-										</i>
-									</div>
-								</a>
-							</div>
-						</div>  -->
-<!-- 						
-					</div>
-				</div>
-		
-			</div>
-		</div> -->
-
-		<div class="modal fade" id="keleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog mdl1" role="document">
-				<div class="modal-content centr ">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true" style="color: #fff">&times;</span>
-						</button>
-						<h2 class="modal-title" id="myModalLabel">Solutions</h2>
-					</div>
-					<div class="modal-body modal-nav">
-						<ul>
-							
-							
-							<li>
-								<a href="/chatbots.html">
-									<h3>Chatbots</h3>
-								</a>
-							</li>
-
-							<hr>
-							<li>
-								<a href="/epa.html"><h3>EPA</h3></a>
-							</li>
-							<hr>
-							<li><a href="/epod.html"><h3>ePOD</h3></a></li>
-							<hr>
-							<li>
-								<a href="/iot.html">
-									<h3>Internet of Things</h3>
-								</a>
-							</li>
-							<hr>
-							<li><a href="/logistics.html"><h3>Logistics</h3></a></li>
-							<hr>
-							<li>
-								<a href="/automation.html">
-									<h3>Smart Automation</h3>
-								</a>
-							</li>
-						
-							
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>	
-	
-
-		<div class="overlay overlay-boxify">
-			<nav>
-				<ul>
-					<li><a href="aboutus.html"><i class="fa fa-heart"></i>About Us</a></li>
-					<li><a data-toggle="modal" data-target="#keleModal"><i class="fa fa-flash"></i>Solutions</a></li>
-				</ul>
-				<ul>
-					<li><a href="/services.html"><i class="fa fa-desktop"></i>Services</a></li>
-					<li><a href="/contactus.html"><i class="fa fa-phone"></i>Contact Us</a></li>
-				</ul>
-			</nav>
-		</div>
-		<footer id="myFooter">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<h2 class="logo">
-							<a href="#"> 
-								<img class="img-responsive" src="./img/logo-white.png" alt=""> </a>
-						</h2>
-					</div>
-					<div class="col-sm-1"></div>
-					<div class="col-sm-3">
-						<h5>Solutions</h5>
-						<ul>
-							<li>
-								<a href="/chatbots.html">Chatbots</a>
-							</li>
-							<br>
-							<li>
-								<a href="/epa.html">EPA</a>
-							</li>
-							<br>
-							<li>
-								<a href="/epod.html">ePOD</a>
-							</li>
-							<br>
-							<li>
-								<a href="/iot.html">Internet of Things</a>
-							</li>
-							<br>
-							<li>
-								<a href="/logistics.html">Logistics</a>
-							</li>
-							<br>
-							<li>
-								<a href="/automation.html">Smart Automation</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-sm-3">
-						<h5>Address</h5>
-						 Unit 7, Somerset Business Park, 11 York Street Kensington ‘B’ Randburg 2194 Gauteng
-						 <br>
-						 <span class="phno row"> Contact: +27 83 997 7711 <br>
-						 email: Enquiry@keletech.co.za</span>
-						 <br>
-						 <span class="mail row"> </span>
-					</div>
-					
-					
-					<div class="col-sm-3">
-						<div class="social-networks">
-							<a href="#" class="twitter">
-								<i class="fa fa-twitter"></i>
-							</a>
-							<a href="#" class="facebook">
-								<i class="fa fa-facebook"></i>
-							</a>
-							<a href="#" class="google">
-								<i class="fa fa-instagram"></i>
-							</a>
+								</li>
+			
+								<hr>
+								<li>
+									<a href="/epa.html">
+										<h3>EPA</h3>
+									</a>
+								</li>
+								<hr>
+								<li>
+									<a href="/epod.html">
+										<h3>ePOD</h3>
+									</a>
+								</li>
+								<hr>
+								<li>
+									<a href="/iot.html">
+										<h3>Internet of Things</h3>
+									</a>
+								</li>
+								<hr>
+								<li>
+									<a href="/logistics.html">
+										<h3>Logistics</h3>
+									</a>
+								</li>
+								<hr>
+								<li>
+									<a href="/automation.html">
+										<h3>Smart Automation</h3>
+									</a>
+								</li>
+			
+			
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="footer-copyright">
-				<p>© 2018 Copyright Kele Tech </p>
+			
+			
+			<div class="overlay overlay-boxify">
+				<nav>
+					<ul>
+						<li>
+							<a href="aboutus.html">
+								<i class="fa fa-heart"></i>About Us</a>
+						</li>
+						<li>
+							<a data-toggle="modal" data-target="#keleModal">
+								<i class="fa fa-flash"></i>Solutions</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="/services.html">
+								<i class="fa fa-desktop"></i>Services</a>
+						</li>
+						<li>
+							<a href="/contactus.html">
+								<i class="fa fa-phone"></i>Contact Us</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-		</footer>
+			<footer id="myFooter">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2">
+							<h2 class="logo">
+								<a href="#">
+									<img class="img-responsive" src="./img/logo-white.png" alt=""> </a>
+							</h2>
+						</div>
+						<div class="col-sm-1"></div>
+						<div class="col-sm-3">
+							<h5>Solutions</h5>
+							<ul>
+								<li>
+									<a href="/chatbots.html">Chatbots</a>
+								</li>
+								<br>
+								<li>
+									<a href="/epa.html">EPA</a>
+								</li>
+								<br>
+								<li>
+									<a href="/epod.html">ePOD</a>
+								</li>
+								<br>
+								<li>
+									<a href="/iot.html">Internet of Things</a>
+								</li>
+								<br>
+								<li>
+									<a href="/logistics.html">Logistics</a>
+								</li>
+								<br>
+								<li>
+									<a href="/automation.html">Smart Automation</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<h5>Address</h5>
+							Unit 7, Somerset Business Park, 11 York Street Kensington ‘B’ Randburg 2194 Gauteng
+							<br>
+							<span class="phno row"> Contact: +27 83 997 7711
+								<br> email: Enquiry@keletech.co.za</span>
+							<br>
+							<span class="mail row"> </span>
+						</div>
+			
+			
+						<div class="col-sm-3">
+							<div class="social-networks">
+								<a href="#" class="twitter">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#" class="facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#" class="google">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p>© 2018 Copyright Kele Tech </p>
+				</div>
+			</footer>
+		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/min/toucheffects-min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
