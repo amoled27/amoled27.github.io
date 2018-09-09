@@ -803,14 +803,14 @@ p+.addr,
 [class^='tm-'] {
     display: block;
     text-align: center;
-    font-size: 42px;
+    font-size: 70px;
     line-height: 44px;
     height: 44px;
     color: #333;
 }
 
 .tm-magic {
-    font-size: 44px;
+    font-size: 70px;
 }
 
 /*==================     Images     ======================*/
@@ -1675,4 +1675,11 @@ h4+.project_crdts,
 
 li.active.act a {
     color: #358bdd;
+}
+
+.mb-2 {
+    margin-bottom: 2em;
+}
+.mt-2 {
+    margin-top: 2em;
 }
