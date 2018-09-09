@@ -1654,3 +1654,25 @@ h4+.project_crdts,
 .abtwid h4 {
     color: #358bdd;
 }
+
+.abt-content {
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.abt-text {
+    padding-top: 2em;
+    text-align: justify;
+}
+
+.abt-pts li p {
+    text-align: justify;
+}
+
+.navc {
+    background: #0a2035;
+}
+
+li.active.act a {
+    color: #358bdd;
+}
