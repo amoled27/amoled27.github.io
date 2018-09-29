@@ -1,482 +1,318 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-    <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/grid.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous"> -->
-    <!-- <link rel="stylesheet" href="css/pizza.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamtech</title>
+
+
+    <!-- css links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/camera.css">
-    <link rel="stylesheet" href="css/touchTouch.css">
-    <link rel="stylesheet" href="css/owl-carousel.css">
-    <link rel="stylesheet" href="css/contact-form.css">
 
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
-    <script src="js/jquery.equalheights.js"></script>
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    <script src="js/jquery.mobile.customized.min.js"></script>
-    <script src="js/wow/wow.js"></script>
-    <script>
-        $(document).ready(function () {
-            if ($('html').hasClass('desktop')) {
-                new WOW().init();
-            }
-        });
-    </script>
-    <!--<![endif]-->
-    <!-- <script src="js/pizza.min.js"></script>
-    <script src="js/vendor/dependencies.js"></script>
-    <script src="js/vendor/modernizr.js"></script> -->
-    <script src="js/camera.js"></script>
-    <script src="js/touchTouch.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/TMForm.js"></script>
-    <script src="js/owl.carousel.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-    <html class="lt-ie9">
-    <div id="ie6-alert" style="width: 100%; text-align:center; background: #232323;">
-        <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0"
-             usemap="#Map" longdesc="http://die6.frontcube.com"/>
-        <map name="Map" id="Map">
-            <area shape="rect" coords="496,201,604,329"
-                  href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank"
-                  alt="Download Interent Explorer"/>
-            <area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank"
-                  alt="Download Apple Safari"/>
-            <area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank"
-                  alt="Download Opera"/>
-            <area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank"
-                  alt="Download Firefox"/>
-            <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank"
-                  alt="Download Google Chrome"/>
-        </map>
-    </div>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-    <![endif]-->
 </head>
-
 <body>
-
-    <div class="page">
-        <!--========================================================
-                                  HEADER
-        =========================================================-->
-        <header id="header" class="header">
-
-            <div class="hdr-wrap">
-                <div id="camera" class="camera-wrap">
-                    <div data-src="images/index_slide01.jpg">
-                        <div class="camera_caption fadeIn titl">
-                            <h3 class="wow fadeInLeft" data-wow-delay=".4s" style="width:99%">
-                             Bring your great ideas to life with the HamTech Advantage
-                            </h3>
-                            <!-- <p class="wow fadeInRight" data-wow-delay=".8s"></p> -->
-                            <div class="wow fadeInUp" data-wow-delay="2s">
-                                <a class="btn1" href="index-1.html">more info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-src="images/index_slide02.jpg">
-                        <div class="camera_caption fadeIn titl">
-                            <h3 class="wow fadeInLeft" data-wow-delay=".4s" style="color: #358bdd">
-                                 Technology, Experience
-                            </h3>
-                            <p class="wow fadeInRight" data-wow-delay=".8s"></p>
-                            <div class="wow fadeInUp" data-wow-delay="2s">
-                                <a class="btn1" href="index-2.html">more info</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="logo">
-                    <embed src="images/logo-hamtech.png" />
+    <header class="vid">
+        <nav class="navbar navbar-expand-lg nv">
+            <a class="navbar-brand logox" href="#">
+                <img src="../assets/img/hamtech-logo.png" class="wow tada img-fluid" data-wow-iteration="2" alt="">
+            </a>>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link" href="#">Services</a>
+                    <a class="nav-item nav-link" href="#">Solutions</a>
+                    <a class="nav-item nav-link" href="/views/contact.html">Contact</a>
                 </div>
             </div>
-
-            <div id="stuck_container" class="stuck_container">
-                <div class="container">
-                    <div class="row">
-                        <div class="grid_12">
-                            <div class="hdr-brand">
-                                <h1><a href="./">HamTech</a></h1>
-                            </div>
-                            <nav class="nav">
-                                <ul class="sf-menu">
-                                    <li class="active">
-                                        <a href="./">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-1.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-2.html">Services</a>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="index-3.html">Solutions</a>
-                                    </li> -->
-                                    <li>
-                                        <a href="index-4.html">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+        </nav>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./assets/header.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100" >
+            <div class="d-flex text-center h-100" style="margin-top:-5.5em">
+                <div class="my-auto w-100 text-white" >
+                    <h2>Bring your great ideas to life with the</h2>
+                    <h1 class="display-3 wow bounceInUp" data-wow-duration="1s">HamTech Advantage </h1>
                 </div>
             </div>
-        </header>
-        <!--========================================================
-                                  CONTENT
-        =========================================================-->
-        <section id="content" class="content">
-
-            <div class="container well__ins1 well__ins2">
-                <div class="row">
-                    <div class="grid_12">
-                        <h2 class="wow fadeInLeft">About us</h2>
-                        <h3 class="hdng wow fadeInRight">HamTech is an ICT company excelling in software solutions and applications. We strive to smart connect technologies and machines
-                        for integrated functioning in the field of Internet of Things.</h3>
+        </div>
+    </header>
+    
+    <section class="about">
+        <div class="container pbtwo">
+            <div class="wow swing" data-wow-duration="1s">
+                <div class="row d-flex justify-content-center abt">
+                    <div class="title-text">
+                        <p>About <span class="highlight">Hamtech</span> </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="grid_6">
-                        <div class="box  wow fadeInUp" data-wow-delay=".8s">
-                            <p>
-                             We believe that it is the people that drive value in business, therefore culture plays a pivotal role in our organisation.
-                            A winning team is a team that not only see’s individuals on any project or milestone but a team that completes task together,
-                            win together and achieve a greater objective by delivering projects on time and seamless
-                            </p>
-                        </div>
+                <div class="d-flex row justify-content-center">
+                    <div class="subtitle-text">
+                        <p>first you should know</p>
                     </div>
-                    <div class="grid_6">
-                        <!-- <div class="progress progress__skin1 mg-add wow fadeInUp" data-percent="54%" data-wow-delay=".2s">
-                            <div class="progress_fill" style="width: 54%"></div>
-                            <div class="progress_cnt">Claritas est etiam</div>
-                        </div>
-                        <div class="progress progress__skin2  wow fadeInUp" data-percent="73%" data-wow-delay=".4s">
-                            <div class="progress_fill" style="width: 73%"></div>
-                            <div class="progress_cnt">Eodem modo typi</div>
-                        </div>
-                        <div class="progress progress__skin3  wow fadeInUp" data-percent="87%" data-wow-delay=".6s">
-                            <div class="progress_fill" style="width: 87%"></div>
-                            <div class="progress_cnt">Typi non habent claritatem insitam</div>
-                        </div> -->
-                        <!-- <ul data-pie-id="my-cool-chart">
-                            <li data-value="36">Software Applications</li>
-                            <li data-value="24">Networking</li>
-                            <li data-value="40">Smart devices</li>
-                         
-                        </ul> -->
-
-                    </div>
+                </div>
+                <div class="d-flex justify-content-center sep-parent">
+                    <div class="sep"></div>
+                    <i class="fa fa-circle sepfa"></i>
+                    <div class="sep"></div>
                 </div>
             </div>
-
-            <!-- <div class="parallax1" data-stellar-background-ratio="0.2">
-                <div class="container">
-                    <div class="row">
-                        <div class="grid_12">
-                            <h2 class="wow fadeInLeft">Why choose us</h2>
-                            <h3 class="wow fadeInRight">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, andit praesentsed diam nonummy nibh</h3>
-                            <div class="wow fadeInUp">
-                                <img class="mg-add" src="images/index_img01.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+            <div class="row col-md-6 col-sm-6 col-xs-12 col-lg-6">
+                <div class="abt-para1 wow bounceInLeft" data-wow-duration="1s">
+                    <p>HamTech is an ICT company excelling in software solutions and applications. We strive to smart connect technologies and
+                    machines for integrated functioning in the field of Internet of Things.</p>
                 </div>
-            </div> -->
-<!-- 
-            <div class="bg1 well__ins3 well__ins2">
-                <div class="container">
-                    <div class="row">
-                        <div class="grid_12">
-                            <div class="img-wrap center">
-                                <div class="img-cnt wow bounceIn mg-add" data-wow-delay=".4s"><img src="images/index_img02.jpg" alt=""></div>
-                                <div class="img-cnt wow bounceIn mg-add" data-wow-delay=".2s"><img src="images/index_img03.jpg" alt=""></div>
-                                <div class="img-cnt wow bounceIn mg-add" data-wow-delay=".6s"><img src="images/index_img04.jpg" alt=""></div>
-                            </div>
-                            <div id="owl" class="owl wow fadeInUp">
-                                <div class="item">
-                                    <blockquote class="quote">
-                                        <h4 class="quote_aside"><a href="#">Robert Adams</a></h4>
-                                        <p class="quote_cnt">
-                                            “Mulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem vestigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus”
-                                        </p>
-                                    </blockquote>
-                                </div>
-                                <div class="item">
-                                    <blockquote class="quote">
-                                        <h4 class="quote_aside"><a href="#">Monica Perry</a></h4>
-                                        <p class="quote_cnt">
-                                            “Veugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem vestigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus”
-                                        </p>
-                                    </blockquote>
-                                </div>
-                                <div class="item">
-                                    <blockquote class="quote">
-                                        <h4 class="quote_aside"><a href="#">Johm Smith</a></h4>
-                                        <p class="quote_cnt">
-                                            “Aeat vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem vestigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus”
-                                        </p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="container well well__ins4">
-                <div class="row">
-                    <div class="grid_3 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="box center">
-                            <div class="tm-magic"></div>
-                            <h4><a href="#">Web & Mobile development</a></h4>
-                        </div>
-                    </div>
-                    <div class="grid_3 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="box center">
-                            <div class="tm-gear"></div>
-                            <h4><a href="#">Smart Home Automation</a></h4>
-                        </div>
-                    </div>
-                    <div class="grid_3 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="box center">
-                            <div class="tm-support"></div>
-                            <h4><a href="#">Internet Of Things Solutions</a></h4>
-                        </div>
-                    </div>
-                    <div class="grid_3 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="box center">
-                            <div class="tm-volume"></div>
-                            <h4><a href="#">Software Architecture & Design</a></h4>
-                            <!-- <p>
-                                Vel illum dolore eu feugiat nulla
-                                facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                                praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. Typi non habent claritatem
-                            </p> -->
-                        </div>
-                    </div>
+                <div class="abt-para2 wow bounceInLeft" data-wow-duration=".75s">
+                    We believe that it is the people that drive value in business, therefore culture plays a pivotal role in our
+                    organisation. A winning team is a team that not only see’s individuals on any project or milestone but a team that
+                    completes task together, win together and achieve a greater objective by delivering projects on time and seamless
                 </div>
             </div>
-            <section>
-             <div class="container">
-                <div class="row">
-                    <div class="grid_12 clihead">
-                        <h2 class="wow fadeInLeft">Our Clients</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="grid_1"></div>
-                        <div class="grid_2">
-                            <img src="/images/client-1.png" alt="">
-                        </div>
-                        <div class="grid_2">
-                            <img src="/images/client-2.png" alt="">
-                        </div>
-                        <div class="grid_2">
-                            <img src="/images/client-3.png" alt="">
-                    
-                        </div>
-                        <div class="grid_2">
-                            <img src="/images/client-4.png" alt="">
-                    
-                        </div>
-                        <div class="grid_2">
-                            <img src="/images/client-5.png" alt="">
-                    
-                        </div>
-                        <div class="grid_1"></div>
-                    </div>
-             </div>
-            <div class="container" style="margin-top: 30px;">
-                <div class="row">
-                    <div class="grid_1"></div>
-                    <div class="grid_2">
-                        <img src="/images/client-6.png" alt="">
-                    </div>
-                    <div class="grid_2">
-                        <img src="/images/client-7.png" alt="">
-                    </div>
-                    <div class="grid_2">
-                        <img src="/images/client-8.png" alt="">
+            <div class="row col-md-6 col-sm-6 col-xs-12 col-lg-6"></div>
             
+        </div>
+    </section>
+
+    <section class="solutions pttwo">
+        <div class="container">
+                <div class="wow bounceOut" data-wow-duration="1s">
+                    <div class="row d-flex justify-content-center abt">
+                        <div class="title-text">
+                            <p>Services We Offer </p>
+                        </div>
                     </div>
-                    <div class="grid_2">
-                        <img src="/images/client-9.png" alt="">
-            
+                    <div class="d-flex row justify-content-center">
+                        <div class="subtitle-text">
+                            <p>We aim to resolve and support challenges faced by organizations in enterprise-wide information access and reporting.
+</p>
+                        </div>
                     </div>
-                    <div class="grid_2">
-                        <img src="/images/client-10.png" alt="">
-            
+                    <div class="d-flex justify-content-center sep-parent">
+                        <div class="sep"></div>
+                        <i class="fa fa-circle sepfa"></i>
+                        <div class="sep"></div>
                     </div>
-                    <div class="grid_1"></div>
+                </div>
+                <div class="row pttwo">
+                    <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+                       <div class="d-flex justify-content-center wow rubberBand">
+                            <div class="div-circle d-flex justify-content-center">
+                                <div class="fa serv-fa fa-laptop-code"></div>
+                            </div>
+                       </div>
+                        <div class="serv-text d-flex justify-content-center">
+                            <p>Web & Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+                       <div class="d-flex justify-content-center wow rubberBand" data-wow-delay="0.3s">
+                        <div class="div-circle d-flex justify-content-center">
+                            <div class="fa serv-fa fa-home"></div>
+                        </div>
+                        </div>
+                        <div class="serv-text d-flex justify-content-center">
+                            <p>Smart Home Automation</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+                       <div class="d-flex justify-content-center wow rubberBand" data-wow-delay="0.6s">
+                        <div class="div-circle d-flex justify-content-center">
+                            <div class="fa serv-fa fa-mobile-alt"></div>
+                        </div>
+                        </div>
+                        <div class="serv-text d-flex justify-content-center">
+                            <p>Internet of Things Solutions</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+                    <div class="d-flex justify-content-center wow rubberBand" data-wow-delay="0.9s">
+                    <div class="div-circle d-flex justify-content-center">
+                        <div class="fa serv-fa fa-sitemap"></div>
+                    </div>
+                    </div>
+                    <div class="serv-text d-flex justify-content-center">
+                        <p>Software Architecture & Design</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+    <!-- <section class="we-are vid">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./assets/effects.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex text-center h-100">
+                <div class="my-auto w-100 text-white">
+                    <h2>Bring your great ideas to life with the</h2>
+                    <h1 class="display-3 wow bounceInUp" data-wow-duration="1s">HamTech Advantage </h1>
                 </div>
             </div>
-            <div class="container" style="margin-top: 30px;">
+        </div>
+    </section> -->
+    <section class="dummy">
+
+    </section>
+
+    <section class="clients pttwo">
+        <div class="container">
+            <div class="wow bounceOut" data-wow-duration="1s">
+                <div class="row d-flex justify-content-center abt">
+                    <div class="title-text">
+                        <p>Our Clients </p>
+                    </div>
+                </div>
+                <!-- <div class="d-flex row justify-content-center">
+                    <div class="subtitle-text">
+                        <p>We aim to resolve and support challenges faced by organizations in enterprise-wide information access
+                            and reporting.
+                        </p>
+                    </div>
+                </div> -->
+                <div class="d-flex justify-content-center sep-parent">
+                    <div class="sep"></div>
+                    <i class="fa fa-circle sepfa"></i>
+                    <div class="sep"></div>
+                </div>
+            </div>
             <div class="row">
-                    <div class="grid_3"></div>
-                    <div class="grid_2">
-                        <img src="/images/client-11.png" alt="">
-                    </div>
-                    <div class="grid_2">
-                        <img src="/images/client-12.png" alt="">
-                    </div>
-                    <div class="grid_2">
-                        <img src="/images/client-13.png" alt="">
-                    </div>
-                    <div class="grid_3"></div>
-             </div>
-            </div>
-            </section>
-            <div class="bg3 well__ins6 well__ins7" style="margin-top: 35px"> 
-                <div class="container">
-                    <div class="row">
-                        <div class="preffix_3 grid_6">
-                            <h2 class="wow bounceIn" data-wow-delay=".2s">Contact form</h2>
-                            <form id="contact-form" class="contact-form">
-                                <div class="contact-form-loader"></div>
-                                <fieldset>
-                                    <label class="name">
-                                        <input type="text" name="name" placeholder="Name" value=""
-                                               data-constraints="@Required @JustLetters" />
-
-                                        <span class="empty-message">*This field is required.</span>
-                                        <span class="error-message">*This is not a valid name.</span>
-                                    </label>
-
-                                    <label class="phone">
-                                        <input type="text" name="phone" placeholder="Phone" value=""
-                                               data-constraints="@JustNumbers" />
-
-                                        <span class="empty-message">*This field is required.</span>
-                                        <span class="error-message">*This is not a valid phone.</span>
-                                    </label>
-
-                                    <label class="email">
-                                        <input type="text" name="email" placeholder="Email" value=""
-                                               data-constraints="@Required @Email" />
-
-                                        <span class="empty-message">*This field is required.</span>
-                                        <span class="error-message">*This is not a valid email.</span>
-                                    </label>
-
-                                    <label class="message">
-                                        <textarea name="message" placeholder="Message"
-                                                  data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-
-                                        <span class="empty-message">*This field is required.</span>
-                                        <span class="error-message">*The message is too short.</span>
-                                    </label>
-
-                                    <div class="btn-wr">
-                                        <a class="btn2" href="#" data-type="submit">send</a>
-                                    </div>
-                                </fieldset>
-                                <div class="modal fade response-message">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-hidden="true">
-                                                    &times;
-                                                </button>
-                                                <h4 class="modal-title">Modal title</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                You message has been sent! We will be in touch soon.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                <div class="col-md-1 col-lg-1">
+                
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-2.png" alt="" class="img-fluid">                
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-3.png" alt="" class="img-fluid">                
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-4.png" alt="" class="img-fluid">                
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-5.png" alt="" class="img-fluid">                
+                </div>
+                <div class="col-md-1 col-lg-1">
+                
                 </div>
             </div>
 
-        </section>
+            <div class="row">
+                <div class="col-md-1 col-lg-1">
+            
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-2.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-3.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-4.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <img src="./assets/img/client-5.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-1 col-lg-1">
+            
+                </div>
+            </div>
 
-        <!--========================================================
-                                  FOOTER
-        =========================================================-->
-        <footer id="footer" class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="grid_12">
-                        <div class="ftr-brand">
-                            <div class="footerbg">
-                                <div class="row">
-                                    <div class="grid_4">
-                                        <div class="widget-content abtwid">
-                                            <h4>Company</h4>
-                                            <ul class="list-links foot">
-                                                <li class="list-link"><a href="index.html">Home<br/></a></li>
-                                                <li class="list-link"><a href="index-1.html">About Us<br/></a></li>
-                                                <li class="list-link"><a href="index-2.html">Services<br/></a></li>
-                                                <li class="list-link"><a href="index-4.html">Contact Us<br/></a></li>
-                                                <li class="list-link"><a href="terms.html">Terms of Use<br/></a></li>
-                                                <li class="list-link"><a href="index-5.html">Privacy Policy<br/></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid_4">
-                                        <div class="widget about-widget abtwid">
-                                            <h4>Contacts</h4>
-                                            <p><b>Email:</b> info@hamtech.co.za</p>
-                                            <p><b>Tel:</b> [+27] 860426662</p>
-                                            <p><b>Fax:</b> [+27] 866178400</p>
-                                            <!-- <ul class="list-links foot">
-                                                <li class="list-link"><a href="index.html">Home<br/></a></li>
-                                                <li class="list-link"><a href="about-us.html">About Us<br/></a></li>
-                                                <li class="list-link"><a href="services.html">Services<br/></a></li>
-                                                <li class="list-link"><a href="contact.html">Contact Us<br/></a></li>
-                                                <li class="list-link"><a href="terms.html">Terms of Use<br/></a></li>
-                                                <li class="list-link"><a href="privacy.html">Privacy Policy<br/></a></li>
-                                            </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="grid_4">
-                                        <div class="widget about-widget abtwid">
-                                            <h4 class="widget-title">South Africa</h4>
-                                            <p>Stoney Ridge Office Cnr Witkoppen & Waterford Place, Unit 6, Block B, Paulshof 2146</p>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info" style="color: #fff">
-                             © 2018 HamTech | All rights reserved.
-                            <!-- {%FOOTER_LINK} -->
-                        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                <div class="row foot foot-rw wow bounceInLeft">
+                    <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
+                        <p>Call Us</p>
+                        <p>+ 0970000000</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+                        <i class="fa fa-phone wow tada" data-wow-iteration="1000"></i>
+                    </div>
+                </div>
+                <div class="row foot-rw wow bounceInLeft" data-wow-delay="0.5s">
+                    <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
+                        <p>Address</p>
+                        <p>Johannesberg, South Africa</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+                        <i class="fa fa-map-marker-alt wow bounce" data-wow-iteration="1000"></i>
+                    </div>
+                </div>
+                <div class="row foot-rw wow bounceInLeft" data-wow-delay="1s">
+                    <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
+                        <p>Email Us</p>
+                        <p>contact@hamtech.co.za</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+                        <i class="fa fa-envelope wow rubberBand" data-wow-iteration="1000"></i>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 fut ">
+                <div class="d-flex justify-content-center"> 
+                    <p>Links</p>
+                </div>
+                <div class="d-flex justify-content-center"> 
+                    <ul class="footr ">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Solutions</li>
+                        <li>Services</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4"></div>
+        </div>
+    </footer>
+    <!-- scripts -->
 
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-    <script src="js/script.js"></script>
-    <!-- <script>
-        Pizza.init();
-    </script> -->
-<script type="text/javascript">
- var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-7078796-5']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();</script>
-</body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    $(".div-circle").hover(
+        function () {
+            $(this).addClass("serv_hover_fa");
+        },
+        function () {
+            $(this).removeClass("serv_hover_fa");
+        }
+    );
+    </script>
+</body>
 </html>
