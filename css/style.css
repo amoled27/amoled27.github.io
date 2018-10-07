@@ -43,7 +43,7 @@ header .overlay {
 }
 
 .nv {
-    z-index: 2;
+    z-index: 4;
 }
 
 .about {
@@ -187,7 +187,7 @@ div#navbarNavAltMarkup {
 }
 
 .clients {
-    background: #0076a3;
+    background: #0d141e;
 }
 
 .address p {
@@ -218,7 +218,7 @@ div#navbarNavAltMarkup {
 }
 
 footer {
-    background: #0d141e;
+    background: #2275a7;
 }
 
 .fut {
@@ -237,12 +237,101 @@ footer {
     color: #fff;
 }
 
-.logox img{
+.logox img {
     padding-left: 30px;
     padding-top: 25px;
 }
 
- @media (pointer: coarse) and (hover: none) {
+.widt {
+    width: 55%;
+    margin-top: 2em;
+}
+
+.form-control {
+    margin-bottom: 1.5em;
+}
+
+.contct {
+    background: #dcdbdb9e;
+}
+
+.contact-logo img {
+    width: 85%;
+}
+
+.abt-logo img {
+    width: 55%;
+}
+
+.block {
+    padding-bottom: 3em;
+}
+
+.block p {
+    color: #fff;
+}
+
+.block h4 {
+    color: #2c77dd;
+}
+
+.right p {
+    text-align: right;
+}
+
+.right h4 {
+    text-align: right;
+}
+
+.center-img {
+    padding-top: 4em;
+}
+
+.serv {
+    margin-top: 4em;
+}
+
+.rights {
+    background: #0d141e;
+}
+
+.abtt p {
+    color: #fff;
+    text-align: justify;
+}
+
+.abtt h4 {
+    color: #257ad6;
+}
+
+.abtt-x {
+    margin-top: 4em;
+}
+
+
+
+@media(max-width: 991px) {
+    .center-img {
+        padding-top: 9.5em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .dbv {
+        padding-top: 3em;
+    }
+}
+
+@media (max-width: 767px) {
+    .right p {
+        text-align: left;
+    }
+    .right h4 {
+        text-align: left;
+    }
+}
+
+@media (pointer: coarse) and (hover: none) {
     header {
         background: url('../assets/img/header.png') black no-repeat center center scroll;
     }

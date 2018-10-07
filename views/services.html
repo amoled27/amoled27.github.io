@@ -32,8 +32,8 @@
 <body>
     <header class="vid">
         <nav class="navbar navbar-expand-lg nv">
-            <a class="navbar-brand logox contact-logo" href="#">
-                <img src="../assets/img/hamtech-logo.png"  class= "img-fluid" alt="">
+            <a class="navbar-brand logox abt-logo" href="#">
+                <img src="../assets/img/hamtech-logo.png" class="wow tada img-fluid" data-wow-iteration="2" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,48 +44,78 @@
                     <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="/views/aboutus.html">About Us</a>
                     <a class="nav-item nav-link" href="/views/services.html">Services</a>
-                    <a class="nav-item nav-link" href="#">Solutions</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="/">Solutions</a>
+                    <a class="nav-item nav-link" href="/views/contact.html">Contact</a>
                 </div>
             </div>
         </nav>
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="../assets/effects.mp4" type="video/mp4">
-        </video>
-        <div class="container h-100 d-flex justify-content-center">
-            <div class="h-100 widt">
-                <div class="card contct">
-                    <div class="card-body">
-                        <h3 class="card-title">Contact us</h3>
-                            <input type="text" class="form-control" placeholder="Name">
-                            <input type="email" class="form-control" placeholder="Email">
-                            <input type="text" class="form-control" placeholder="Phone">
-                            <textarea class="form-control" placeholder="Message" rows="4"></textarea>
-                            
-                        <a href="#" class="btn btn-primary">Contact us</a>
-                    </div>
+        <div class="container h-100">
+            <div class="d-flex text-center h-100" style="margin-top:-5.5em">
+                <div class="my-auto w-100 text-white">
+                    <!-- <h2>Bring your great ideas to life with the</h2> -->
+                    <h1 class="display-3 wow bounceInUp" data-wow-duration="1s">Services We Offer </h1>
                 </div>
             </div>
         </div>
     </header>
 
-
-   
-    <!-- <section class="we-are vid">
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="./assets/effects.mp4" type="video/mp4">
-        </video>
-        <div class="container h-100">
-            <div class="d-flex text-center h-100">
-                <div class="my-auto w-100 text-white">
-                    <h2>Bring your great ideas to life with the</h2>
-                    <h1 class="display-3 wow bounceInUp" data-wow-duration="1s">HamTech Advantage </h1>
+    <section class="about">
+        <div class="container pbtwo">
+            <div class="wow swing" data-wow-duration="1s">
+                <div class="row d-flex justify-content-center abt">
+                    <div class="title-text">
+                        <p>Our <span class="highlight">Services</span> </p>
+                    </div>
+                </div>
+                <div class="d-flex row justify-content-center">
+                    <div class="subtitle-text">
+                        <p>What we offer</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center sep-parent">
+                    <div class="sep"></div>
+                    <i class="fa fa-circle sepfa"></i>
+                    <div class="sep"></div>
                 </div>
             </div>
+           <div class="row serv">
+                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="block">
+                        <h4>Custom Application Development</h4>
+                        <p>Ability to understand the current challenges and provide guidance to overcome the challenge by developing
+                            custom built
+                            applications.</p>
+                    </div>
+
+                    <div class="block dbv">
+                        <h4>IOT Solutions</h4>
+                        <p>Internet Of Things(IOT) solutions for companies from various domains to leverage the full potential of IOT by providing
+                        End to End solutions right from gadgets to network connectivity.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4 center-img d-none d-md-block">
+                    <img src="../assets/img/services-ham.png" alt="" class="img img-fluid">
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                    <div class="block right">
+                        <h4>Mobile & Web Application</h4>
+                        <p>Our team of well trained and knowledgeable app developers in the Android and iOS platform create high quality,
+                        user-friendly, cost effective mobile applications to meet our customer’s expectations.</p>
+                    </div>
+
+                    <div class="block right">
+                        <h4>Smart Home Automation</h4>
+                        <p>A Smart Home automation System is designed to seamlessly integrate your sound, lighting and comfort services to provide
+                        convenience, safety and energy efficiency.</p>
+                    </div>
+                </div>
+           </div>
+
         </div>
-    
+    </section>
+
+      
 
     <footer>
         <div class="row">
@@ -134,7 +164,7 @@
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4"></div>
         </div>
-    </footer>-->
+    </footer>
     <!-- scripts -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
