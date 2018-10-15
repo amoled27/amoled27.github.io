@@ -264,7 +264,7 @@ footer {
 }
 
 .abt-logo img {
-    width: 55%;
+    width: 65%;
 }
 
 .block {
@@ -322,6 +322,23 @@ footer {
     border-radius: 0px;
     min-height: 50px;
     margin: 7px;
+}
+
+a.nav-item.nav-link {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.abt-back {
+    background: url(../assets/img/aboutus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.serv-back {
+    background: url(../assets/img/solutions.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media(max-width: 991px) {
