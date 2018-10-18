@@ -360,15 +360,78 @@ a.nav-item.nav-link {
     padding-bottom: 2em;
 }
 
+.hand {
+    position: absolute;
+    left: 9em;
+    top: 8.5em;
+}
+
+.coder {
+    padding-top: 11em;
+}
+
+.light-glow {
+    position: absolute;
+    left: 8.4em;
+}
+
+.light-off {
+    position: absolute;
+    left: 13em;
+}
+
+@media (max-width: 767px) {
+    .points-iot {
+        margin-top: 5em;
+    }
+}
+
 @media(max-width: 991px) {
     .center-img {
         padding-top: 9.5em;
     }
 }
 
+@media(min-width: 768px) and (max-width: 991px) {
+    .light-glow {
+        position: absolute;
+        left: 4.4em;
+        margin-top: -22em
+    }
+    .light-off {
+        position: absolute;
+        left: 9em;
+        margin-top: -22em
+    }
+}
+
+@media(min-width: 991px) and (max-width: 1200px) {
+    .light-glow {
+        position: absolute;
+        left: 7.4em;
+        margin-top: -26em
+    }
+    .light-off {
+        position: absolute;
+        left: 12em;
+        margin-top: -26em
+    }
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
     .dbv {
         padding-top: 3em;
+    }
+}
+
+@media( min-width: 425px) and (max-width: 507px) {
+    .light-glow {
+        margin-top: -26em;
+        left: 7.4em
+    }
+    .light-off {
+        margin-top: -26em;
+        left: 12em;
     }
 }
 
