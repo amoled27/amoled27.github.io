@@ -30,54 +30,64 @@
 </head>
 
 <body>
-    <header class="vid">
-        <nav class="navbar navbar-expand-lg nv">
-            <a class="navbar-brand logox contact-logo" href="#">
-                <img src="../assets/img/hamtech_logo.png"  class= "img-fluid" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="/views/aboutus.html">About Us</a>
-                    <a class="nav-item nav-link" href="/views/services.html">Solutions</a>
-                    <a class="nav-item nav-link" href="/views/contact.html">Contact Us</a>
+    <div class="contx">
+        <header class="vid">
+            <nav class="navbar navbar-expand-lg nv">
+                <a class="navbar-brand logox contact-logo" href="#">
+                    <img src="../assets/img/hamtech_logo.png" class="img-fluid" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="/views/aboutus.html">About Us</a>
+                        <div class="dropdown"> <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Solutions </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
+                                    href="services.html">Solutions</a> <a class="dropdown-item" href="hms.html">Hamtech
+                                    Messaging Services</a> <a class="dropdown-item" href="epod.html">E-Proof Of
+                                    Delivery</a> <a class="dropdown-item" href="web.html">Web Development</a> <a class="dropdown-item"
+                                    href="mobile.html">Mobile App Development</a> <a class="dropdown-item" href="iot.html">Internet
+                                    Of Things </a> </div>
+                        </div>
+                        <a class="nav-item nav-link" href="/views/contact.html">Contact Us</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="../assets/effects.mp4" type="video/mp4">
-        </video>
-        <div class="container h-100 d-flex justify-content-center">
-            <div class="h-100 widt">
-                <div class="card contct">
-                    <div class="card-body contact-card">
-                        <h3 class="card-title">Contact us</h3>
+            </nav>
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="../assets/effects.mp4" type="video/mp4">
+            </video>
+            <div class="container h-100 d-flex justify-content-center">
+                <div class="h-100 widt">
+                    <div class="card contct">
+                        <div class="card-body contact-card">
+                            <h3 class="card-title">Contact us</h3>
                             <input type="text" class="form-control" placeholder="Name">
                             <input type="email" class="form-control" placeholder="Email">
                             <input type="text" class="form-control" placeholder="Phone">
                             <textarea class="form-control" placeholder="Message" rows="4"></textarea>
-                            
-                       <div class="d-flex justify-content-center">
-                            <a href="#" class="btn btn-primary" style="border-radius:0px">Contact us</a>
-                       </div>
+
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary" style="border-radius:0px">Contact us</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
 
 
 
 
-    
 
 
-   
+
+
     <!-- <section class="we-are vid">
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -117,7 +127,7 @@
                 <div class="row foot-rw wow bounceInLeft" data-wow-delay="1s">
                     <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
                         <p>Email Us</p>
-                        <p>contact@hamtech.co.za</p>
+                        <p>info@hamtech.co.za</p>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
                         <i class="fa fa-envelope wow rubberBand" data-wow-iteration="1000"></i>

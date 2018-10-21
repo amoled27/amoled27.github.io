@@ -41,7 +41,20 @@
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="/views/aboutus.html">About Us</a>
-                    <a class="nav-item nav-link" href="/views/services.html">Solutions</a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Solutions
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="views/services.html">Solutions</a>
+                            <a class="dropdown-item" href="views/hms.html">Hamtech Messaging Services</a>
+                            <a class="dropdown-item" href="views/epod.html">E-Proof Of Delivery</a>
+                            <a class="dropdown-item" href="views/web.html">Web Development</a>
+                            <a class="dropdown-item" href="views/mobile.html">Mobile App Development</a>
+                            <a class="dropdown-item" href="views/iot.html">Internet Of Things </a>
+                        </div>
+                    </div>
                     <a class="nav-item nav-link" href="/views/contact.html">Contact Us</a>
                 </div>
             </div>
@@ -123,13 +136,13 @@
                     </div>
                 </div>
                 <div class="row pttwo">
-                  
-                    <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+                  <div class="col-md-1 col-lg-1"></div>
+                    <div class="col-md-2 col-sm-6 col-xs-12 col-lg-2">
                        <a href="./views/hms.html">
                         <div class="d-flex justify-content-center wow rubberBand">
                             <div class="div-circle d-flex justify-content-center">
                                 <!-- <div class="fa serv-fa fa-home"></div> -->
-                                <img src="./assets/img/ham-iot.svg" class="serv-fa fa serv-logo" alt="">
+                                <img src="./assets/img/chat.svg" class="serv-fa fa serv-logo" alt="">
                             </div>
                         </div>
                        </a>
@@ -137,7 +150,7 @@
                             <p>Hamtech Messaging Services</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+                    <div class="col-md-2 col-sm-6 col-xs-12 col-lg-2">
                         <a href="./views/epod.html">
                             <div class="d-flex justify-content-center wow rubberBand" data-wow-delay="0.3s">
                                 <div class="div-circle d-flex justify-content-center">
@@ -147,10 +160,10 @@
                             </div>
                         </a>
                         <div class="serv-text d-flex justify-content-center">
-                            <p>EPOD</p>
+                            <p>E-Proof of Delivery</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+                    <div class="col-md-2 col-sm-6 col-xs-12 col-lg-2">
                         <a href="./views/web.html">
                             <div class="d-flex justify-content-center wow rubberBand" data-wow-delay="0.6s">
                                 <div class="div-circle d-flex justify-content-center">
@@ -160,22 +173,37 @@
                             </div>
                         </a>
                         <div class="serv-text d-flex justify-content-center">
-                            <p>Web & Mobile Development</p>
+                            <p>Web Development</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+                    <div class="col-md-2 col-sm-6 col-xs-12 col-lg-2">
                        <a href="./views/iot.html">
                         <div class="d-flex justify-content-center wow rubberBand" data-wow-delay="0.9s">
                             <div class="div-circle d-flex justify-content-center">
                                 <!-- <div class="fa serv-fa fa-mobile-alt"></div> -->
-                                <img src="./assets/img/innovation.svg" class="serv-fa fa serv-logo" alt="">
+                                <img src="./assets/img/ham-iot.svg" class="serv-fa fa serv-logo" alt="">
                             </div>
                         </div>
                        </a>
                         <div class="serv-text d-flex justify-content-center">
+                            <p>Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12 col-lg-2">
+                        <a href="./views/iot.html">
+                            <div class="d-flex justify-content-center wow rubberBand" data-wow-delay="1.2s">
+                                <div class="div-circle d-flex justify-content-center">
+                                    <!-- <div class="fa serv-fa fa-mobile-alt"></div> -->
+                                    <img src="./assets/img/innovation.svg" class="serv-fa fa serv-logo" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="serv-text d-flex justify-content-center">
                             <p>Internet of Things Solutions</p>
                         </div>
                     </div>
+                  <div class="col-md-1 col-lg-1"></div>
+
                 
                 </div>
         </div>
@@ -268,7 +296,7 @@
             <div class="wow swing" data-wow-duration="1s">
                 <div class="row d-flex justify-content-center abt">
                     <div class="title-text">
-                        <p>Hamtech <span class="highlight">Messaging</span> </p>
+                        <a href="views/hms.html"><p>Hamtech <span class="highlight">Messaging</span> </p></a>
                     </div>
                 </div>
                 <!-- <div class="d-flex row justify-content-center">
@@ -289,61 +317,88 @@
        </div>
     </section>
 
-    <footer>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
-                <div class="row foot foot-rw wow bounceInLeft">
-                    <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
-                        <p>Call Us</p>
-                        <p>+ 0970000000</p>
+    <footer >
+      <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-6 col-xs-12 col-lg-5">
+                    <div class="row foot foot-rw wow bounceInLeft">
+                        <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
+                            <p>Call Us</p>
+                            <p>+27(0) 860426662</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 facon">
+                            <i class="fa fa-phone wow tada" data-wow-iteration="1000"></i>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-                        <i class="fa fa-phone wow tada" data-wow-iteration="1000"></i>
-                    </div>
-                </div>
-                <div class="row foot-rw wow bounceInLeft" data-wow-delay="0.5s">
-                    <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
-                        <p>Address</p>
-                        <p>Johannesberg, South Africa</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-                        <i class="fa fa-map-marker-alt wow bounce" data-wow-iteration="1000"></i>
-                    </div>
-                </div>
-                <div class="row foot-rw wow bounceInLeft" data-wow-delay="1s">
-                    <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
-                        <p>Email Us</p>
-                        <p>contact@hamtech.co.za</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-                        <i class="fa fa-envelope wow rubberBand" data-wow-iteration="1000"></i>
+                    <div class="row foot-rw wow bounceInLeft" data-wow-delay="1s">
+                        <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
+                            <p>Email Us</p>
+                            <p>info@hamtech.co.za</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-hidden col-lg-4 facon">
+                            <i class="fa fa-envelope wow rubberBand" data-wow-iteration="1000"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-7 col-lg-7 col-sm-6 col-xs-12">
+                    <div class="row foot foot-rw wow bounceInLeft">
+                        <div class="col-md-10 col-sm-10 col-xs-10 col-lg-10 address">
+                            <p>Address</p>
+                            <p>Stoney Ridge Office Cnr Witkoppen & Waterford Place,</p>
+                            <p>Unit 6, Block B, Paulshof 2146</p>
+                            <p>Johannesburg , South Africa</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2 bouncer facon">
+                            <i class="fa fa-map-marker-alt wow bounce" data-wow-iteration="1000"></i>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 fut ">
-                <div class="d-flex justify-content-center"> 
-                    <p>Links</p>
-                </div>
-                <div class="d-flex justify-content-center"> 
-                    <ul class="footr ">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Solutions</li>
-                        <li>Services</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4"></div>
-        </div>
+      </div>
     </footer>
+    
     <div class="rights">
        <div class="d-flex justify-content-center wow bounceIn" style="padding-top:30px" data-wow-delay="0.6s">
-            <img src="./assets/img/hamtech_logo.png" alt="" class="img-fluid" style="height:100px; width:100px" >
+            <img src="./assets/img/hamtech_logo.png" alt="" class="img-fluid" style="height:130px; width:150px" >
        </div>
        <div class="d-flex justify-content-center" style="margin-top:10px; color: #fff">
         <p>&copy; 2018 Hamtech | All rights reserved</p>
        </div>
+    </div>
+    <div class="linkss">
+        <div class="container">
+            <div class="row d-flex justify-content-center linkx">
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="/">Home</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="views/services.html">Solutions</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="views/aboutus.html">AboutUs</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="views/contact.html">ContactUs</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="views/hms.html">HMS</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="views/epod.html">EPOD</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="views/iot.html">IOT</a>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12 col-lg-2 d-flex justify-content-center">
+                    <a href="views/web.html">Web Development</a>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12 col-lg-2 d-flex justify-content-center">
+                    <a href="views/mobile.html">Mobile Development</a>
+                </div>
+    
+            </div>
+        </div>
     </div>
     <!-- scripts -->
 

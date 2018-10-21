@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <header class="vid">
+    <header class="vid iot-back">
         <nav class="navbar navbar-expand-lg nv">
             <a class="navbar-brand logox abt-logo" href="#">
                 <img src="../assets/img/hamtech_logo.png" class="wow tada img-fluid" data-wow-iteration="2" alt="">
@@ -43,7 +43,14 @@
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="/views/aboutus.html">About Us</a>
-                    <a class="nav-item nav-link" href="/views/services.html">Solutions</a>
+                    <div class="dropdown"> <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Solutions </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="services.html">Solutions</a>
+                            <a class="dropdown-item" href="hms.html">Hamtech Messaging Services</a> <a class="dropdown-item"
+                                href="epod.html">E-Proof Of Delivery</a> <a class="dropdown-item" href="web.html">Web
+                                Development</a> <a class="dropdown-item" href="mobile.html">Mobile App Development</a>
+                            <a class="dropdown-item" href="iot.html">Internet Of Things </a> </div>
+                    </div>
                     <a class="nav-item nav-link" href="/views/contact.html">Contact</a>
                 </div>
             </div>
@@ -80,21 +87,23 @@
             </div>
 
             <div class="row">
-                <p style="color:#fff">We provide IOT solutions for businesses in various domains by understanding the core requirements and developing
-                end-to-end intelligent gadgets and applications to manage without human interference.
-                We have high-end solutions in multiple arenas such as,
-</p>
+                <p style="color:#fff">We provide IOT solutions for businesses in various domains by understanding the
+                    core requirements and developing
+                    end-to-end intelligent gadgets and applications to manage without human interference.
+                    We have high-end solutions in multiple arenas such as,
+                </p>
             </div>
             <div class="row" style="padding-top:2em">
                 <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-                  <div class="row">
-                      <div class="col-md-2 col-sm-1 col-xs-1 col-lg-2"></div>
-                      <div class="col-md-8 col-sm-10 col-xs-10 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-1 col-xs-1 col-lg-2"></div>
+                        <div class="col-md-8 col-sm-10 col-xs-10 col-lg-8">
                             <img src="../assets/img/hand.png" alt="" class="img-fluid">
-                            <img src="../assets/img/actual-hand.png" alt="" class="img-fluid hand wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
-                      </div>
-                      <div class="col-md-2 col-sm-1 col-xs-1 col-lg-2"></div>
-                  </div>
+                            <img src="../assets/img/actual-hand.png" alt="" class="img-fluid hand wow bounceInUp"
+                                data-wow-duration="1s" data-wow-delay="1s">
+                        </div>
+                        <div class="col-md-2 col-sm-1 col-xs-1 col-lg-2"></div>
+                    </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 points-iot">
                     <ul style="color:#fff">
@@ -111,63 +120,86 @@
 
         </div>
     </section>
-
-
-
     <footer>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
-                <div class="row foot foot-rw wow bounceInLeft">
-                    <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
-                        <p>Call Us</p>
-                        <p>+ 0970000000</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-6 col-xs-12 col-lg-5">
+                    <div class="row foot foot-rw wow bounceInLeft">
+                        <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
+                            <p>Call Us</p>
+                            <p>+27(0) 860426662</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 facon">
+                            <i class="fa fa-phone wow tada" data-wow-iteration="1000"></i>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-                        <i class="fa fa-phone wow tada" data-wow-iteration="1000"></i>
-                    </div>
-                </div>
-                <div class="row foot-rw wow bounceInLeft" data-wow-delay="0.5s">
-                    <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
-                        <p>Address</p>
-                        <p>Johannesberg, South Africa</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-                        <i class="fa fa-map-marker-alt wow bounce" data-wow-iteration="1000"></i>
-                    </div>
-                </div>
-                <div class="row foot-rw wow bounceInLeft" data-wow-delay="1s">
-                    <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
-                        <p>Email Us</p>
-                        <p>contact@hamtech.co.za</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-                        <i class="fa fa-envelope wow rubberBand" data-wow-iteration="1000"></i>
+                    <div class="row foot-rw wow bounceInLeft" data-wow-delay="1s">
+                        <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8 address">
+                            <p>Email Us</p>
+                            <p>info@hamtech.co.za</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-hidden col-lg-4 facon">
+                            <i class="fa fa-envelope wow rubberBand" data-wow-iteration="1000"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-7 col-lg-7 col-sm-6 col-xs-12">
+                    <div class="row foot foot-rw wow bounceInLeft">
+                        <div class="col-md-10 col-sm-10 col-xs-10 col-lg-10 address">
+                            <p>Address</p>
+                            <p>Stoney Ridge Office Cnr Witkoppen & Waterford Place,</p>
+                            <p>Unit 6, Block B, Paulshof 2146</p>
+                            <p>Johannesburg , South Africa</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2 bouncer facon">
+                            <i class="fa fa-map-marker-alt wow bounce" data-wow-iteration="1000"></i>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 fut ">
-                <div class="d-flex justify-content-center">
-                    <p>Links</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <ul class="footr ">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Solutions</li>
-                        <li>Services</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4"></div>
         </div>
     </footer>
     <div class="rights">
         <div class="d-flex justify-content-center wow bounceIn" style="padding-top:30px" data-wow-delay="0.6s">
-            <img src="../assets/img/hamtech_logo.png" alt="" class="img-fluid" style="height:100px; width:100px">
+            <img src="../assets/img/hamtech_logo.png" alt="" class="img-fluid" style="height:130px; width:150px">
         </div>
         <div class="d-flex justify-content-center" style="margin-top:10px; color: #fff">
             <p>&copy; 2018 Hamtech | All rights reserved</p>
+        </div>
+    </div>
+    <div class="linkss">
+        <div class="container">
+            <div class="row d-flex justify-content-center linkx">
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="/">Home</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="services.html">Solutions</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="aboutus.html">AboutUs</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="contact.html">ContactUs</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="hms.html">HMS</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="epod.html">EPOD</a>
+                </div>
+                <div class="col-md-1 col-sm-12 col-xs-12 col-lg-1 d-flex justify-content-center">
+                    <a href="iot.html">IOT</a>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12 col-lg-2 d-flex justify-content-center">
+                    <a href="web.html">Web Development</a>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12 col-lg-2 d-flex justify-content-center">
+                    <a href="mobile.html">Mobile Development</a>
+                </div>
+
+            </div>
         </div>
     </div>
     <!-- scripts -->
