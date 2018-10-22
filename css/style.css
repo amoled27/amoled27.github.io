@@ -6,7 +6,7 @@ header {
     position: relative;
     background-color: black;
     height: 100vh;
-    min-height: 25rem;
+    min-height: 45rem;
     width: 100%;
     overflow: hidden;
 }
@@ -53,6 +53,7 @@ header .overlay {
 
 div#navbarNavAltMarkup {
     padding-top: 2em;
+    width: 100%;
 }
 
 .title-text p {
@@ -143,10 +144,10 @@ div#navbarNavAltMarkup {
     padding-top: 4em;
 }
 
-.mobdev img{
+.mobdev img {
     width: 70%;
-    padding-left:2em; 
-} 
+    padding-left: 2em;
+}
 
 .div-circle {
     border-radius: 50%;
@@ -216,9 +217,18 @@ nav a {
     z-index: 1;
 }
 
+.navbar {
+    position: absolute;
+    width: 100%;
+}
+
 .dummy {
     min-height: 2em;
     background: #0d141e;
+}
+
+.navtext {
+    padding-top: 21em;
 }
 
 .clients {
@@ -317,6 +327,7 @@ footer {
 
 .contct {
     background: #dcdbdb9e;
+    margin-top: 10em;
 }
 
 .contact-logo img {
@@ -484,6 +495,10 @@ a.nav-item.nav-link {
 }
 
 @media(max-width: 991px) {
+    div#navbarNavAltMarkup {
+        background: #2578e6ba;
+        padding: 1em;
+    }
     .center-img {
         padding-top: 9.5em;
     }
@@ -515,7 +530,7 @@ a.nav-item.nav-link {
         margin-top: -22em
     }
     .mobdev img {
-        width:100%
+        width: 100%
     }
 }
 
@@ -565,7 +580,7 @@ a.nav-item.nav-link {
     .display-3 {
         font-size: 2.5rem;
     }
-    .mobdev img{
+    .mobdev img {
         width: 50%;
     }
 }
@@ -576,6 +591,9 @@ a.nav-item.nav-link {
     }
     .contx header {
         height: 100vh;
+    }
+    .title-text p {
+        font-size: 19px;
     }
 }
 
@@ -594,5 +612,8 @@ a.nav-item.nav-link {
     }
     .facon i {
         visibility: hidden !important;
+    }
+    .widt{ 
+        width: 100%;
     }
 }
