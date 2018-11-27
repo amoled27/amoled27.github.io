@@ -1,0 +1,56 @@
+body {
+    background-image: url('../images/rasethaba2.jpg');
+    background-size: cover;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.inp {
+    /* width: 70% !important; */
+}
+
+.imagex {
+    width: 40px;
+    height: 40px !important;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff !important;
+    padding-bottom: 20px;
+}
+
+.top {
+    padding-top: 4em;
+}
+
+.pad {
+    padding-top: 33px;
+}
+
+.form-check-label {
+    padding-bottom: 10px;
+    color: #fff;
+    margin-left: 4px;
+}
+
+.social {
+    padding-top: 1em;
+}
+
+.butn {
+    background: #bf0c0f;
+    border-color: #bf0c0f;
+    color: #fff;
+}
+
+.contact {
+    text-align: center;
+    padding-top: 1em;
+    color: #fff;
+}
+
+.copy {
+    color: #bfb8b8;
+    padding-top: 1em;
+}
