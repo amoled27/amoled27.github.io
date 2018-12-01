@@ -33602,10 +33602,11 @@ a.pswp__share--download:hover {
     padding-left: 20px;
     line-height: 49px;
     color: #949a9e;
+    margin-bottom: 0.8em;
 }
 
 .obj li:before {
-    content: '>  ';
+    content: url('../images/focus.png');
     /* display: inline-block; */
 }
 
@@ -33649,7 +33650,127 @@ address {
 .page-footer .icon {
     color: #949393 !important;
 }
+
 .ringer {
     width: 12%;
 }
+
+.bx1 {
+    color: #204799;
+}
+
+.bx2 {
+    color: #d3351e;
+}
+
+.bx3 {
+    color: #5d6ab2;
+}
+
+.bx4 {
+    color: #9a94cb;
+}
+
+.bx1 :hover {
+    background-color: #204799;
+}
+
+.bx2 :hover {
+    background-color: #d3351e;
+}
+
+.bx3 :hover {
+    background-color: #5d6ab2;
+}
+
+.bx4 :hover {
+    background-color: #9a94cb;
+}
+
+.bx1 h4 {
+    color: #204799;
+}
+
+.bx2 h4 {
+    color: #d3351e;
+}
+
+.bx3 h4 {
+    color: #5d6ab2;
+}
+
+.bx4 h4 {
+    color: #9a94cb;
+}
+
+.bxx1 {
+    color: #204799;
+}
+
+.bxx2 {
+    color: #d3351e;
+}
+
+.bxx3 {
+    color: #5d6ab2;
+}
+
+.bxx1 h4 {
+    color: #204799;
+}
+
+.bxx2 h4 {
+    color: #d3351e;
+}
+
+.bxx3 h4 {
+    color: #5d6ab2;
+}
+
+.footr-logo {
+    width: 70%;
+    border: 2px solid #37337e;
+    padding: 5px 20px 5px 20px;
+    background: #fff;
+}
+
+footer {
+    background: #1c469640;
+}
+
+.ftr {
+    margin-top: 1em;
+}
+
+.mt {
+    margin-top: 1em;
+}
+
+img.social-logo {
+    width: 11%;
+    margin: 0 8px 0 8px;
+}
+
+.titlv {
+    font-size: 50px;
+}
+
+.mission {
+    font-size: 21px;
+    text-align: justify;
+    color: #000;
+}
+
+.mission li {
+    margin-bottom: 1em;
+}
+
+.mission li:before {
+    content: url('../images/mission.png');
+}
+
+.obj-img {
+    margin-left: 8em;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,8 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:300,300italic,400">
+    <link rel="stylesheet" href="/css/animate.css">
+
     <link rel="stylesheet" href="css/style.css">
 		<!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -23,14 +25,16 @@
       <header class="page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap rd-navbar-static-position">
-          <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" class="rd-navbar" data-sm-stick-up-offset="440px" data-lg-stick-up-offset="440px" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed">
+          <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" class="rd-navbar"
+            data-sm-stick-up-offset="300px" data-lg-stick-up-offset="300px" data-md-layout="rd-navbar-static"
+            data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed">
             <div class="rd-navbar-inner">
               <div class="rd-navbar-nav-wrap">
                 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
-                  <li><a href="./">Home</a></li>
-                  <li class="active"><a href="about.html">About us</a></li>
-                  <li><a href="#">Services</a>
+                  <li class=""><a href="./">Home</a></li>
+                  <li class="active"><a href="about.html" class="" data-wow-delay="0.5s">About us</a></li>
+                  <li><a href="#" class="" data-wow-delay="0.6s">Services</a>
                     <!-- RD Navbar Dropdown-->
                     <ul class="rd-navbar-dropdown">
                       <li><a href="services-masonry.html">Masonry style</a></li>
@@ -39,8 +43,8 @@
                       <li><a href="services-list.html">List style</a></li>
                     </ul>
                   </li>
-                  <li><a href="news.html">Mission</a></li>
-                  <li><a href="contacts.html">Contacts</a></li>
+                  <li><a href="news.html" class="" data-wow-delay="0.8s">Mission</a></li>
+                  <li><a href="contacts.html" class="" data-wow-delay="1s">Contacts</a></li>
                 </ul>
               </div>
               <!-- RD Navbar Panel-->
@@ -48,7 +52,7 @@
                 <!-- RD Navbar Toggle-->
                 <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a href="index.html" class="brand-name"><img alt="" src="images/brand.png"></a></div>
+                <div class="rd-navbar-brand"><a href="index.html" class="brand-name"><img alt="" src="images/hamonate.png"></a></div>
               </div>
             </div>
           </nav>
@@ -67,7 +71,7 @@
         <section class="section-bottom-81 section-top-40">
           <div class="shell">
             <hr class="divider divider-vertical">
-            <h1 class="wow fadeInUpBig" data-wow-delay="0.6s"> About Us</h1>
+            <h1 class="wow fadeInUpBig" data-wow-delay="0.3s"> About Us</h1>
             <div class="range">
               <div class="cell-md-5"><img src="images/about-01.jpg" width="470" height="281" alt="" class="center-block img-responsive"></div>
               <div class="cell-md-7 text-md-left">
@@ -84,53 +88,52 @@
           </div>
         </section>
         <!-- RD Parallax-->
+        <section class="rd-parallax" style="background: rgba(93, 104, 183, 0.12);">
+          <div data-speed="0.3" data-type="media" data-url="images/about-02.jpg" class="rd-parallax-layer"></div>
+          <div data-speed="0" data-type="html" class="rd-parallax-layer">
+            <div class="shell section-96" style="    padding-bottom: 4em;
+    padding-top: 5em;">
+              <hr class="divider divider-vertical">
+
+              <h1>Objectives</h1>
+                  <div class="range">
+                    <div class="cell-md-6 cell-sm-12">
+                      <ul class="obj">
+                        <li class="" data-wow-delay="0.4"> &nbsp; &nbsp; To build an Information Business Solutions Company that reflects the demographics of
+                          South Africa;</li>
+                        <li class="" data-wow-delay="0.6"> &nbsp; &nbsp; To ensure the advancement of women in a male-dominated sector;</li>
+                        <li class="" data-wow-delay="0.8"> &nbsp; &nbsp; To build capacity by focusing on training and the transfer of skills</li>
+                      </ul>
+                    </div>
+                    <div class="cell-md-6 cell-sm-12">
+                      <!-- <img class="obj-img" src="./images/obj.png" alt=""> -->
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </section>
+
         <section class="rd-parallax">
           <div data-speed="0.3" data-type="media" data-url="images/about-02.jpg" class="rd-parallax-layer"></div>
           <div data-speed="0" data-type="html" class="rd-parallax-layer">
             <div class="shell section-96" style="padding-bottom:0px">
               <hr class="divider divider-vertical">
-              <h1 class="wow flipInX" data-wow-delay="0.8s">Objectives</h1>
-              <!-- <div class="range range-xs-center offset-top-20">
-                <div class="cell-md-3 cell-sm-5"><span class="icon fl-great-icon-set-monitor85"></span>
-                  <h4 class="offset-top-10">Interface Design</h4>
-                  <p class="text-base text-bold">
-                    Designing user-friendly and
-                    <br class="veil reveal-lg">
-                    easy-to-follow interfaces.
-                  </p>
+              <h1>Core Business Focus</h1>
+              <div class="range">
+                <div class="cell-md-6 cell-sm-12">
+                  <ul class="obj">
+                    <li>&nbsp; &nbsp;Outsourcing,</li>
+                    <li>&nbsp; &nbsp;Recruitment/Staffing Solutions,</li>
+                    <li>&nbsp; &nbsp;Business Consulting using the SAP and Microsoft software suite of products, and</li>
+                    <li>&nbsp; &nbsp;Implementation, development, maintenance/ support and education service offerings to support these
+                      solutions.</li>
+                  </ul>
                 </div>
-                <div class="cell-md-3 cell-sm-5 offset-top-54 offset-sm-top-0"><span class="icon fl-great-icon-set-mobile226"></span>
-                  <h4 class="offset-top-10">Mobile Apps</h4>
-                  <p class="text-base text-bold">
-                    Providing users with the extensive
-                    <br class="veil reveal-lg">
-                    experience of working on mobile
-                    <br class="veil reveal-lg">
-                    projects on the go.
-                  </p>
-                </div>
-                <div class="cell-md-3 cell-sm-5 offset-top-54 offset-md-top-0"><span class="icon fl-great-icon-set-lightbulb52"></span>
-                  <h4 class="offset-top-10">Storytelling</h4>
-                  <p class="text-base text-bold">
-                    Creating engaging stories that are
-                    	<br class="veil reveal-lg">
-                    	both interactive and effective.
-                  </p>
-                </div>
-                <div class="cell-md-3 cell-sm-5 offset-top-54 offset-md-top-0"><span class="icon fl-great-icon-set-user156"></span>
-                  <h4 class="offset-top-10">Free Support</h4>
-                  <p class="text-base text-bold">
-                    Providing 24/7 assistance without any
-                    hidden fees.
-                    
-                  </p>
-                </div>
-              </div> -->
-              <ul class="obj">
-                <li class="wow fadeInLeft" data-wow-delay="0.4">To build an Information Business Solutions Company that reflects the demographics of South Africa;</li>
-                <li class="wow fadeInLeft" data-wow-delay="0.6">To ensure the advancement of women in a male-dominated sector;</li>
-                <li class="wow fadeInLeft" data-wow-delay="0.8">To build capacity by focusing on training and the transfer of skills</li>
-              </ul>
+                <div class="cell-md-6 cell-sm-12">
+                    <img class="obj-img" src="./images/obj.png" alt="">
+                  </div>
+              </div>
+             
             </div>
           </div>
         </section>
@@ -266,26 +269,45 @@
           <div class="range text-sm-left">
             <div class="cell-sm-4 cell-sm-push-3">
               <ul class="list-inline">
-                <li><a href="#" class="icon icon-xs fa-facebook"></a></li>
-                <li><a href="#" class="icon icon-xs fa-google-plus"></a></li>
-                <li><a href="#" class="icon icon-xs fa-linkedin"></a></li>
-                <li><a href="#" class="icon icon-xs fa-twitter"></a></li>
+                <!-- <li><a href="#" class="icon icon-xs fa-facebook"></a></li>
+                      <li><a href="#" class="icon icon-xs fa-google-plus"></a></li>
+                      <li><a href="#" class="icon icon-xs fa-linkedin"></a></li>
+                      <li><a href="#" class="icon icon-xs fa-twitter"></a></li> -->
+                <!-- <li> -->
+                <img src="./images/facebook.svg" class="social-logo" alt="">
+                <!-- </li> -->
+                <!-- <li> -->
+                <img src="./images/instagram.svg" class="social-logo" alt="">
+                <!-- </li> -->
+                <!-- <li> -->
+                <img src="./images/twitter.svg" class="social-logo" alt="">
+                <!-- </li> -->
+                <!-- <li> -->
+                <img src="./images/envelope.svg" class="social-logo" alt="">
+                <!-- </li> -->
               </ul>
             </div>
             <div class="cell-sm-4 cell-sm-push-2">
-              <p class="offset-bottom-0 text-bold text-spacing-75 text-uppercase">	Call us:</p>
-              <div class="h4"><a href="callto:#">800-2345-6789</a></div>
-              <address class="offset-top-20">My Company , 4578 Marmora Road,<br class="veil reveal-md-block">Glasgow D04 89GR<br>Email:<a href="mailto:#">info@demolink.org</a></address>
+              <p class="offset-bottom-0 text-bold text-spacing-75 text-uppercase"> Call us:</p>
+              <div class="h4 phone mt">
+                <img src="./images/telephone.svg" class="ringer wow tada" data-wow-iteration="1000" alt=""> <a href="callto:#"
+                  class="wow flash" data-wow-iteration="1000" data-wow-duration="3s">086 042 6662</a></div>
+              <address class="offset-top-20">M19 Webber Street, Selby<br class="veil reveal-md-block">Johannesburg, 2191,<br>Email:<a
+                  class="phone" href="mailto:#">sales@hamonate.co.za</a></address>
             </div>
             <div class="cell-sm-4 text-sm-left">
               <div class="unit unit-sm-horizontal unit-md-horizontal unit-lg-horizontal">
-                <div class="unit-left"><a href="./"><img src="images/brand-light.png" width="90" height="84" alt=""></a></div>
+                <div class="unit-left"><a href="./"><img class="footr-logo wow tada" data-wow-iteration="3" src="images/hamonate.png"
+                      alt=""></a></div>
                 <div class="unit-body">
-                  <div class="offset-top-20">
-                    <p class="offset-bottom-0 text-bold">&#169;<span id="copyright-year"></span></p><a href="privacy.html" class="text-bold">Privacy Policy</a>
-                  </div>
+                  <!-- <div class="offset-top-20">
+                          <p class="offset-bottom-0 text-bold">&#169;<span id="copyright-year"></span></p><a href="privacy.html" class="text-bold">Privacy Policy</a>
+                        </div> -->
                 </div>
               </div>
+              <p class="offset-bottom-0 text-bold ftr">&#169;<span id="copyright-year"></span><a href="privacy.html" class="text-bold">
+                  Privacy
+                  Policy</a></p>
             </div>
           </div>
         </div>
@@ -331,6 +353,10 @@
     <!-- Java script-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+      <script>
+        new WOW().init();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <!-- begin olark code-->
     <script data-cfasync="false" type="text/javascript">
       window.olark || function (e) {
