@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,361 +32,256 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
+
+  <!-- Hammer reload -->
+  <script>
+    setInterval(function () {
+      try {
+        if (typeof ws != 'undefined' && ws.readyState == 1) { return true; }
+        ws = new WebSocket('ws://' + (location.host || 'localhost').split(':')[0] + ':35353')
+        ws.onopen = function () { ws.onclose = function () { document.location.reload() } }
+        window.onbeforeunload = function () { ws = null }
+        ws.onmessage = function () {
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+              href = link.href.replace(/((&|\?)hammer=)[^&]+/, '');
+              link.href = href + (href.indexOf('?') >= 0 ? '&' : '?') + 'hammer=' + (new Date().valueOf());
+            }
+          }
+        }
+      } catch (e) { }
+    }, 1000)
+  </script>
+  <!-- /Hammer reload -->
+
 </head>
+
 <body>
 
-<!-- begin animsition -->
-<div class="animsition">
+  <!-- begin animsition -->
+  <div class="animsition">
 
 
-<nav class="navbar navbar-default navbar-fixed-top" id="nav1">
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav1">
 
-  <div class="topbar">
-    <div class="container">
-      <ul class="list-unstyled list-inline">
-        <li><i class="fa fa-envelope-o"></i> your@example.com</li>
-        <li><i class="fa fa-phone"></i> +123 456 789</li>
-      </ul>
-    </div> <!-- /.container -->
-  </div> <!-- /.topbar -->
-
-  <div class="container navbar-padding">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="current-parent navbar-brand" href="index.html">Newcorp</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li class='current-parent'><a class='current-parent' href="index.html">Home 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-2.html">Home 2</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-3.html">Home 3</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-video.html">Home Video</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-slider.html">Home Slider</a></li>
+      <div class="topbar">
+        <div class="container">
+          <ul class="list-unstyled list-inline">
+            <li><i class="fa fa-envelope-o"></i> your@example.com</li>
+            <li><i class="fa fa-phone"></i> +123 456 789</li>
           </ul>
-        </li>
+        </div> <!-- /.container -->
+      </div> <!-- /.topbar -->
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="services.html">Services 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="services-2.html">Services 2</a></li>
+      <div class="container navbar-padding">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="current-parent navbar-brand" href="index.html">Newcorp</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+              <a href="about.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Home <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class='current-parent'><a class='current-parent' href="index.html">Home 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="index-2.html">Home 2</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="index-3.html">Home 3</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="index-video.html">Home Video</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="index-slider.html">Home Slider</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="about.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="services.html">Services 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="services-2.html">Services 2</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="about.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class='current'><a class='current' href="about.html">About 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="about-2.html">About 2</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="about.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">News <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="news.html">News 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="news-2.html">News 2</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="about.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Pages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="faq.html">FAQ</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="404.html">404</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="about.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="contact.html">Contact 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="contact-2.html">Contact 2</a></li>
+              </ul>
+            </li>
+
           </ul>
-        </li>
+        </div> <!-- /.collapse -->
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="about.html">About 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li class='current'><a class='current' href="about-2.html">About 2</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="news.html">News 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="news-2.html">News 2</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="faq.html">FAQ</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="404.html">404</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="contact.html">Contact 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="contact-2.html">Contact 2</a></li>
-          </ul>
-        </li>
-
-      </ul>
-    </div> <!-- /.collapse -->
-
-  </div> <!-- /.container -->
-</nav>
+      </div> <!-- /.container -->
+    </nav>
 
 
-<div class="intro-about intro-pages parallax-window" data-parallax="scroll" data-image-src="assets/images/bg7.jpg">
-  <div class="intro-content">
-    <h2>About</h2>
-    <p>And so we say goodbye to our beloved pet, Nibbler, who's gone to a place where I, too, hope one day to go.</p>
-  </div> <!-- /.intro-content -->
-  <div id="startchange"></div> <!-- start navbar animation -->
-</div> <!-- /.intro-about -->
+    <div class="intro-about intro-pages parallax-window" data-parallax="scroll" data-image-src="assets/images/bg7.jpg">
+      <div class="intro-content">
+        <h2>About</h2>
+      </div> <!-- /.intro-content -->
+      <div id="startchange"></div> <!-- start navbar animation -->
+    </div> <!-- /.intro-about -->
 
-<section class="about-main about-2">
-  <div class="container">
+    <section class="about-main">
+      <div class="container">
 
-      <div class="col-md-6">
-        <div class="about-box-2">
-        <h2>Our Mission</h2>
+        <div class="about-box">
 
-        <p>The alien mothership is in orbit here. If we can hit that bullseye, the rest of the dominoes will fall like a house of cards. I hear the jury's still out on science. Michael! No… but I'd like to be asked! Guy's a pro. Across from where? There's only one man I've ever called a coward, and that's Brian Doyle Murray.</p>
-        <p>Get me a vodka rocks. And a piece of toast. That's why you always leave a note! What's Spanish for "I know you speak English?" Whoa, this guy's straight? No… but I'd like to be asked! First place chick is hot, but has an attitude, doesn't date magicians. We just call it a sausage. Did you enjoy your meal, Mom?</p>
-        <div class="clearfix"></div>
+         
+         <div class="row">
+           <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+             <img src="./assets/images/westoria.jpg" alt="" class="img img-responsive">
+           </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3" style="padding-top: 9px;">
+            <img src="./assets/images/data-world.png" alt="" class="img img-responsive">
+
+          </div>
+           <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3" style="padding-top: 2em;">
+            <img src="./assets/images/zubenathi.png" alt="" class="img img-responsive">
+
+           </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 col-lg-3" style=" padding-top: 2em;">
+            <img src="./assets/images/cogta.png" alt="" class="img img-responsive">
+          
+          </div>
+         </div>
+          <div class="clearfix"></div>
+
         </div> <!-- /.about-box -->
-      </div> <!-- /.col-md-6 -->
 
-      <div class="col-md-6">
-        <div class="about-box-2">
-        <h2>Our Philosophy</h2>
 
-        <p>The alien mothership is in orbit here. If we can hit that bullseye, the rest of the dominoes will fall like a house of cards. I hear the jury's still out on science. Michael! No… but I'd like to be asked! Guy's a pro. Across from where? There's only one man I've ever called a coward, and that's Brian Doyle Murray.</p>
-        <p>Get me a vodka rocks. And a piece of toast. That's why you always leave a note! What's Spanish for "I know you speak English?" Whoa, this guy's straight? No… but I'd like to be asked! First place chick is hot, but has an attitude, doesn't date magicians. We just call it a sausage. Did you enjoy your meal, Mom?</p>
-        <div class="clearfix"></div>
-        </div> <!-- /.about-box -->
-      </div> <!-- /.col-md-6 -->
+      </div> <!-- /.container -->
+    </section> <!-- /.about-main -->
 
-  </div> <!-- /.container -->
-</section> <!-- /.about-main -->
+    <div class="call-to-action" data-parallax="scroll" data-image-src="assets/images/bg5.jpg">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" style="text-align: center">
+              <h3>We help you invest.</h3>
+              <p>Mere salary won't make you rich, correct investment will.</p>
+            </div>
 
-<div class="call-to-action" data-parallax="scroll" data-image-src="assets/images/bg5.jpg">
-  <div class="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <h3>Who's brave enough to fly into something.</h3>
-          <p>Not tricks, Michael, illusions. It's a hug, Michael. I'm hugging you. He'll want to use your yacht, and I  don't want this thing smelling like fish.</p>
-        </div> <!-- /.col-md-7 -->
-
-        <div class="col-md-5">
+            <!-- <div class="col-md-5">
           <form class="form-inline">
             <input type="text" class="form-control" placeholder="Your email" />
             <button type="submit" class="btn btn-white">Send</button>
           </form>
-        </div> <!-- /.col-md-5 -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </div> <!-- /.content -->
-</div> <!-- /.call-to-action -->
-
-
-<section class="about-team-2">
-  <div class="container">
-
-    <header>
-      <h2>Our Team</h2>
-      <p class="sub-heading">I'll tell them you went down prying the wedding ring off his cold, dead finger. You can see how I lived before I met you. No! I want to live! There are still too many things.</p>
-    </header>
-
-    <div class="row">
-
-      <div class="col-md-6">
-        <div class="team-member match-height">
-          <div class="team-member-img">
-            <img src="assets/images/team-member1.jpg" class="img-circle" alt="" />
+        </div>  -->
           </div>
-          <div class="team-member-info">
-            <h5>Frank Miller</h5>
-            <p class="team-role">CEO</p>
-            <p>I care deeply for nature. There's so many poorly chosen words in that sentence.</p>
-          </div> <!-- /team-member-info -->
-        </div> <!-- /team-member -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="team-member match-height">
-          <div class="team-member-img">
-            <img src="assets/images/team-member2.jpg" class="img-circle" alt="" />
-          </div>
-          <div class="team-member-info">
-            <h5>John Kramer</h5>
-            <p class="team-role">CEO</p>
-            <p>I care deeply for nature. There's so many poorly chosen words in that sentence.</p>
-          </div> <!-- /team-member-info -->
-        </div> <!-- /team-member -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="team-member match-height">
-          <div class="team-member-img">
-            <img src="assets/images/team-member3.jpg" class="img-circle" alt="" />
-          </div>
-          <div class="team-member-info">
-            <h5>Jessica Benes</h5>
-            <p class="team-role">CEO</p>
-            <p>I care deeply for nature. There's so many poorly chosen words in that sentence.</p>
-          </div> <!-- /team-member-info -->
-        </div> <!-- /team-member -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="team-member match-height">
-          <div class="team-member-img">
-            <img src="assets/images/team-member4.jpg" class="img-circle" alt="" />
-          </div>
-          <div class="team-member-info">
-            <h5>Rachel Kramer</h5>
-            <p class="team-role">CEO</p>
-            <p>I care deeply for nature. There's so many poorly chosen words in that sentence.</p>
-          </div> <!-- /team-member-info -->
-        </div> <!-- /team-member -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="team-member match-height">
-          <div class="team-member-img">
-            <img src="assets/images/team-member5.jpg" class="img-circle" alt="" />
-          </div>
-          <div class="team-member-info">
-            <h5>Katya Milic</h5>
-            <p class="team-role">CEO</p>
-            <p>I care deeply for nature. There's so many poorly chosen words in that sentence.</p>
-          </div> <!-- /team-member-info -->
-        </div> <!-- /team-member -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="team-member match-height">
-          <div class="team-member-img">
-            <img src="assets/images/team-member6.jpg" class="img-circle" alt="" />
-          </div>
-          <div class="team-member-info">
-            <h5>George Ross</h5>
-            <p class="team-role">CEO</p>
-            <p>I care deeply for nature. There's so many poorly chosen words in that sentence.</p>
-          </div> <!-- /team-member-info -->
-        </div> <!-- /team-member -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="team-member match-height">
-          <div class="team-member-img">
-            <img src="assets/images/team-member7.jpg" class="img-circle" alt="" />
-          </div>
-          <div class="team-member-info">
-            <h5>Mike White</h5>
-            <p class="team-role">CEO</p>
-            <p>I care deeply for nature. There's so many poorly chosen words in that sentence.</p>
-          </div> <!-- /team-member-info -->
-        </div> <!-- /team-member -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="team-member match-height">
-          <div class="team-member-img">
-            <img src="assets/images/team-member8.jpg" class="img-circle" alt="" />
-          </div>
-          <div class="team-member-info">
-            <h5>Julia Kruger</h5>
-            <p class="team-role">CEO</p>
-            <p>I care deeply for nature. There's so many poorly chosen words in that sentence.</p>
-          </div> <!-- /team-member-info -->
-        </div> <!-- /team-member -->
-      </div> <!-- /.col-md-6 -->
-
-    </div> <!-- /.row -->
-  </div> <!-- /.container -->
-</section> <!-- /.about-team-2 -->
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-3 col-xs-4">
-        <h4>Newcorp</h4>
-        <ul class="footer-menu list-unstyled">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-
-        <ul class="footer-menu list-unstyled">
-          <li><a href="#">News</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div> <!-- /.col-md-3 -->
-
-      <div class="col-md-7 col-sm-7 col-xs-4">
-        <h4>Contact</h4>
-        <p>Phone: +123 456 789</p>
-        <p>Email: your@example.com</p>
-        <p>Address: 767 Fifth Ave.<br />
-          New York, NY 10153</p>
-      </div> <!-- /.col-md-7 -->
-
-      <div class="col-md-2 col-sm-2 col-xs-4">
-        <h4>Follow</h4>
-        <ul class="social list-unstyled">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </div> <!-- /.col-md-2 -->
-    </div> <!-- /.row -->
-
-    <p class="copyright">Copyright &copy; 2016 Newcorp All Rights Reserved.</p>
-
-  </div> <!-- /.container -->
-</footer>
+        </div>
+      </div>
+    </div>
 
 
-</div> <!-- /.animsition -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-4">
+            <h4>Newcorp</h4>
+            <ul class="footer-menu list-unstyled">
+              <li><a href="about.html#">Home</a></li>
+              <li><a href="about.html#">Services</a></li>
+              <li><a href="about.html#">About</a></li>
+              <li><a href="about.html#">Careers</a></li>
+            </ul>
 
-<script src="assets/js/jquery-2.2.4.min.js"></script>
-<script src="assets/vendor/bootstrap-3.3.6/js/bootstrap.min.js"></script>
-<script src="assets/vendor/animsition-4.0.2/js/animsition.min.js"></script>
-<script src="assets/vendor/typed-1.1.4/typed.min.js"></script>
-<script src="assets/vendor/vide-0.5.0/jquery.vide.min.js"></script>
-<script src="assets/vendor/swiper-3.3.1/js/swiper.min.js"></script>
-<script src="assets/vendor/parallax-1.4.2/parallax.min.js"></script>
-<script src="assets/vendor/jquery.match-height-0.7.0/jquery.matchHeight-min.js"></script>
-<script src="assets/contact-form/js/validator.min.js"></script>
-<script src="assets/contact-form/js/form-scripts.js"></script>
-<script src="assets/js/scripts.js"></script>
+            <ul class="footer-menu list-unstyled">
+              <li><a href="about.html#">News</a></li>
+              <li><a href="about.html#">FAQ</a></li>
+              <li><a href="about.html#">Contact</a></li>
+            </ul>
+          </div> <!-- /.col-md-3 -->
+
+          <div class="col-md-7 col-sm-7 col-xs-4">
+            <h4>Contact</h4>
+            <p>Phone: +123 456 789</p>
+            <p>Email: your@example.com</p>
+            <p>Address: 767 Fifth Ave.<br />
+              New York, NY 10153</p>
+          </div> <!-- /.col-md-7 -->
+
+          <div class="col-md-2 col-sm-2 col-xs-4">
+            <h4>Follow</h4>
+            <ul class="social list-unstyled">
+              <li><a href="about.html#">Facebook</a></li>
+              <li><a href="about.html#">Twitter</a></li>
+              <li><a href="about.html#">Instagram</a></li>
+            </ul>
+          </div> <!-- /.col-md-2 -->
+        </div> <!-- /.row -->
+
+        <p class="copyright">Copyright &copy; 2016 Newcorp All Rights Reserved.</p>
+
+      </div> <!-- /.container -->
+    </footer>
+
+
+  </div> <!-- /.animsition -->
+
+  <script src="assets/js/jquery-2.2.4.min.js"></script>
+  <script src="assets/vendor/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/animsition-4.0.2/js/animsition.min.js"></script>
+  <script src="assets/vendor/typed-1.1.4/typed.min.js"></script>
+  <script src="assets/vendor/vide-0.5.0/jquery.vide.min.js"></script>
+  <script src="assets/vendor/swiper-3.3.1/js/swiper.min.js"></script>
+  <script src="assets/vendor/parallax-1.4.2/parallax.min.js"></script>
+  <script src="assets/vendor/jquery.match-height-0.7.0/jquery.matchHeight-min.js"></script>
+  <script src="assets/contact-form/js/validator.min.js"></script>
+  <script src="assets/contact-form/js/form-scripts.js"></script>
+  <script src="assets/js/scripts.js"></script>
 
 </body>
+
 </html>

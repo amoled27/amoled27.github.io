@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,8 +22,11 @@
   <link href="assets/vendor/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/swiper-3.3.1/css/swiper.min.css" rel="stylesheet" />
 
+  <!-- Animate CSS -->
+  <link href="assets/css/animate.css" rel="stylesheet" />
   <!-- Main CSS-->
   <link href="assets/css/style.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,252 +35,289 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
+
+  <!-- Hammer reload -->
+  <script>
+    setInterval(function () {
+      try {
+        if (typeof ws != 'undefined' && ws.readyState == 1) { return true; }
+        ws = new WebSocket('ws://' + (location.host || 'localhost').split(':')[0] + ':35353')
+        ws.onopen = function () { ws.onclose = function () { document.location.reload() } }
+        window.onbeforeunload = function () { ws = null }
+        ws.onmessage = function () {
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+              href = link.href.replace(/((&|\?)hammer=)[^&]+/, '');
+              link.href = href + (href.indexOf('?') >= 0 ? '&' : '?') + 'hammer=' + (new Date().valueOf());
+            }
+          }
+        }
+      } catch (e) { }
+    }, 1000)
+  </script>
+  <!-- /Hammer reload -->
+
 </head>
+
 <body>
 
-<!-- begin animsition -->
-<div class="animsition">
+  <!-- begin animsition -->
+  <div class="animsition">
 
 
-<nav class="navbar navbar-default navbar-fixed-top" id="nav1">
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav1">
 
-  <div class="topbar">
-    <div class="container">
-      <ul class="list-unstyled list-inline">
-        <li><i class="fa fa-envelope-o"></i> your@example.com</li>
-        <li><i class="fa fa-phone"></i> +123 456 789</li>
-      </ul>
-    </div> <!-- /.container -->
-  </div> <!-- /.topbar -->
+      <div class="topbar">
+        <div class="container">
+          <ul class="list-unstyled list-inline">
+            <li><i class="fa fa-envelope-o"></i> your@example.com</li>
+            <li><i class="fa fa-phone"></i> +123 456 789</li>
+          </ul>
+        </div> <!-- /.container -->
+      </div> <!-- /.topbar -->
 
-  <div class="container navbar-padding">
+      <div class="container navbar-padding">
 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="current-parent navbar-brand" href="index.html">Newcorp</a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="current-parent navbar-brand" href="index.html">Newcorp</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class='current'><a class='current' href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">What we do</a></li>
+
+            <li class="dropdown">
+              <a href="about.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">News <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="news.html">News 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="news-2.html">News 2</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="about.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Pages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="faq.html">FAQ</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="404.html">404</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="about.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="contact.html">Contact 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="contact-2.html">Contact 2</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div> <!-- /.collapse -->
+
+      </div> <!-- /.container -->
+    </nav>
+
+
+    <div class="intro-about overlay intro-pages parallax-window" data-parallax="scroll" data-image-src="assets/images/partners-head.jpeg">
+      <div class="intro-content">
+        <h2>Partners</h2>
+      </div> <!-- /.intro-content -->
+      <div id="startchange"></div> <!-- start navbar animation -->
+    </div> <!-- /.intro-about -->
+
+    <section class="about-main">
+      <div class="container">
+          <h2 class="d-flex justify-content-center partnerr wow flipInY"> Clients</h2>
+
+        <div class="about-box">
+
+         
+          <!--/.col-md 4 -->
+          <div class="row">
+
+              <div class="col-md-3 col-sm-3 col-xs-12 col-lg-3">
+                <img src="./assets/images/cl_dw.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="0.5s">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 col-lg-3" style="margin-top: 5px;">
+                <img src="./assets/images/cl_iv.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="0.5s">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 col-lg-3">
+                <img src="./assets/images/west.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="0.5s">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 col-lg-3">
+                <img src="./assets/images/cl_dw.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="0.5s">
+              </div>
+          </div>
+            <div class="row" style="margin-top:3em">
+              <div class="col-md-3 col-sm-3 col-xs-12 col-lg-3">
+                <img src="./assets/images/cl_bc.png" alt="" class="part-img img-fluid img-responsive wow flipInX" >
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 col-lg-3">
+                <img src="./assets/images/cl_be.png" alt="" class="part-img img-fluid img-responsive imz wow flipInX">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 col-lg-3">
+                <img src="./assets/images/cl_soa.png" alt="" class="part-img img-fluid img-responsive wow flipInX" >
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 col-lg-3" style="    margin-top: 12px;">
+                <img src="./assets/images/republic.png" alt="" class="part-img img-fluid img-responsive wow flipInX" >
+              </div>
+            </div>
+        
+          
+          <div class="clearfix"></div>
+
+        </div> <!-- /.about-box -->
+
+
+      </div> <!-- /.container -->
+    </section> <!-- /.about-main -->
+
+    <div class="call-to-action" data-parallax="scroll" data-image-src="assets/images/bg5.jpg">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" style="text-align: center">
+              <h3>We help you invest.</h3>
+              <p>Mere salary won't make you rich, correct investment will.</p>
+            </div>
+
+            <!-- <div class="col-md-5">
+          <form class="form-inline">
+            <input type="text" class="form-control" placeholder="Your email" />
+            <button type="submit" class="btn btn-white">Send</button>
+          </form>
+        </div>  -->
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li class='current-parent'><a class='current-parent' href="index.html">Home 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-2.html">Home 2</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-3.html">Home 3</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-video.html">Home Video</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-slider.html">Home Slider</a></li>
-          </ul>
-        </li>
+  <section class="about-main">
+    <div class="container">
+          <h2 class="d-flex justify-content-center partnerr wow flipInY"> Alliance Partners</h2>
+      
+      <div class="about-box">
+  
+  
+        <!--/.col-md 4 -->
+        
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4 d-flex justify-content-center">
+            <img src="./assets/images/al_af.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="">
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="services.html">Services 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="services-2.html">Services 2</a></li>
-          </ul>
-        </li>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4" style="padding-top: 16px;">
+            <img src="./assets/images/al_dw.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="">
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="about.html">About 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="about-2.html">About 2</a></li>
-          </ul>
-        </li>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4" style=" padding-top: 13px;">
+            <img src="./assets/images/al_rm.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="">
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li class='current'><a class='current' href="news.html">News 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="news-2.html">News 2</a></li>
-          </ul>
-        </li>
+          </div>
+        </div>
+        <div class="row" style="margin-top:3em">
+          <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
+            <img src="./assets/images/al_mo.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="">
+          
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4 d-flex justify-content-center" style="padding-top: 10px;">
+            <img src="./assets/images/al_gt.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="">
+          
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
+            <img src="./assets/images/al_zm.png" alt="" class="part-img img-fluid img-responsive wow flipInX" data-wow-delay="">
+          
+          </div>
+        </div>
+  
+  
+        <div class="clearfix"></div>
+  
+      </div> <!-- /.about-box -->
+  
+  
+    </div> <!-- /.container -->
+  </section> <!-- /.about-main -->
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="faq.html">FAQ</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="404.html">404</a></li>
-          </ul>
-        </li>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-4">
+            <h4>Newcorp</h4>
+            <ul class="footer-menu list-unstyled">
+              <li><a href="about.html#">Home</a></li>
+              <li><a href="about.html#">Services</a></li>
+              <li><a href="about.html#">About</a></li>
+              <li><a href="about.html#">Careers</a></li>
+            </ul>
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="contact.html">Contact 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="contact-2.html">Contact 2</a></li>
-          </ul>
-        </li>
+            <ul class="footer-menu list-unstyled">
+              <li><a href="about.html#">News</a></li>
+              <li><a href="about.html#">FAQ</a></li>
+              <li><a href="about.html#">Contact</a></li>
+            </ul>
+          </div> <!-- /.col-md-3 -->
 
-      </ul>
-    </div> <!-- /.collapse -->
+          <div class="col-md-7 col-sm-7 col-xs-4">
+            <h4>Contact</h4>
+            <p>Phone: +123 456 789</p>
+            <p>Email: your@example.com</p>
+            <p>Address: 767 Fifth Ave.<br />
+              New York, NY 10153</p>
+          </div> <!-- /.col-md-7 -->
 
-  </div> <!-- /.container -->
-</nav>
+          <div class="col-md-2 col-sm-2 col-xs-4">
+            <h4>Follow</h4>
+            <ul class="social list-unstyled">
+              <li><a href="about.html#">Facebook</a></li>
+              <li><a href="about.html#">Twitter</a></li>
+              <li><a href="about.html#">Instagram</a></li>
+            </ul>
+          </div> <!-- /.col-md-2 -->
+        </div> <!-- /.row -->
 
+        <p class="copyright">Copyright &copy; 2016 Newcorp All Rights Reserved.</p>
 
-<div class="intro-news intro-pages parallax-window" data-parallax="scroll" data-image-src="assets/images/bg8.jpg">
-  <div class="intro-content">
-    <h2>News</h2>
-    <p>And so we say goodbye to our beloved pet, Nibbler, who's gone to a place where I, too, hope one day to go.</p>
-  </div> <!-- /.intro-content -->
-  <div id="startchange"></div> <!-- start navbar animation -->
-</div> <!-- /.intro-news -->
-
-<section class="news-main">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-6">
-        <div class="news-box">
-          <h4>Get me a vodka rocks. And a piece of toast.</h4>
-          <p>Across from where? I'm a monster. That's why you always leave a note! I'm half machine. I'm a monster. That's what it said on 'Ask Jeeves.' No, I did not kill Kitty. However, I am going to oblige.</p>
-          <a href="#" class="btn btn-border">Learn more</a>
-        </div> <!-- /.news-box -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="news-box">
-          <h4>Get me a vodka rocks. And a piece of toast.</h4>
-          <p>Across from where? I'm a monster. That's why you always leave a note! I'm half machine. I'm a monster. That's what it said on 'Ask Jeeves.' No, I did not kill Kitty. However, I am going to oblige.</p>
-          <a href="#" class="btn btn-border">Learn more</a>
-        </div> <!-- /.news-box -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="news-box">
-          <h4>Get me a vodka rocks. And a piece of toast.</h4>
-          <p>Across from where? I'm a monster. That's why you always leave a note! I'm half machine. I'm a monster. That's what it said on 'Ask Jeeves.' No, I did not kill Kitty. However, I am going to oblige.</p>
-          <a href="#" class="btn btn-border">Learn more</a>
-        </div> <!-- /.news-box -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="news-box">
-          <h4>Get me a vodka rocks. And a piece of toast.</h4>
-          <p>Across from where? I'm a monster. That's why you always leave a note! I'm half machine. I'm a monster. That's what it said on 'Ask Jeeves.' No, I did not kill Kitty. However, I am going to oblige.</p>
-          <a href="#" class="btn btn-border">Learn more</a>
-        </div> <!-- /.news-box -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="news-box">
-          <h4>Get me a vodka rocks. And a piece of toast.</h4>
-          <p>Across from where? I'm a monster. That's why you always leave a note! I'm half machine. I'm a monster. That's what it said on 'Ask Jeeves.' No, I did not kill Kitty. However, I am going to oblige.</p>
-          <a href="#" class="btn btn-border">Learn more</a>
-        </div> <!-- /.news-box -->
-      </div> <!-- /.col-md-6 -->
-
-      <div class="col-md-6">
-        <div class="news-box">
-          <h4>Get me a vodka rocks. And a piece of toast.</h4>
-          <p>Across from where? I'm a monster. That's why you always leave a note! I'm half machine. I'm a monster. That's what it said on 'Ask Jeeves.' No, I did not kill Kitty. However, I am going to oblige.</p>
-          <a href="#" class="btn btn-border">Learn more</a>
-        </div> <!-- /.news-box -->
-      </div> <!-- /.col-md-6 -->
-
-    </div> <!-- /.row -->
-  </div> <!-- /.container -->
-</section> <!-- /.news-main -->
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-3 col-xs-4">
-        <h4>Newcorp</h4>
-        <ul class="footer-menu list-unstyled">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-
-        <ul class="footer-menu list-unstyled">
-          <li><a href="#">News</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div> <!-- /.col-md-3 -->
-
-      <div class="col-md-7 col-sm-7 col-xs-4">
-        <h4>Contact</h4>
-        <p>Phone: +123 456 789</p>
-        <p>Email: your@example.com</p>
-        <p>Address: 767 Fifth Ave.<br />
-          New York, NY 10153</p>
-      </div> <!-- /.col-md-7 -->
-
-      <div class="col-md-2 col-sm-2 col-xs-4">
-        <h4>Follow</h4>
-        <ul class="social list-unstyled">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </div> <!-- /.col-md-2 -->
-    </div> <!-- /.row -->
-
-    <p class="copyright">Copyright &copy; 2016 Newcorp All Rights Reserved.</p>
-
-  </div> <!-- /.container -->
-</footer>
+      </div> <!-- /.container -->
+    </footer>
 
 
-</div> <!-- /.animsition -->
+  </div> <!-- /.animsition -->
 
-<script src="assets/js/jquery-2.2.4.min.js"></script>
-<script src="assets/vendor/bootstrap-3.3.6/js/bootstrap.min.js"></script>
-<script src="assets/vendor/animsition-4.0.2/js/animsition.min.js"></script>
-<script src="assets/vendor/typed-1.1.4/typed.min.js"></script>
-<script src="assets/vendor/vide-0.5.0/jquery.vide.min.js"></script>
-<script src="assets/vendor/swiper-3.3.1/js/swiper.min.js"></script>
-<script src="assets/vendor/parallax-1.4.2/parallax.min.js"></script>
-<script src="assets/vendor/jquery.match-height-0.7.0/jquery.matchHeight-min.js"></script>
-<script src="assets/contact-form/js/validator.min.js"></script>
-<script src="assets/contact-form/js/form-scripts.js"></script>
-<script src="assets/js/scripts.js"></script>
+  <script src="assets/js/jquery-2.2.4.min.js"></script>
+  <script src="assets/vendor/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/animsition-4.0.2/js/animsition.min.js"></script>
+  <script src="assets/vendor/typed-1.1.4/typed.min.js"></script>
+  <script src="assets/vendor/vide-0.5.0/jquery.vide.min.js"></script>
+  <script src="assets/vendor/swiper-3.3.1/js/swiper.min.js"></script>
+  <script src="assets/vendor/parallax-1.4.2/parallax.min.js"></script>
+  <script src="assets/vendor/jquery.match-height-0.7.0/jquery.matchHeight-min.js"></script>
+  <script src="assets/contact-form/js/validator.min.js"></script>
+  <script src="assets/contact-form/js/form-scripts.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,9 +21,14 @@
   <link href="assets/vendor/animsition-4.0.2/css/animsition.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/swiper-3.3.1/css/swiper.min.css" rel="stylesheet" />
+  <link href="assets/vendor/animsition-4.0.2/css/animsition.min.css" rel="stylesheet" />
 
+  <!-- Animate CSS -->
+  <link href="assets/css/animate.css" rel="stylesheet" />
   <!-- Main CSS-->
   <link href="assets/css/style.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,303 +37,356 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
+
+  <!-- Hammer reload -->
+  <script>
+    setInterval(function () {
+      try {
+        if (typeof ws != 'undefined' && ws.readyState == 1) { return true; }
+        ws = new WebSocket('ws://' + (location.host || 'localhost').split(':')[0] + ':35353')
+        ws.onopen = function () { ws.onclose = function () { document.location.reload() } }
+        window.onbeforeunload = function () { ws = null }
+        ws.onmessage = function () {
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+              href = link.href.replace(/((&|\?)hammer=)[^&]+/, '');
+              link.href = href + (href.indexOf('?') >= 0 ? '&' : '?') + 'hammer=' + (new Date().valueOf());
+            }
+          }
+        }
+      } catch (e) { }
+    }, 1000)
+  </script>
+  <!-- /Hammer reload -->
+
 </head>
+
 <body>
 
-<!-- begin animsition -->
-<div class="animsition">
+  <!-- begin animsition -->
+  <div class="animsition">
 
 
-<nav class="navbar navbar-default navbar-fixed-top" id="nav1">
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav1">
 
-  <div class="topbar">
-    <div class="container">
-      <ul class="list-unstyled list-inline">
-        <li><i class="fa fa-envelope-o"></i> your@example.com</li>
-        <li><i class="fa fa-phone"></i> +123 456 789</li>
-      </ul>
-    </div> <!-- /.container -->
-  </div> <!-- /.topbar -->
-
-  <div class="container navbar-padding">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="current-parent navbar-brand" href="index.html">Newcorp</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li class='current-parent'><a class='current-parent' href="index.html">Home 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-2.html">Home 2</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-3.html">Home 3</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-video.html">Home Video</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="index-slider.html">Home Slider</a></li>
+      <div class="topbar">
+        <div class="container">
+          <ul class="list-unstyled list-inline">
+            <li><i class="fa fa-envelope-o"></i> your@example.com</li>
+            <li><i class="fa fa-phone"></i> +123 456 789</li>
           </ul>
-        </li>
+        </div> <!-- /.container -->
+      </div> <!-- /.topbar -->
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li class='current'><a class='current' href="services.html">Services 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="services-2.html">Services 2</a></li>
+      <div class="container navbar-padding">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="current-parent navbar-brand" href="index.html">Newcorp</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class='current'><a class='current' href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">What we do</a></li>
+
+            <li class="dropdown">
+              <a href="services.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">News <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="news.html">News 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="news-2.html">News 2</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="services.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Pages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="faq.html">FAQ</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="404.html">404</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="services.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="contact.html">Contact 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="contact-2.html">Contact 2</a></li>
+              </ul>
+            </li>
+
           </ul>
-        </li>
+        </div> <!-- /.collapse -->
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="about.html">About 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="about-2.html">About 2</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="news.html">News 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="news-2.html">News 2</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="faq.html">FAQ</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="404.html">404</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="contact.html">Contact 1</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="contact-2.html">Contact 2</a></li>
-          </ul>
-        </li>
-
-      </ul>
-    </div> <!-- /.collapse -->
-
-  </div> <!-- /.container -->
-</nav>
+      </div> <!-- /.container -->
+    </nav>
 
 
-<div class="intro-services intro-pages parallax-window" data-parallax="scroll" data-image-src="assets/images/bg6.jpg">
-  <div class="intro-content">
-    <h2>Services</h2>
-    <p>And so we say goodbye to our beloved pet, Nibbler, who's gone to a place where I, too, hope one day to go.</p>
-  </div> <!-- /.intro-content -->
-  <div id="startchange"></div> <!-- start navbar animation -->
-</div> <!-- /.intro-services -->
+    <div class="intro-services overlay intro-pages parallax-window" data-parallax="scroll" data-image-src="assets/images/services-head.jpeg">
+      <div class="intro-content">
+        <h2>Services</h2>
+      </div> <!-- /.intro-content -->
+      <div id="startchange"></div> <!-- start navbar animation -->
+    </div> <!-- /.intro-services -->
 
-<section class="services-main">
-  <div class="container">
+    <section class="services-main">
+      <div class="container">
 
-    <header>
-      <h2>Working with financial services doesn't have to be hard</h2>
-      <p class="sub-heading">I'll tell them you went down prying the wedding ring off his cold, dead finger. You can see how I lived before I met you. No! I want to live! There are still too many things.</p>
-    </header>
+        <header>
+          <h2>Working with financial services doesn't have to be hard</h2>
+          <p class="sub-heading">I'll tell them you went down prying the wedding ring off his cold, dead finger. You
+            can see how I lived before I met you. No! I want to live! There are still too many things.</p>
+        </header>
 
-    <div class="row">
+        <div class="row">
 
-      <div class="col-md-6">
-        <div class="services-main-left">
-        <h3>Wealth Management</h3>
-        <p>I don't understand the question, and I won't respond to it. He'll want to use your yacht, and I don't want this thing smelling like fish. Well, what do you expect, mother? As you may or may not know, Lindsay and I have hit a bit of a rough patch. No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide.</p>
-        <a href="#" class="btn btn-border">Learn more</a>
-        </div> <!-- /.services-main-left -->
-      </div> <!-- /.col-md-6 -->
+          <div class="col-md-8">
+            <div class="services-main-left">
+              <h3>Accounting &#38; Tax</h3>
+              <ul class="serv">
+                <li class="wow bounceInLeft">Company registration</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.2s">Registration of VAT,
+                  PAYE, UIF and SDL</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.3s">Completion and submission of
+                  VAT, PAYE, UIF, SDL, WCA and
+                  CIPC returns</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.4s">Preparation of PAYE bi-annual
+                  reconciliation</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.5s">Management reporting</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.6s">Annual Financial Statement</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.7s">Individual and Corporate Tax
+                  Returns preparation and
+                  submission</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.8s">Data capture</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.9s">Income tax registrations</li>
+                <li class="wow bounceInLeft" data-wow-delay="1s">Completion and submission of
+                  all income tax returns via e-
+                  filing</li>
+                <li class="wow bounceInLeft" data-wow-delay="1.1s">Tax clearance applciations</li>
+                <li class="wow bounceInLeft" data-wow-delay="1.2s">
+                  Objections
+                </li>
+              </ul>
 
-      <div class="col-md-6">
-        <div class="services-main-right">
-          <img src="assets/images/laptop.jpg" alt="" />
-        </div> <!-- /.services-main-right -->
-      </div> <!-- /.col-md 6 -->
+            </div> <!-- /.services-main-left -->
+          </div> <!-- /.col-md-6 -->
+          <div class="col-md-4 taxn">
+            <img src="./assets/images/tax.png" alt="" class="img img-fluid img-responsive">
+          </div>
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </section> <!-- /.services-main -->
 
-    </div> <!-- /.row -->
-  </div> <!-- /.container -->
-</section> <!-- /.services-main -->
+    <section class="rw2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 taxn">
+            <img src="./assets/images/advisor.png" alt="" class="img img-responsive">
+          </div>
 
-<div class="call-to-action" data-parallax="scroll" data-image-src="assets/images/bg5.jpg">
-  <div class="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <h3>Who's brave enough to fly into something.</h3>
-          <p>Not tricks, Michael, illusions. It's a hug, Michael. I'm hugging you. He'll want to use your yacht, and I  don't want this thing smelling like fish.</p>
-        </div> <!-- /.col-md-7 -->
+          <div class="col-md-7">
+            <div class="services-main-left fnt">
+              <h3>Advisory</h3>
+              <ul class="serv2">
+                <li class="wow bounceInLeft">Business stabilisation / recovery / turnaround</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.2s">Review and improvement of Internal controls</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.3s">Audit readiness & support</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.5s">Performance management systems
+                  development/customisation and
+                  implementation</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.6s">Project management</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.7s">Change management</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.8s">Internal control and business process
+                  training</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.9s">Revenue enhancement and loss control</li>
+                <li class="wow bounceInLeft" data-wow-delay="1s">Fraud and risk management</li>
+                <li class="wow bounceInLeft" data-wow-delay="1.1s">SCM and Contract management</li>
+                <li class="wow bounceInLeft" data-wow-delay="1.2s">
+                  Public sector policy review/
+                  development/implementation
+                </li>
+              </ul>
 
-        <div class="col-md-5">
-          <form class="form-inline">
-            <input type="text" class="form-control" placeholder="Your email" />
-            <button type="submit" class="btn btn-white">Send</button>
-          </form>
-        </div> <!-- /.col-md-5 -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </div> <!-- /.content -->
-</div> <!-- /.call-to-action -->
+            </div> <!-- /.services-main-left -->
+          </div> <!-- /.col-md-6 -->
+        </div> <!-- /.row -->
+      </div>
+    </section>
 
+    <section>
+      <div class="container">
 
-<section class="services-list">
-  <div class="container">
+        <div class="row">
 
-    <div class="row">
+          <div class="col-md-8 ">
+            <div class="services-main-left fnt">
+              <h3>SMME Development / Investment</h3>
+              <ul class="serv3">
+                <p> Identification and hand- holding of young entrepreneurs from start to successful</p>
+                <li class="wow bounceInLeft">Investment of Financial and Other Resources / Business funding</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.2s">Business plan development</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.3s">Business mentoring & coaching</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.5s">Financial management training and support</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.6s">Business administration management support &
+                  training</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.7s">Statutory and legal compliance</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.8s">Marketing and business development</li>
+              </ul>
 
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-dollar"></i>
-          <h4>Wealth Management</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-globe"></i>
-          <h4>Sales and Trading</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-line-chart"></i>
-          <h4>Investment Banking</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-search"></i>
-          <h4>Research</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-pie-chart"></i>
-          <h4>Investment Managment</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-child"></i>
-          <h4>Sustainable Investment</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-    </div> <!-- /.row -->
-
-  </div> <!-- /.container -->
-</section> <!-- /.services-list -->
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-3 col-xs-4">
-        <h4>Newcorp</h4>
-        <ul class="footer-menu list-unstyled">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-
-        <ul class="footer-menu list-unstyled">
-          <li><a href="#">News</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div> <!-- /.col-md-3 -->
-
-      <div class="col-md-7 col-sm-7 col-xs-4">
-        <h4>Contact</h4>
-        <p>Phone: +123 456 789</p>
-        <p>Email: your@example.com</p>
-        <p>Address: 767 Fifth Ave.<br />
-          New York, NY 10153</p>
-      </div> <!-- /.col-md-7 -->
-
-      <div class="col-md-2 col-sm-2 col-xs-4">
-        <h4>Follow</h4>
-        <ul class="social list-unstyled">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </div> <!-- /.col-md-2 -->
-    </div> <!-- /.row -->
-
-    <p class="copyright">Copyright &copy; 2016 Newcorp All Rights Reserved.</p>
-
-  </div> <!-- /.container -->
-</footer>
+            </div> <!-- /.services-main-left -->
+          </div> <!-- /.col-md-6 -->
+          <div class="col-md-4 taxn">
+            <img src="./assets/images/invest.png" alt="" class="img img-responsive">
+          </div>
+        </div> <!-- /.row -->
 
 
-</div> <!-- /.animsition -->
+      </div> <!-- /.container -->
+    </section> <!-- /.services-main -->
 
-<script src="assets/js/jquery-2.2.4.min.js"></script>
-<script src="assets/vendor/bootstrap-3.3.6/js/bootstrap.min.js"></script>
-<script src="assets/vendor/animsition-4.0.2/js/animsition.min.js"></script>
-<script src="assets/vendor/typed-1.1.4/typed.min.js"></script>
-<script src="assets/vendor/vide-0.5.0/jquery.vide.min.js"></script>
-<script src="assets/vendor/swiper-3.3.1/js/swiper.min.js"></script>
-<script src="assets/vendor/parallax-1.4.2/parallax.min.js"></script>
-<script src="assets/vendor/jquery.match-height-0.7.0/jquery.matchHeight-min.js"></script>
-<script src="assets/contact-form/js/validator.min.js"></script>
-<script src="assets/contact-form/js/form-scripts.js"></script>
-<script src="assets/js/scripts.js"></script>
+
+
+
+    <section class="services-list">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="services-item match-height">
+              <i class="fa fa-dollar"></i>
+              <h4>Wealth Management</h4>
+              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
+                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
+            </div>
+          </div> <!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="services-item match-height">
+              <i class="fa fa-globe"></i>
+              <h4>Sales and Trading</h4>
+              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
+                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
+            </div>
+          </div> <!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="services-item match-height">
+              <i class="fa fa-line-chart"></i>
+              <h4>Investment Banking</h4>
+              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
+                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
+            </div>
+          </div> <!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="services-item match-height">
+              <i class="fa fa-search"></i>
+              <h4>Research</h4>
+              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
+                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
+            </div>
+          </div> <!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="services-item match-height">
+              <i class="fa fa-pie-chart"></i>
+              <h4>Investment Managment</h4>
+              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
+                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
+            </div>
+          </div> <!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="services-item match-height">
+              <i class="fa fa-child"></i>
+              <h4>Sustainable Investment</h4>
+              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
+                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
+            </div>
+          </div> <!-- /.col-md-4 -->
+
+        </div> <!-- /.row -->
+
+      </div> <!-- /.container -->
+    </section> <!-- /.services-list -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-4">
+            <h4>Newcorp</h4>
+            <ul class="footer-menu list-unstyled">
+              <li><a href="services.html#">Home</a></li>
+              <li><a href="services.html#">Services</a></li>
+              <li><a href="services.html#">About</a></li>
+              <li><a href="services.html#">Careers</a></li>
+            </ul>
+
+            <ul class="footer-menu list-unstyled">
+              <li><a href="services.html#">News</a></li>
+              <li><a href="services.html#">FAQ</a></li>
+              <li><a href="services.html#">Contact</a></li>
+            </ul>
+          </div> <!-- /.col-md-3 -->
+
+          <div class="col-md-7 col-sm-7 col-xs-4">
+            <h4>Contact</h4>
+            <p>Phone: +123 456 789</p>
+            <p>Email: your@example.com</p>
+            <p>Address: 767 Fifth Ave.<br />
+              New York, NY 10153</p>
+          </div> <!-- /.col-md-7 -->
+
+          <div class="col-md-2 col-sm-2 col-xs-4">
+            <h4>Follow</h4>
+            <ul class="social list-unstyled">
+              <li><a href="services.html#">Facebook</a></li>
+              <li><a href="services.html#">Twitter</a></li>
+              <li><a href="services.html#">Instagram</a></li>
+            </ul>
+          </div> <!-- /.col-md-2 -->
+        </div> <!-- /.row -->
+
+        <p class="copyright">Copyright &copy; 2016 Newcorp All Rights Reserved.</p>
+
+      </div> <!-- /.container -->
+    </footer>
+
+
+  </div> <!-- /.animsition -->
+
+  <script src="assets/js/jquery-2.2.4.min.js"></script>
+  <script src="assets/vendor/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/animsition-4.0.2/js/animsition.min.js"></script>
+  <script src="assets/vendor/typed-1.1.4/typed.min.js"></script>
+  <script src="assets/vendor/vide-0.5.0/jquery.vide.min.js"></script>
+  <script src="assets/vendor/swiper-3.3.1/js/swiper.min.js"></script>
+  <script src="assets/vendor/parallax-1.4.2/parallax.min.js"></script>
+  <script src="assets/vendor/jquery.match-height-0.7.0/jquery.matchHeight-min.js"></script>
+  <script src="assets/contact-form/js/validator.min.js"></script>
+  <script src="assets/contact-form/js/form-scripts.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 </body>
+
 </html>

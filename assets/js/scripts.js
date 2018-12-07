@@ -30,7 +30,7 @@ $(document).ready(function(){
 
   // ----------- typed text -----------
   $(".typed-text").typed({
-    strings: ["Wealth management", "Investment banking", "Sales and trading"],
+    strings: ["Accounting", "Investment Banking", "Taxes"],
     typeSpeed: 65,
     startDelay: 10,
     backDelay: 1200,
