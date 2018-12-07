@@ -26,6 +26,7 @@
   <!-- Animate CSS -->
   <link href="assets/css/animate.css" rel="stylesheet" />
   <!-- Main CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="assets/css/style.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
@@ -38,29 +39,6 @@
   <![endif]-->
 
 
-  <!-- Hammer reload -->
-  <script>
-    setInterval(function () {
-      try {
-        if (typeof ws != 'undefined' && ws.readyState == 1) { return true; }
-        ws = new WebSocket('ws://' + (location.host || 'localhost').split(':')[0] + ':35353')
-        ws.onopen = function () { ws.onclose = function () { document.location.reload() } }
-        window.onbeforeunload = function () { ws = null }
-        ws.onmessage = function () {
-          var links = document.getElementsByTagName('link');
-          for (var i = 0; i < links.length; i++) {
-            var link = links[i];
-            if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-              href = link.href.replace(/((&|\?)hammer=)[^&]+/, '');
-              link.href = href + (href.indexOf('?') >= 0 ? '&' : '?') + 'hammer=' + (new Date().valueOf());
-            }
-          }
-        }
-      } catch (e) { }
-    }, 1000)
-  </script>
-  <!-- /Hammer reload -->
-
 </head>
 
 <body>
@@ -70,73 +48,51 @@
 
 
     <nav class="navbar navbar-default navbar-fixed-top" id="nav1">
-
-      <div class="topbar">
-        <div class="container">
-          <ul class="list-unstyled list-inline">
-            <li><i class="fa fa-envelope-o"></i> your@example.com</li>
-            <li><i class="fa fa-phone"></i> +123 456 789</li>
-          </ul>
-        </div> <!-- /.container -->
-      </div> <!-- /.topbar -->
-
-      <div class="container navbar-padding">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="current-parent navbar-brand" href="index.html">Newcorp</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class='current'><a class='current' href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">What we do</a></li>
-
-            <li class="dropdown">
-              <a href="services.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                aria-expanded="false">News <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="news.html">News 1</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="news-2.html">News 2</a></li>
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="services.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                aria-expanded="false">Pages <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="faq.html">FAQ</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="404.html">404</a></li>
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="services.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                aria-expanded="false">Contact <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="contact.html">Contact 1</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="contact-2.html">Contact 2</a></li>
-              </ul>
-            </li>
-
-          </ul>
-        </div> <!-- /.collapse -->
-
+    
+    <div class="topbar">
+      <div class="container">
+        <ul class="list-unstyled list-inline">
+          <li><i class="fa fa-envelope-o"></i> info@staac.co.za</li>
+          <li><i class="fa fa-phone wow tada"></i> 084 817 7979</li>
+        </ul>
       </div> <!-- /.container -->
+    </div> <!-- /.topbar -->
+    
+    <div class="container navbar-padding">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="current navbar-brand resized" href="index.html">
+          <img src="./assets/images/staac.png" alt="" class="img-responsive img-fluid brand-logo">
+          <!-- STAAC. -->
+        </a>
+      </div>
+    
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbr">
+    
+          <!-- <li class="dropdown">
+              <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+               
+              </ul>
+            </li> -->
+          <li class='current'><a class='current' href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">What we do</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div> <!-- /.collapse -->
+    
+    </div> <!-- /.container -->
     </nav>
-
 
     <div class="intro-services overlay intro-pages parallax-window" data-parallax="scroll" data-image-src="assets/images/services-head.jpeg">
       <div class="intro-content">
@@ -161,32 +117,32 @@
               <h3>Accounting &#38; Tax</h3>
               <ul class="serv">
                 <li class="wow bounceInLeft">Company registration</li>
-                <li class="wow bounceInLeft" data-wow-delay="0.2s">Registration of VAT,
+                <li class="wow bounceInLeft" data-wow-delay="0.05s">Registration of VAT,
                   PAYE, UIF and SDL</li>
-                <li class="wow bounceInLeft" data-wow-delay="0.3s">Completion and submission of
+                <li class="wow bounceInLeft" data-wow-delay="0.1s">Completion and submission of
                   VAT, PAYE, UIF, SDL, WCA and
                   CIPC returns</li>
-                <li class="wow bounceInLeft" data-wow-delay="0.4s">Preparation of PAYE bi-annual
+                <li class="wow bounceInLeft" data-wow-delay="0.15s">Preparation of PAYE bi-annual
                   reconciliation</li>
-                <li class="wow bounceInLeft" data-wow-delay="0.5s">Management reporting</li>
-                <li class="wow bounceInLeft" data-wow-delay="0.6s">Annual Financial Statement</li>
-                <li class="wow bounceInLeft" data-wow-delay="0.7s">Individual and Corporate Tax
+                <li class="wow bounceInLeft" data-wow-delay="0.2s">Management reporting</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.25s">Annual Financial Statement</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.3s">Individual and Corporate Tax
                   Returns preparation and
                   submission</li>
-                <li class="wow bounceInLeft" data-wow-delay="0.8s">Data capture</li>
-                <li class="wow bounceInLeft" data-wow-delay="0.9s">Income tax registrations</li>
-                <li class="wow bounceInLeft" data-wow-delay="1s">Completion and submission of
+                <li class="wow bounceInLeft" data-wow-delay="0.35s">Data capture</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.4s">Income tax registrations</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.45s">Completion and submission of
                   all income tax returns via e-
                   filing</li>
-                <li class="wow bounceInLeft" data-wow-delay="1.1s">Tax clearance applciations</li>
-                <li class="wow bounceInLeft" data-wow-delay="1.2s">
+                <li class="wow bounceInLeft" data-wow-delay="0.45s">Tax clearance applciations</li>
+                <li class="wow bounceInLeft" data-wow-delay="0.45s">
                   Objections
                 </li>
               </ul>
 
             </div> <!-- /.services-main-left -->
           </div> <!-- /.col-md-6 -->
-          <div class="col-md-4 taxn">
+          <div class="col-md-4 taxn wow flip" data-wow-delay="0.4s">
             <img src="./assets/images/tax.png" alt="" class="img img-fluid img-responsive">
           </div>
         </div> <!-- /.row -->
@@ -196,7 +152,7 @@
     <section class="rw2">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 taxn">
+          <div class="col-md-5 taxn wow flip" data-wow-delay="0.8s">
             <img src="./assets/images/advisor.png" alt="" class="img img-responsive">
           </div>
 
@@ -251,8 +207,8 @@
 
             </div> <!-- /.services-main-left -->
           </div> <!-- /.col-md-6 -->
-          <div class="col-md-4 taxn">
-            <img src="./assets/images/invest.png" alt="" class="img img-responsive">
+          <div class="col-md-4 taxn wow flip">
+            <img src="./assets/images/invest.png" alt="" class="img img-responsive" data-wow-delay="0.8s">
           </div>
         </div> <!-- /.row -->
 
@@ -260,115 +216,50 @@
       </div> <!-- /.container -->
     </section> <!-- /.services-main -->
 
-
-
-
-    <section class="services-list">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-4">
-            <div class="services-item match-height">
-              <i class="fa fa-dollar"></i>
-              <h4>Wealth Management</h4>
-              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
-                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-            </div>
-          </div> <!-- /.col-md-4 -->
-
-          <div class="col-md-4">
-            <div class="services-item match-height">
-              <i class="fa fa-globe"></i>
-              <h4>Sales and Trading</h4>
-              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
-                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-            </div>
-          </div> <!-- /.col-md-4 -->
-
-          <div class="col-md-4">
-            <div class="services-item match-height">
-              <i class="fa fa-line-chart"></i>
-              <h4>Investment Banking</h4>
-              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
-                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-            </div>
-          </div> <!-- /.col-md-4 -->
-
-          <div class="col-md-4">
-            <div class="services-item match-height">
-              <i class="fa fa-search"></i>
-              <h4>Research</h4>
-              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
-                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-            </div>
-          </div> <!-- /.col-md-4 -->
-
-          <div class="col-md-4">
-            <div class="services-item match-height">
-              <i class="fa fa-pie-chart"></i>
-              <h4>Investment Managment</h4>
-              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
-                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-            </div>
-          </div> <!-- /.col-md-4 -->
-
-          <div class="col-md-4">
-            <div class="services-item match-height">
-              <i class="fa fa-child"></i>
-              <h4>Sustainable Investment</h4>
-              <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for
-                nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-            </div>
-          </div> <!-- /.col-md-4 -->
-
-        </div> <!-- /.row -->
-
-      </div> <!-- /.container -->
-    </section> <!-- /.services-list -->
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-3 col-xs-4">
-            <h4>Newcorp</h4>
-            <ul class="footer-menu list-unstyled">
-              <li><a href="services.html#">Home</a></li>
-              <li><a href="services.html#">Services</a></li>
-              <li><a href="services.html#">About</a></li>
-              <li><a href="services.html#">Careers</a></li>
-            </ul>
-
-            <ul class="footer-menu list-unstyled">
-              <li><a href="services.html#">News</a></li>
-              <li><a href="services.html#">FAQ</a></li>
-              <li><a href="services.html#">Contact</a></li>
-            </ul>
-          </div> <!-- /.col-md-3 -->
-
-          <div class="col-md-7 col-sm-7 col-xs-4">
-            <h4>Contact</h4>
-            <p>Phone: +123 456 789</p>
-            <p>Email: your@example.com</p>
-            <p>Address: 767 Fifth Ave.<br />
-              New York, NY 10153</p>
-          </div> <!-- /.col-md-7 -->
-
-          <div class="col-md-2 col-sm-2 col-xs-4">
-            <h4>Follow</h4>
-            <ul class="social list-unstyled">
-              <li><a href="services.html#">Facebook</a></li>
-              <li><a href="services.html#">Twitter</a></li>
-              <li><a href="services.html#">Instagram</a></li>
-            </ul>
-          </div> <!-- /.col-md-2 -->
-        </div> <!-- /.row -->
-
-        <p class="copyright">Copyright &copy; 2016 Newcorp All Rights Reserved.</p>
-
-      </div> <!-- /.container -->
-    </footer>
-
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <h4>STAAC</h4>
+          <ul class="footer-menu list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#">What we do</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div> <!-- /.col-md-3 -->
+  
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <h4>Contact</h4>
+          <p>Phone: 084 817 7979</p>
+          <p>Email: info@staac.co.za</p>
+          <p>Address: Waterford place
+            27 <br />Autumn road,
+            Rivonia
+            2128</p>
+        </div> <!-- /.col-md-7 -->
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <h4>Postal Address</h4>
+          <p>Address: PO Box 554<br />
+            Kelvin
+            2054</p>
+        </div> <!-- /.col-md-7 -->
+  
+        <div class="col-md-2 col-sm-2 col-xs-12">
+          <h4>Follow</h4>
+          <ul class="social list-unstyled">
+            <li><a href="index.html#">Facebook</a></li>
+            <li><a href="index.html#">Twitter</a></li>
+            <li><a href="index.html#">Instagram</a></li>
+          </ul>
+        </div> <!-- /.col-md-2 -->
+      </div> <!-- /.row -->
+  
+      <p class="copyright">Copyright &copy; 2018 STAAC All Rights Reserved.</p>
+  
+    </div> <!-- /.container -->
+  </footer>
 
   </div> <!-- /.animsition -->
 

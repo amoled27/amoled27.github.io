@@ -746,7 +746,7 @@ a.dropdown-toggle {
 }
 
 .choose-us .btn {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 /**********************************
@@ -1900,11 +1900,62 @@ ul.serv3 li {
 }
 
 .intro-1 {
-    background: #00000073;
+    background: #00000021;
 }
 
 .overlay {
-    background: #00000073;
+    background: #00000026;
+}
+
+.brand-logo {
+    width: 16%;
+    margin-top: -19px;
+}
+
+.navbr {
+    margin-top: -24px;
+    margin-bottom: 22px;
+}
+
+.navbar-collapse {
+    padding-top: 1em;
+}
+
+.testimonial {
+    width: 55px;
+    border: 1px solid #000;
+}
+
+@media ( max-width: 767px) and (min-width: 447px) {
+    .brand-logo {
+        width: 19%;
+        margin-top: -63px;
+    }
+}
+
+@media(max-width: 448px) {
+    .resized {
+        display: flex;
+        justify-content: center;
+    }
+    .brand-logo {
+        width: 30%;
+        margin-top: -67px;
+    }
+}
+
+@media(max-width: 380px) {
+    .brand-logo {
+        width: 40%;
+        margin-top: -67px;
+    }
+}
+
+@media(max-width: 330px) {
+    .brand-logo {
+        width: 48%;
+        margin-top: -67px;
+    }
 }
 
 /* .cardx :hover {
