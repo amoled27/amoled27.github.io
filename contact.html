@@ -106,7 +106,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li class='current'><a class='current' href="services.html">Services 1</a></li>
+            <li><a href="services.html">Services 1</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="services-2.html">Services 2</a></li>
           </ul>
@@ -144,7 +144,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="contact.html">Contact 1</a></li>
+            <li class='current'><a class='current' href="contact.html">Contact 1</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="contact-2.html">Contact 2</a></li>
           </ul>
@@ -157,120 +157,74 @@
 </nav>
 
 
-<div class="intro-services intro-pages parallax-window" data-parallax="scroll" data-image-src="assets/images/bg6.jpg">
+<div class="intro-contact intro-pages parallax-window" data-parallax="scroll" data-image-src="assets/images/bg9.jpg">
   <div class="intro-content">
-    <h2>Services</h2>
+    <h2>Contact</h2>
     <p>And so we say goodbye to our beloved pet, Nibbler, who's gone to a place where I, too, hope one day to go.</p>
   </div> <!-- /.intro-content -->
   <div id="startchange"></div> <!-- start navbar animation -->
-</div> <!-- /.intro-services -->
+</div> <!-- /.intro-news -->
 
-<section class="services-main">
+<div class="contact-main">
   <div class="container">
-
-    <header>
-      <h2>Working with financial services doesn't have to be hard</h2>
-      <p class="sub-heading">I'll tell them you went down prying the wedding ring off his cold, dead finger. You can see how I lived before I met you. No! I want to live! There are still too many things.</p>
-    </header>
-
     <div class="row">
 
-      <div class="col-md-6">
-        <div class="services-main-left">
-        <h3>Wealth Management</h3>
-        <p>I don't understand the question, and I won't respond to it. He'll want to use your yacht, and I don't want this thing smelling like fish. Well, what do you expect, mother? As you may or may not know, Lindsay and I have hit a bit of a rough patch. No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide.</p>
-        <a href="#" class="btn btn-border">Learn more</a>
-        </div> <!-- /.services-main-left -->
-      </div> <!-- /.col-md-6 -->
+      <div class="col-md-8 col-md-offset-2">
 
-      <div class="col-md-6">
-        <div class="services-main-right">
-          <img src="assets/images/laptop.jpg" alt="" />
-        </div> <!-- /.services-main-right -->
-      </div> <!-- /.col-md 6 -->
+        <ul class="contact-info list-unstyled list-inline">
+
+          <li class="match-height">
+            <p class="contact-info-title">Phone</p>
+            <p>+123 456 789</p>
+          </li>
+
+          <li class="match-height">
+            <p class="contact-info-title">Email</p>
+            <p>your@example.com</p>
+          </li>
+
+          <li class="match-height">
+            <p class="contact-info-title">Address</p>
+            <p>767 Fifth Ave.<br />
+            New York, NY 10153</p>
+          </li>
+
+        </ul> <!-- /.contact-info -->
+
+        <form id="contactForm" data-toggle="validator" class="shake">
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Your name" required data-error="Name missing">
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Your email" required>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            <textarea id="message" class="form-control" rows="6" placeholder="Write your message here" required></textarea>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="float-left">
+            <button type="submit" id="form-submit" class="btn btn-contact ">Send</button>
+          </div>
+          <div id="msgSubmit" class="h3 text-center hidden"></div>
+
+        </form>
+
+      </div> <!--/.col-md-6 -->
 
     </div> <!-- /.row -->
   </div> <!-- /.container -->
-</section> <!-- /.services-main -->
+</div> <!-- /.contact-main -->
 
-<div class="call-to-action" data-parallax="scroll" data-image-src="assets/images/bg5.jpg">
-  <div class="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <h3>Who's brave enough to fly into something.</h3>
-          <p>Not tricks, Michael, illusions. It's a hug, Michael. I'm hugging you. He'll want to use your yacht, and I  don't want this thing smelling like fish.</p>
-        </div> <!-- /.col-md-7 -->
-
-        <div class="col-md-5">
-          <form class="form-inline">
-            <input type="text" class="form-control" placeholder="Your email" />
-            <button type="submit" class="btn btn-white">Send</button>
-          </form>
-        </div> <!-- /.col-md-5 -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </div> <!-- /.content -->
-</div> <!-- /.call-to-action -->
-
-
-<section class="services-list">
-  <div class="container">
-
-    <div class="row">
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-dollar"></i>
-          <h4>Wealth Management</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-globe"></i>
-          <h4>Sales and Trading</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-line-chart"></i>
-          <h4>Investment Banking</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-search"></i>
-          <h4>Research</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-pie-chart"></i>
-          <h4>Investment Managment</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-      <div class="col-md-4">
-        <div class="services-item match-height">
-          <i class="fa fa-child"></i>
-          <h4>Sustainable Investment</h4>
-          <p>Guy's a pro. Get me a vodka rocks. And a piece of toast. Whoa, this guy's straight? I care deeply for nature. Guy's a pro. I'm a monster. But I bought a yearbook ad from you.</p>
-        </div>
-      </div> <!-- /.col-md-4 -->
-
-    </div> <!-- /.row -->
-
-  </div> <!-- /.container -->
-</section> <!-- /.services-list -->
+<!-- Google maps -->
+<div id="map"></div>
+<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+<script src="assets/js/map.js"></script>
 
 <footer>
   <div class="container">
