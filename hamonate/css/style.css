@@ -33559,7 +33559,7 @@ a.pswp__share--download:hover {
     margin-top: 3em;
 }
 
-.mid-btn button {
+.mid-btn a {
     border: 5px solid #184891;
     padding: 0.4em 1.3em 0.4em 1.3em;
     font-size: 19px;
@@ -33576,7 +33576,7 @@ a.pswp__share--download:hover {
     padding-top: 2.5em;
 }
 
-.mid-x button {
+.mid-x a {
     background: transparent !important;
     border: 4px solid #fff;
     color: #fff;
@@ -33597,10 +33597,10 @@ a.pswp__share--download:hover {
 }
 
 .obj li {
-    font-size: 24px;
+    font-size: 21px;
     text-align: left;
     padding-left: 20px;
-    line-height: 49px;
+    line-height: 40px;
     color: #949a9e;
     margin-bottom: 0.8em;
 }
@@ -33611,6 +33611,24 @@ a.pswp__share--download:hover {
 }
 
 .obj {
+    margin-top: 20px;
+}
+
+.obk li {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 49px;
+    color: #949a9e;
+    margin-bottom: 0.8em;
+}
+
+.obk li:before {
+    content: url('../images/creative.png');
+    /* display: inline-block; */
+}
+
+.obk {
     margin-top: 20px;
 }
 
@@ -33758,7 +33776,13 @@ img.social-logo {
 .mission {
     font-size: 21px;
     text-align: justify;
-    color: #000;
+    color: #5d5a5aba;
+}
+
+.services {
+    font-size: 21px;
+    text-align: justify;
+    color: #5d5a5aba;
 }
 
 .mission li {
@@ -33769,8 +33793,53 @@ img.social-logo {
     content: url('../images/mission.png');
 }
 
+.services li:before {
+    content: url('../images/settings.png');
+}
+
+.services li {
+    margin-bottom: 1em;
+}
+
 .obj-img {
     margin-left: 8em;
+}
+
+span.icon {
+    font-size: 80px
+}
+
+.obj-head p {
+    font-size: 21px;
+    color: #5d5a5aba;
+    text-align: justify;
+}
+
+.pdt {
+    padding-top: 2em;
+}
+
+.service-img {
+    padding-top: 2em;
+}
+
+.social-box {
+    border: 2px solid #184891;
+    font-size: 19px;
+    text-align: justify;
+    min-height: 12em;
+    padding: 10px;
+    border-radius: 8px;
+    color: #184891;
+}
+
+.charity-gap {
+    margin-top: 6em
+}
+
+.charity {
+    width: 378px;
+    margin-top: -12em;
 }
 
 /*# sourceMappingURL=style.css.map */
