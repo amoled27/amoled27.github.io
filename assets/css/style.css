@@ -1926,10 +1926,89 @@ ul.serv3 li {
     border: 1px solid #000;
 }
 
+.serv {
+    text-align: left;
+}
+
+.serv2 {
+    text-align: left;
+}
+
+.serv3 {
+    text-align: left;
+}
+
+.tax-bulb2 {
+    display: none;
+}
+
+.mt-top {
+    margin-top: 6em;
+}
+
+@media (max-width: 991px) {
+    .taxn {
+        padding-top: 0em;
+        width: 50%;
+    }
+    .tax-bulb2 {
+        display: block;
+    }
+    .tax-bulb {
+        display: none;
+    }
+    .buffalo {
+        width: 55%;
+    }
+    .mt-top {
+        margin-top: 3em;
+    }
+}
+
 @media ( max-width: 767px) and (min-width: 447px) {
     .brand-logo {
         width: 19%;
         margin-top: -63px;
+    }
+    .xcm {
+        margin-top: -51px;
+    }
+}
+
+@media ( max-width: 767px) {
+    .kk {
+        margin-top: 3em;
+    }
+    .rww {
+        display: flex;
+        justify-content: center;
+    }
+    .buffalo {
+        width: 100%;
+    }
+    .imz {
+        width: 65%;
+        /* padding-left: 179px; */
+        margin-top: 1em;
+    }
+    .mt-top {
+        margin-top: 0em;
+    }
+}
+
+.abf {
+    min-height: 6.5em;
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+    .abf {
+        min-height: 7.5em;
+    }
+}
+
+@media (min-width: 1351px) {
+    .abf {
+        min-height: 8em;
     }
 }
 
