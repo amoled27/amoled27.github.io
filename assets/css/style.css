@@ -1953,6 +1953,7 @@ ul.serv3 li {
     }
     .tax-bulb2 {
         display: block;
+        margin-left: 2em;
     }
     .tax-bulb {
         display: none;
@@ -1962,6 +1963,9 @@ ul.serv3 li {
     }
     .mt-top {
         margin-top: 3em;
+    }
+    .jik {
+        margin-left: 2em;
     }
 }
 
@@ -2020,6 +2024,15 @@ ul.serv3 li {
     .brand-logo {
         width: 30%;
         margin-top: -67px;
+    }
+    .serve {
+        font-size: 17px;
+    }
+    .serve2 {
+        font-size: 17px;
+    }
+    .serve3{
+        font-size: 17px;
     }
 }
 

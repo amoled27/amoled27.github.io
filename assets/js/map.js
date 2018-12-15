@@ -2,7 +2,7 @@ google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(40.764145,-73.972272),
+            center: new google.maps.LatLng(-26.0457364, 28.0587479),
             zoom: 16,
             zoomControl: false,
             disableDoubleClickZoom: false,
@@ -22,7 +22,7 @@ google.maps.event.addDomListener(window, 'load', init);
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['office', 'undefined', 'undefined', 'undefined', 'undefined', 40.7635371, -73.97224779999999, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png']
+            ['office', 'undefined', 'undefined', 'undefined', 'undefined', -26.0457364, 28.0587479, '/assets/images/map-marker.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
