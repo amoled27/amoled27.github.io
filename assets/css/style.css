@@ -1946,6 +1946,22 @@ ul.serv3 li {
     margin-top: 6em;
 }
 
+.link-img {
+    padding: 5em 9em 3em 9em;
+}
+
+p.links {
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+}
+
+.linkdiv :hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px) and (min-width: 550px) {}
+
 @media (max-width: 991px) {
     .taxn {
         padding-top: 0em;
@@ -1966,6 +1982,12 @@ ul.serv3 li {
     }
     .jik {
         margin-left: 2em;
+    }
+    .link-img {
+        padding: 5em 5em 3em 5em;
+    }
+    p.links {
+        font-size: 19px;
     }
 }
 
@@ -2031,7 +2053,7 @@ ul.serv3 li {
     .serve2 {
         font-size: 17px;
     }
-    .serve3{
+    .serve3 {
         font-size: 17px;
     }
 }
@@ -2048,8 +2070,10 @@ ul.serv3 li {
         width: 48%;
         margin-top: -67px;
     }
-}
-
-/* .cardx :hover {
+    .link-img {
+        padding: 3em 3em 3em 3em;
+    }
+    }
+    /* .cardx :hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 } */
