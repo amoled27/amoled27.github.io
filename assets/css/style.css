@@ -704,7 +704,7 @@ a.dropdown-toggle {
 **********************************/
 
 .choose-us {
-    background-color: #fff;
+    background-color: #f7f8f9;
     text-align: center;
     padding-top: 120px;
     padding-bottom: 110px;
@@ -1089,9 +1089,10 @@ footer li {
 .box-title {
     border-right: 1px solid #e8e8e8;
     padding-right: 25px;
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 120px;
     margin-right: 20px;
+    min-height: 21em;
 }
 
 .box-title h3 {
@@ -1643,6 +1644,8 @@ h4.panel-title {
         padding-bottom: 10px;
         margin-right: 0;
         margin-bottom: 30px;
+        min-height: 1em;
+        padding-top: 1em;
     }
     .news-main.news-main-2 {
         padding-bottom: 70px;
@@ -1947,7 +1950,20 @@ ul.serv3 li {
 }
 
 .link-img {
-    padding: 5em 9em 3em 9em;
+    padding: 5em 6em 2em 6em;
+    ;
+}
+
+.sage {
+    padding: 4em 6em 2.2em 6em;
+}
+
+.cc {
+    padding: 3em 6em 3em 6em;
+}
+
+.afrika {
+    padding: 4em 2em 3em 2em;
 }
 
 p.links {
@@ -1960,9 +1976,39 @@ p.links {
     transform: scale(1.1);
 }
 
-@media (max-width: 800px) and (min-width: 550px) {}
+.zozo {
+    min-height: 18em;
+}
+
+/* 
+.zozo1 {
+    background: #4272db;
+}
+
+.zozo2 {
+    background: green;
+}
+
+.zozo3 {
+    background: #4242db;
+}
+
+.zozo4 {
+    background: firebrick;
+}
+
+.zozo5 {
+    background: #2db;
+}
+
+.zozo6 {
+    background: khaki;
+} */
 
 @media (max-width: 991px) {
+    .cc {
+        padding: 3em 4em 3em 4em;
+    }
     .taxn {
         padding-top: 0em;
         width: 50%;
@@ -1984,10 +2030,17 @@ p.links {
         margin-left: 2em;
     }
     .link-img {
-        padding: 5em 5em 3em 5em;
+        padding: 3em 2em 1em 2em;
     }
     p.links {
         font-size: 19px;
+        margin-bottom: 0px;
+    }
+    .afrika {
+        padding: 4em 2em 1.5em 2em;
+    }
+    .jugaad {
+        margin-top: -3px;
     }
 }
 
@@ -2073,7 +2126,8 @@ p.links {
     .link-img {
         padding: 3em 3em 3em 3em;
     }
-    }
-    /* .cardx :hover {
+}
+
+/* .cardx :hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 } */
