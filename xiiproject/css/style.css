@@ -1,0 +1,65 @@
+.main-body {
+    background: url('/images/background.jpeg')
+}
+
+.middle-text {}
+
+.main-div {
+    padding-top: 30px;
+    padding-left: 100px;
+    color: white;
+}
+
+.festival-list li {
+    font-size: 30px;
+}
+
+.middle-tex {
+    text-align: center;
+}
+
+.holi-div {
+    width: 800px;
+    margin: 0 auto;
+    /* internet */
+}
+
+.holi-img {
+    width: 350px;
+    border: 1px solid black;
+}
+
+.infop {
+    font-size: 21px;
+    text-align: justify;
+}
+
+.holi {
+    background: palegoldenrod;
+}
+
+.gudi {
+    background: #f3bdbe;
+}
+
+button {
+    background: #fff;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+.festive-link {
+    color: white;
+}
+
+.christmas {
+    /* background: #d3e2fe; */
+    background: url('/images/christmas-bg.jpeg');
+}
+
+.diwali{
+    /* background: #d3e2fe; */
+    background: url('/images/diwali-bg.jpg');
+}
