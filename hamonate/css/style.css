@@ -4725,7 +4725,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     padding: 8px 15px;
     margin-bottom: 20px;
     list-style: none;
-    background-color: #f5f5f5;
+    background-color: #a494b959;
     border-radius: 0;
 }
 
@@ -22609,7 +22609,7 @@ html .page .offset-bottom-0 {
 }
 
 .breadcrumb {
-    background-color: #f8f8f8;
+    background-color: #a494b959;
     padding: 17px 15px;
 }
 
@@ -33840,6 +33840,10 @@ span.icon {
 .charity {
     width: 378px;
     margin-top: -12em;
+}
+
+@media (max-width: 991px) {
+    
 }
 
 /*# sourceMappingURL=style.css.map */
