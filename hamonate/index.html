@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/hamonate-favicon.png" type="image/x-icon">
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:300,300italic,400">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
@@ -45,7 +45,7 @@
                 <!-- RD Navbar Toggle-->
                 <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a href="index.html" class="brand-name"><img alt="" src="images/hamonate.png"></a></div>
+                <div class="rd-navbar-brand"><a href="index.html" class="brand-name"><img alt="" src="images/hamonate-logo.png"></a></div>
               </div>
             </div>
           </nav>
@@ -60,11 +60,11 @@
                 <!-- <h4 data-caption-animate="fadeIn" data-caption-delay="300" class="veil reveal-md-block">Offering world-class consulting and <br class="veil reveal-lg-block">software development services 
                 </h4> -->
                 <hr data-caption-animate="fadeIn" data-caption-delay="400" class="divider-vertical divider divider-xs divider-primary">
-                <div data-caption-animate="fadeIn" data-caption-delay="500" class="h4"><a href="" class="text-primary link">read more</a></div>
+                <div data-caption-animate="fadeIn" data-caption-delay="500" class="h4"><a href="/services.html" class="text-primary link">read more</a></div>
                 <hr data-caption-animate="fadeIn" data-caption-delay="550" class="veil reveal-lg-block center-bottom divider-vertical divider divider-sm divider-primary">
               </div>
             </div>
-            <div data-slide-bg="images/index-02.jpg" class="swiper-slide">
+            <!-- <div data-slide-bg="images/index-02.jpg" class="swiper-slide">
               <div class="swiper-slide-caption">
                 <h1 data-caption-animate="fadeIn" data-caption-delay="200">Networking. <br class="veil reveal-lg-block">Database management. <br class="veil reveal-lg-block">Application development. 
                 </h1>
@@ -74,7 +74,7 @@
                 <div data-caption-animate="fadeIn" data-caption-delay="500" class="h4"><a href="blog-single-post.html" class="text-primary link">read more</a></div>
                 <hr data-caption-animate="fadeIn" data-caption-delay="550" class="veil reveal-lg-block center-bottom divider-vertical divider divider-sm divider-primary">
               </div>
-            </div>
+            </div> -->
             <div data-slide-bg="images/index-03.jpg" class="swiper-slide">
               <div class="swiper-slide-caption">
                 <h1 data-caption-animate="fadeIn" data-caption-delay="200">What we can do for <br class="veil reveal-lg-block">you through information <br class="veil reveal-lg-block">technology consulting? 
@@ -82,7 +82,7 @@
                 <h4 data-caption-animate="fadeIn" data-caption-delay="300" class="veil reveal-md-block">Offering world-class consulting and <br class="veil reveal-lg-block">software development services 
                 </h4>
                 <hr data-caption-animate="fadeIn" data-caption-delay="450" class="divider-vertical divider divider-xs divider-primary">
-                <div data-caption-animate="fadeIn" data-caption-delay="500" class="h4"><a href="blog-single-post.html" class="text-primary link">read more</a></div>
+                <div data-caption-animate="fadeIn" data-caption-delay="500" class="h4"><a href="/solutions.html" class="text-primary link">read more</a></div>
                 <hr data-caption-animate="fadeIn" data-caption-delay="550" class="veil reveal-lg-block center-bottom divider-vertical divider divider-sm divider-primary">
               </div>
             </div>
@@ -225,13 +225,9 @@
         </section>
       
         <!-- RD Google Map-->
-        <div data-zoom="14" data-x="-73.9874068" data-y="40.643180" data-styles='[{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]' class="rd-google-map rd-google-map__model">
-          <ul class="map_locations">
-            <li data-y="40.643180" data-x="-73.9874068">
-              <p>9870 St Vincent Place, Glasgow, DC 45 Fr 45.</p>
-            </li>
-          </ul>
-        </div>
+    <div class="google-map">
+      <div id="map-canvas"></div>
+    </div>
       </main>
       <div class="new-proj">
        <h3 class="wow fadeInUp">Want to Discuss Your New Project?</h3>
@@ -276,7 +272,7 @@
             </div>
             <div class="cell-sm-4 text-sm-left">
               <div class="unit unit-sm-horizontal unit-md-horizontal unit-lg-horizontal">
-                <div class="unit-left"><a href="./"><img class="footr-logo wow tada" data-wow-iteration="3" src="images/hamonate.png" alt=""></a></div>
+                <div class="unit-left"><a href="./"><img class="footr-logo wow tada" data-wow-iteration="3" src="images/hamonate-logo.png" alt=""></a></div>
                 <div class="unit-body">
                   <!-- <div class="offset-top-20">
                     <p class="offset-bottom-0 text-bold">&#169;<span id="copyright-year"></span></p><a href="privacy.html" class="text-bold">Privacy Policy</a>
@@ -329,6 +325,8 @@
       </div>
     </div>
     <!-- Java script-->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAl9TPUiDXLwcUsB8r4jQHe8w4dyN3U1s4"></script>
+    <script src="js/map.js"></script>
     <script src="js/fontawesome/fontawesome.js"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
@@ -336,58 +334,6 @@
     new WOW().init();</script>
     <!-- begin olark code-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script data-cfasync="false" type="text/javascript">
-      window.olark || function (e) {
-      	var t = window, n = document, a = "https:" == t.location.protocol ? "https:" : "http:", o = e.name, r = "load", i = function () {
-      		function d() {
-      			c.P(r), t[o](r)
-      		}
-      
-      		t[o] = function () {
-      			(c.s = c.s || []).push(arguments)
-      		};
-      		for (var c = t[o]._ = {}, s = e.methods.length; s--;)!function (e) {
-      			t[o][e] = function () {
-      				t[o]("call", e, arguments)
-      			}
-      		}(e.methods[s]);
-      		c.l = e.loader, c.i = i, c.p = {0: +new Date}, c.P = function (e) {
-      			c.p[e] = new Date - c.p[0]
-      		}, t.addEventListener ? t.addEventListener(r, d, !1) : t.attachEvent("on" + r, d);
-      		var l = function () {
-      			function t(e) {
-      				return e = "head", ["<", e, "></", e, "><", r, ' onload="var d=', v, ";d.getElementsByTagName('head')[0].", s, "(d.", f, "('script')).", m, "='", a, "//", c.l, "'", '"', "></", r, ">"].join("")
-      			}
-      
-      			var r = "body", i = n[r];
-      			if (!i)return setTimeout(l, 100);
-      			c.P(1);
-      			var d, s = "appendChild", f = "createElement", m = "src", u = n[f]("div"), p = u[s](n[f](o)), h = n[f]("iframe"), v = "document", w = "domain";
-      			u.style.display = "none", i.insertBefore(u, i.firstChild).id = o, h.frameBorder = "0", h.id = o + "-loader", /MSIE[ ]+6/.test(navigator.userAgent) && (h.src = "javascript:false"), h.allowTransparency = "true", p[s](h);
-      			try {
-      				h.contentWindow[v].open()
-      			} catch (g) {
-      				e[w] = n[w], d = "javascript:var d=" + v + ".open();d.domain='" + n.domain + "';", h[m] = d + "void(0);"
-      			}
-      			try {
-      				var y = h.contentWindow[v];
-      				y.write(t()), y.close()
-      			} catch (E) {
-      				h[m] = d + 'd.write("' + t().replace(/"/g, String.fromCharCode(92) + '"') + '");d.close();'
-      			}
-      			c.P(2)
-      		};
-      		l()
-      	};
-      	i()
-      }({
-      	loader: "static.olark.com/jsclient/loader0.js",
-      	name: "olark",
-      	methods: ["configure", "extend", "declare", "identify"]
-      }), olark.identify("7830-582-10-3714");
-    </script>
-    <noscript><a href="https://www.olark.com/site/7830-582-10-3714/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by<a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software
-        <!-- end olark code--></a></noscript>
 <script type="text/javascript">
  var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-7078796-5']);

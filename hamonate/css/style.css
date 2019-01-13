@@ -33678,7 +33678,7 @@ address {
 }
 
 .bx2 {
-    color: #d3351e;
+    color: #9a94cb;
 }
 
 .bx3 {
@@ -33694,7 +33694,7 @@ address {
 }
 
 .bx2 :hover {
-    background-color: #d3351e;
+    background-color: #9a94cb;
 }
 
 .bx3 :hover {
@@ -33710,7 +33710,7 @@ address {
 }
 
 .bx2 h4 {
-    color: #d3351e;
+    color: #9a94cb;
 }
 
 .bx3 h4 {
@@ -33866,6 +33866,32 @@ h5 {
     color: #1c4696;
 }
 
-@media (max-width: 991px) {}
+.google-map #map-canvas {
+    height: 400px;
+}
+
+@media(max-width: 1200px) {
+    .charity {
+        width: 308px;
+    }
+}
+
+@media (max-width: 991px) {
+    .md-hide {
+        display: none !important;
+    }
+    .charity-gap {
+        margin-top: 4em;
+    }
+    .bx22 {
+        margin-top: 4em;
+    }
+}
+
+@media (max-width: 540px) {
+    .obj-img {
+        margin-left: 0em;
+    }
+}
 
 /*# sourceMappingURL=style.css.map */
