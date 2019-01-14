@@ -33866,6 +33866,19 @@ h5 {
     color: #1c4696;
 }
 
+.objectives-ul ul {
+    list-style-position: inside;
+    text-indent: -4em;
+    padding-left: 1em;
+}
+
+.mission-ul ul {
+    list-style-position: inside;
+    text-indent: -1.7em;
+    padding-left: 1em;
+
+}
+
 .google-map #map-canvas {
     height: 400px;
 }
