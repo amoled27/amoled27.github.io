@@ -9054,7 +9054,7 @@ html:not(.lt-ie10) .not-animated {
     height: 48px;
     border-radius: 6px;
     color: #fff;
-    background: #ff830a;
+    background: #d42824;
     overflow: hidden;
     text-align: center;
     text-decoration: none;
@@ -9097,7 +9097,7 @@ html:not(.lt-ie10) .not-animated {
 
 .ui-to-top:hover {
     color: #fff;
-    background: #ff9024;
+    background: #f15f5c;
     text-decoration: none
 }
 
@@ -18037,6 +18037,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .txt-justify {
     text-align: justify;
+}
+
+.brand-x img {
+    max-width: 80%;
 }
 
 .csi-parallax {
