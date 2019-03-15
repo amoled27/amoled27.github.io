@@ -2072,8 +2072,8 @@ hr {
 .button.button-primary:hover,
 .button.button-primary:active {
     color: #fff;
-    background-color: #783c00;
-    border-color: #783c00
+    background-color: #dc655a;
+    border-color: #dc655a
 }
 
 .button.button-primary:hover .icon.text-primary,
@@ -2308,6 +2308,10 @@ html .button.button-icon {
     letter-spacing: .05em;
     text-transform: uppercase;
     transition: .33s
+}
+
+.client {
+    text-align: center;
 }
 
 .btn-primary,
@@ -18041,6 +18045,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .brand-x img {
     max-width: 80%;
+}
+
+thead {
+    background: #cf2b1c;
+}
+
+.abt-home-page {
+    padding: 4em 0px 4em 0px;
+}
+
+.bg-gray-1001 {
+    background: #f6f6f6;
 }
 
 .csi-parallax {
