@@ -18059,6 +18059,12 @@ thead {
     background: #f6f6f6;
 }
 
+.t-5 {
+    padding-top:5em;
+}
+.centrr {
+    text-align: center;
+}
 .csi-parallax {
     background: url('../images/csi.jpg');
     height: 100vh;
