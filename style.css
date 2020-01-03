@@ -149,6 +149,16 @@ a {
 .w-100{
   width: 100%;
 }
+.timeline-h2 h2{
+  color: #791218;
+  padding-bottom: 1em;
+  font-size: 43px;
+  padding-top: 1em;
+}
+.timeline1 {
+  /* background-image: url('./asssets/background.png'); */
+
+}
 /* === timeline === */
 .team-info {
   display: none;
