@@ -1,3 +1,7 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 .themeWhite {
   background: #fff;
 }
@@ -6,18 +10,36 @@
 }
 .head {
   font-size: 15px;
-  padding-right: 31px;
+  padding-right: 10px;
   line-height: 29px;
   border-right: 1px solid #ffffff3b;
 }
+.head-button {
+  margin-top: 8px;
+}
+.pad-t {
+  padding-top: 3em;
+}
+.justif {
+  text-align: justify;
+}
+.fweight {
+  font-weight: 600;
+}
+.business-content-head
+{
+  justify-content: center;
+  display: flex;
+  color: #791218;
+  padding-top: 1em;
+}
 
-.head-button button {
+.head-button a {
   color: #fff;
   background: #791218;
   border: 2px solid #fff;
   border-radius: 16px;
-  padding: 4px 30px;
-  margin-top: 1px;
+  padding: 8px 30px;
 }
 
 .text-r {
@@ -27,11 +49,21 @@
   width: 15%;
 }
 .navbar-brand-2 {
-  width: 61%;
+  width: 55%;
+}
+.nav-item a {
+  font-weight: 600;
 }
 .hdtext a {
   color: #fff;
 }
+.hdtext img{
+  width: 22px;
+  padding-right: 6px;
+  margin-bottom: 3px;
+}
+
+
 a {
   color: #791218;
 }
@@ -58,7 +90,7 @@ a {
   color: #383838;
 }
 .footer-partition ul {
-  list-style-image: url("asssets/right-arrow.png");
+  list-style-image: url("assets/right-arrow.png");
 }
 .last-footer {
   background: #791218;
@@ -120,14 +152,14 @@ a {
 }
 
 .header-slim-contact {
-  background-image: url("./asssets/contacthead.png");
+  background-image: url("./assets/contacthead.png");
 }
 
 .header-slim-business {
-  background-image: url("./asssets/businesshead.png");
+  background-image: url("./assets/businesshead.png");
 }
 .header-slim-team {
-  background-image: url("./asssets/teamhead.png");
+  background-image: url("./assets/teamhead.png");
 }
 .header-slim h2 {
   padding-top: 1.5em;
@@ -156,7 +188,7 @@ a {
   padding-top: 1em;
 }
 .timeline1 {
-  /* background-image: url('./asssets/background.png'); */
+  /* background-image: url('./assets/background.png'); */
 
 }
 /* === timeline === */
@@ -196,6 +228,15 @@ h1 {
   content: "";
   display: table;
   clear: both;
+}
+.pad-top {
+  padding-top: 2em;
+}
+
+.justf {
+  padding-top: 4em;
+  text-align: justify;
+  line-height: 30px;
 }
 @media screen and (min-width: 700px) {
   .timeline {
@@ -360,10 +401,16 @@ svg {
   display: flex;
   justify-content: center;
 }
+
+.head-button a:focus {
+  /* border: none; */
+  outline: none;
+}
+
 /* ===== */
 @media (max-width: 1200px) and (min-width: 992px) {
   .navbar-brand-2 {
-    width: 55%;
+    width: 46%;
   }
 }
 @media (max-width: 991px) {
