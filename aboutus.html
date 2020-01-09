@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <div class="themeBlue top-bar">
+    <div class="themeBlue top-bar"  id="topHeader">
         <nav class="navbar navbar-expand-lg themeBlue container">
             <div class="row" style="width: 100%">
                 <div class="col-md-12 col-sm-12 col-xs-12 col-lg-4 hdtext">
@@ -56,7 +56,8 @@
         </nav>
     </div>
     <div class="themeBlue">
-        <nav class="navbar navbar-expand-lg container ml-right main-nav">
+       <div class="nvbar nvbar2" id="slimHeader" >
+        <nav class="navbar navbar-expand-lg container ml-right main-nav" id="myHeader">
             <a class="navbar-brand-2" href="#">
                 <img src="./assets/Mokoena logo.png" alt="" class="brand-img img img-fluid">
             </a>
@@ -85,6 +86,7 @@
                 </ul>
             </div>
         </nav>
+       </div>
         <div class="header-slim header-slim-business">
             <h2>About Us</h2>
         </div>
@@ -127,75 +129,6 @@
 
     </div>
     <div class="footer">
-        <div class="container">
-            <div class="row footer-row">
-                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 footer-partition">
-                    <div class="footer-logo  wow fadeInUp">
-                        <img src="./assets/Mokoena logo.png" alt="" class="img img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 footer-partition">
-                    <div class="div-h2  wow fadeInUp">
-                        <h2>
-                            Quick Links
-                        </h2>
-                    </div>
-                    <div class="div-ul  wow fadeInUp">
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Holdings</li>
-                            <li>Leadership Team</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 footer-partition footer-right-2">
-                    <div class="div-h2">
-                        <h2>
-                            Presence
-                        </h2>
-                    </div>
-                    <div class="div-ul  wow fadeInUp">
-                        <ul>
-                            <li>SA - Gauteng, Limpopo, North West, Mpumalanga</li>
-                            <li>Africa - Ghana, Tanzania</li>
-                            <li>World - Australia, Netherlands</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3 footer-partition footer-right-2">
-                    <div class="div-h2">
-
-                        <h2>
-                            Contact Us
-                        </h2>
-                    </div>
-                    <div class="div-ul">
-                        <p class="footer-contact  wow fadeInUp">
-                            Mokoena Holdings
-                            Turner & Townsend Place
-                            21 Fricker Road
-                            Illovo
-                            Sandton
-
-                        </p>
-
-                    </div>
-                    <div class="div-ul">
-                        <p class="footer-contact  wow fadeInUp">
-                            Telephone: +27 11 328 1600
-                        </p>
-
-                    </div>
-
-                    <div class="div-ul">
-                        <p class="footer-contact wow fadeInUp"> Email: Thandy@mokoenaholdings.co.za</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
         <div class="last-footer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
                 <path class="elementor-shape-fill shape-fill-1" opacity="0.33"
@@ -209,7 +142,14 @@
                 </path>
             </svg>
         </div>
-        <div class="last-footer-2">
+      
+    
+        <div class="lastfooter">
+          <div class="footer-logo d-flex justify-content-center">
+            <img src="./assets/Mokoena logo.png" alt="" class="img img-fluid">
+        </div>
+        </div>
+          <div class="last-footer-2">
             <p>© Copyright 2020 | Mokoena | All right reserved</p>
         </div>
     </div>
@@ -223,6 +163,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     <script>
         new WOW().init();
     </script>
