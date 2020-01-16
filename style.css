@@ -48,7 +48,7 @@
   width: 21%;
 }
 .navbar-brand-2 {
-  width: 55%;
+  width: 50%;
 }
 .nav-item a {
   font-weight: 600;
@@ -514,7 +514,10 @@ svg {
   .main-nav {
     border-top: 1px solid #791218;
     padding-top: 22px;
+  }
+  .navbar-collapse {
     background: #fff;
+    padding-left: 1em;
   }
 }
 @media (max-width: 991px) and (min-width: 769px) {
