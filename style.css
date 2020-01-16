@@ -158,7 +158,7 @@ a {
 }
 
 .header-slim-business {
-  background-image: url("./assets/businesshead.png");
+  background-image: url("./assets/header1.jpg");
 }
 .header-slim-team {
   background-image: url("./assets/teamhead.png");
@@ -195,11 +195,29 @@ a {
   background-repeat: no-repeat;
 }
 .pad-t1 {
-  	display: none !important;
+  display: none !important;
 }
 .marg {
   margin-top: -3.5em;
 }
+
+.marg-top-2 {
+  margin-top: 2em;
+}
+.red-head {
+  background: #791218;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 3px 3px 3px 1em;
+}
+.investment:hover {
+  transform: scale(1.05);
+}
+.red-head h4 {
+  margin-bottom: 0px;
+}
+
 .main-nav + .timeline1 {
   padding-top: 102px;
 }
@@ -210,6 +228,13 @@ a {
 
 .timeline__item.card-back:hover {
   transform: scale(1.1);
+}
+.black-card {
+  background: #313131;
+  padding: 16px;
+  color: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .down {
@@ -459,6 +484,16 @@ svg {
   /* border: none; */
   outline: none;
 }
+.navbar-small {
+  min-height: 6em;
+}
+.navbar-big {
+  min-height: 8em;
+}
+
+.brand-im {
+
+}
 
 /* ===== */
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -500,7 +535,9 @@ svg {
   .footer-row img {
     width: 25%;
   }
- 
+  .navbar-nav {
+    padding-top: 15px;
+  }
 }
 @media (max-width: 768px) {
   .brand-img {
