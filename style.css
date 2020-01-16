@@ -479,6 +479,7 @@ svg {
   .main-nav {
     border-top: 1px solid #791218;
     padding-top: 22px;
+    background: #fff;
   }
 }
 @media (max-width: 991px) and (min-width: 769px) {
@@ -499,6 +500,7 @@ svg {
   .footer-row img {
     width: 25%;
   }
+ 
 }
 @media (max-width: 768px) {
   .brand-img {
