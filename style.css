@@ -470,8 +470,10 @@ svg {
 .shape-fill-3 {
   fill: #fffdfd;
 }
+.last-footer img {
+  height: 100%;
+}
 .last-footer-2 {
-  /* background: #791218; */
   background: #313131;
   min-height: 2em;
   line-height: 46px;
@@ -481,7 +483,6 @@ svg {
 }
 
 .head-button a:focus {
-  /* border: none; */
   outline: none;
 }
 .navbar-small {
@@ -489,10 +490,6 @@ svg {
 }
 .navbar-big {
   min-height: 8em;
-}
-
-.brand-im {
-
 }
 
 /* ===== */
