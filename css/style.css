@@ -544,14 +544,14 @@ h5,
   color: #212529;
 }
 .site-mobile-menu .site-nav-wrap a:hover {
-  color: #71bc42;
+  color: #791218;
 }
 .site-mobile-menu .site-nav-wrap li {
   position: relative;
   display: block;
 }
 .site-mobile-menu .site-nav-wrap li.active > a {
-  color: #71bc42;
+  color: #791218;
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
@@ -646,8 +646,8 @@ h5,
 }
 .site-blocks-cover.inner-page,
 .site-blocks-cover.inner-page .row {
-  min-height: 450px;
-  height: calc(80vh);
+  min-height: 300px;
+  height: calc(58vh);
 }
 .site-blocks-cover .sub-text {
   font-size: 1.1rem;
