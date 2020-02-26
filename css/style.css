@@ -659,9 +659,19 @@ h5,
   font-weight: 700;
   color: #fff;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px){
   .site-blocks-cover h1 {
-    font-size: 4rem;
+    font-size: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .site-blocks-cover h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .site-blocks-cover h1 {
+    font-size: 30px;
   }
 }
 .site-blocks-cover p {
@@ -2219,4 +2229,17 @@ h5,
 }
 .link-color {
   color: #791218;
+}
+.know_more {
+  font-size: 19px;
+    padding: 6px 21px;
+    color: #fff;
+    font-weight: 500;
+    background: #791218;
+}
+.knw-btn {
+  padding-top: 2em ;
+}
+.know_more :hover {
+  color: #ffb9bd;
 }

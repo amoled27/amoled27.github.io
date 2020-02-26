@@ -491,7 +491,9 @@ svg {
 .navbar-big {
   min-height: 8em;
 }
-
+.mokonea-head h1 {
+  width: 40px;
+}
 /* ===== */
 @media (max-width: 1200px) and (min-width: 992px) {
   .navbar-brand-2 {
