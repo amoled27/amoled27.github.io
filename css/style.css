@@ -659,7 +659,7 @@ h5,
   font-weight: 700;
   color: #fff;
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .site-blocks-cover h1 {
     font-size: 50px;
   }
@@ -2232,14 +2232,31 @@ h5,
 }
 .know_more {
   font-size: 19px;
-    padding: 6px 21px;
-    color: #fff;
-    font-weight: 500;
-    background: #791218;
+  padding: 6px 21px;
+  color: #fff;
+  font-weight: 500;
+  background: #791218;
 }
 .knw-btn {
-  padding-top: 2em ;
+  padding-top: 2em;
 }
 .know_more :hover {
   color: #ffb9bd;
+}
+.psc-logo {
+  width: 65%;
+}
+.ndt-logo {
+  padding-top: 15px;
+}
+
+.paltech-logo {
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.groupline-logo {
+  width: 24%;
+  padding-bottom: 17px;
 }
