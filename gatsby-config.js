@@ -3,10 +3,10 @@ module.exports = {
     // edit below
     title: `Personal Blog`,
     author: `Amod Shinde`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Portfolio / Blog`,
+    siteUrl: `https://www.amodshinde.com`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `mod_of_A`,
     },
   },
   plugins: [
