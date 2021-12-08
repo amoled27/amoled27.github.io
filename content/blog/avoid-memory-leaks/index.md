@@ -6,7 +6,7 @@ description: Best Practices to Avoid Memory Leaks in Node.js
 ---
 ![Logging in Node.js](/../../assets/memory-leak/header.png "Logging in Node.js")
 
-In the Previous Blog (add a link to blog ) we understood the Memory management in Node.js, how Garbage Collector (GC) works and what are the possible caused of memory leaks despite GC playing a crucial role. In this blog, let's look at best practices to ensure efficient memory use in Node.js.
+In the Previous Blog (add a link to blog ) we understood the Memory management in Node.js, how Garbage Collector (GC) works and what are the possible causes of memory leaks despite GC playing a crucial role. In this blog, let's look at best practices to ensure efficient memory use in Node.js.
 
 ## 1. REDUCE USE OF GLOBAL VARIABLES
 Since global variables are never garbage collected, it's best to ensure you don't overuse them. 
