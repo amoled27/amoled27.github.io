@@ -22,7 +22,8 @@ class IndexPage extends React.Component {
             👋
           </span>
         </h1>
-        <p>Welcome to my website. Connect with me on <a target="_" href="https://www.linkedin.com/in/amod-shinde/"> LinkedIn </a>  or  <a target="_" href="./cv.pdf" download>Download my CV.</a></p>
+        <p>Welcome to my website. Connect with me on <a target="_" href="https://www.linkedin.com/in/amod-shinde/"> LinkedIn </a></p>
+          {/* or  <a target="_" href="./cv.pdf" download>Download my CV.</a> */}
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>
