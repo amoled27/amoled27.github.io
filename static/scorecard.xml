@@ -1,0 +1,408 @@
+<match_scorecard version="1.0.4">
+<match_details match_id="114388" match_date="2025-01-03" match_type="Test" match_days="5" match_innings="4" match_overs="0" number_batsmen="11" current_state="" team1_id="2" team2_id="6" toss_winning_team_id="6" toss_decision="bat" umpire1_id="7186" umpire2_id="35571" tv_umpire_id="59078" reserve_umpire_id="50959" referee_id="2051" minimum_required_overs="54" adjusted_target="false" venue_id="132" match_result="Australia won by 6 wickets" man_of_match="SM Boland" man_of_series="JJ Bumrah" series_result="Australia 12, India 0" current_day="3" current_session="2" current_ball_no="26.6"/>
+<players>
+<player team_id="2" player_id="115587"/>
+<player team_id="2" player_id="48671"/>
+<player team_id="2" player_id="78285"/>
+<player team_id="2" player_id="50281"/>
+<player team_id="2" player_id="66190"/>
+<player team_id="2" player_id="58730"/>
+<player team_id="2" player_id="54314" keeper="true"/>
+<player team_id="2" player_id="64244" captain="true"/>
+<player team_id="2" player_id="53330"/>
+<player team_id="2" player_id="50724"/>
+<player team_id="2" player_id="61993"/>
+<player team_id="6" player_id="102743"/>
+<player team_id="6" player_id="60530"/>
+<player team_id="6" player_id="95316"/>
+<player team_id="6" player_id="49752"/>
+<player team_id="6" player_id="86165" keeper="true"/>
+<player team_id="6" player_id="49247"/>
+<player team_id="6" player_id="104825"/>
+<player team_id="6" player_id="75311"/>
+<player team_id="6" player_id="70640" captain="true"/>
+<player team_id="6" player_id="87477"/>
+<player team_id="6" player_id="84635"/>
+</players>
+<innings innings_no="1" batting_team_id="6" declared="false" forfeit="false" all_out="true" complete="true" team_batting_time="0" maximum_overs="0" innings_started="true">
+<batting_card>
+<batsman batting_order="1" player_id="102743" player_name="YBK Jaiswal" runs="10" balls="26" fours="1" sixes="0" batting_time="38">
+<dismissal how_out="c BJ Webster b SM Boland" dismissal_type="Caught" bowler_id="61993">
+<dismissal_fielders>
+<player player_id="58730" player_name="BJ Webster"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="2" player_id="60530" player_name="KL Rahul" runs="4" balls="14" fours="0" sixes="0" batting_time="24">
+<dismissal how_out="c SJ Konstas b MA Starc" dismissal_type="Caught" bowler_id="53330">
+<dismissal_fielders>
+<player player_id="115587" player_name="SJ Konstas"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="3" player_id="95316" player_name="Shubman Gill" runs="20" balls="64" fours="2" sixes="0" batting_time="89">
+<dismissal how_out="c SPD Smith b NM Lyon" dismissal_type="Caught" bowler_id="50724">
+<dismissal_fielders>
+<player player_id="50281" player_name="SPD Smith"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="4" player_id="49752" player_name="V Kohli" runs="17" balls="69" fours="0" sixes="0" batting_time="101">
+<dismissal how_out="c BJ Webster b SM Boland" dismissal_type="Caught" bowler_id="61993">
+<dismissal_fielders>
+<player player_id="58730" player_name="BJ Webster"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="5" player_id="86165" player_name="RR Pant" runs="40" balls="98" fours="3" sixes="1" batting_time="149">
+<dismissal how_out="c PJ Cummins b SM Boland" dismissal_type="Caught" bowler_id="61993">
+<dismissal_fielders>
+<player player_id="64244" player_name="PJ Cummins"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="6" player_id="49247" player_name="RA Jadeja" runs="26" balls="95" fours="3" sixes="0" batting_time="149">
+<dismissal how_out="lbw b MA Starc" dismissal_type="LBW" bowler_id="53330"/>
+</batsman>
+<batsman batting_order="7" player_id="104825" player_name="K Nitish Kumar Reddy" runs="0" balls="1" fours="0" sixes="0" batting_time="1">
+<dismissal how_out="c SPD Smith b SM Boland" dismissal_type="Caught" bowler_id="61993">
+<dismissal_fielders>
+<player player_id="50281" player_name="SPD Smith"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="8" player_id="75311" player_name="Washington Sundar" runs="14" balls="30" fours="3" sixes="0" batting_time="49">
+<dismissal how_out="c AT Carey b PJ Cummins" dismissal_type="Caught" bowler_id="64244">
+<dismissal_fielders>
+<player player_id="54314" player_name="AT Carey" wicket_keeper="true"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="9" player_id="84635" player_name="M Prasidh Krishna" runs="3" balls="10" fours="0" sixes="0" batting_time="37">
+<dismissal how_out="c SJ Konstas b MA Starc" dismissal_type="Caught" bowler_id="53330">
+<dismissal_fielders>
+<player player_id="115587" player_name="SJ Konstas"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="10" player_id="70640" player_name="JJ Bumrah" runs="22" balls="17" fours="3" sixes="1" batting_time="39">
+<dismissal how_out="c MA Starc b PJ Cummins" dismissal_type="Caught" bowler_id="64244">
+<dismissal_fielders>
+<player player_id="53330" player_name="MA Starc"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="11" player_id="87477" player_name="Mohammed Siraj" runs="3" balls="16" fours="0" sixes="0" batting_time="23" nonstriker="true" not_out="true"/>
+</batting_card>
+<bowling_card>
+<bowler player_id="53330" player_name="MA Starc" maidens="5" overs="18" runs="49" wickets="3" no_balls="2" wides="0"/>
+<bowler player_id="64244" player_name="PJ Cummins" maidens="4" overs="15.2" runs="37" wickets="2" no_balls="1" wides="0" current="true"/>
+<bowler player_id="61993" player_name="SM Boland" maidens="8" overs="20" runs="31" wickets="4" no_balls="1" wides="0" previous="true"/>
+<bowler player_id="58730" player_name="BJ Webster" maidens="4" overs="13" runs="29" wickets="0" no_balls="2" wides="0"/>
+<bowler player_id="50724" player_name="NM Lyon" maidens="2" overs="6" runs="19" wickets="1" no_balls="0" wides="0"/>
+</bowling_card>
+<extras wides="0" no_balls="6" byes="7" leg_byes="13" penalty_runs="0" extras_total="26"/>
+<fow_summary>
+<fow fow_order="1" wickets_fallen="1" team_score="11" overs="4.6" fow_type="Out" dismissed_player_id="60530" player1_id="102743" player1_name="YBK Jaiswal" player2_id="60530" player2_name="KL Rahul" player1_runs="7" player2_runs="4"/>
+<fow fow_order="2" wickets_fallen="2" team_score="17" overs="7.4" fow_type="Out" dismissed_player_id="102743" player1_id="102743" player1_name="YBK Jaiswal" player2_id="95316" player2_name="Shubman Gill" player1_runs="10" player2_runs="2"/>
+<fow fow_order="3" wickets_fallen="3" team_score="57" overs="24.6" fow_type="Out" dismissed_player_id="95316" player1_id="95316" player1_name="Shubman Gill" player2_id="49752" player2_name="V Kohli" player1_runs="20" player2_runs="12"/>
+<fow fow_order="4" wickets_fallen="4" team_score="72" overs="31.3" fow_type="Out" dismissed_player_id="49752" player1_id="49752" player1_name="V Kohli" player2_id="86165" player2_name="RR Pant" player1_runs="17" player2_runs="9"/>
+<fow fow_order="5" wickets_fallen="5" team_score="120" overs="56.4" fow_type="Out" dismissed_player_id="86165" player1_id="86165" player1_name="RR Pant" player2_id="49247" player2_name="RA Jadeja" player1_runs="40" player2_runs="15"/>
+<fow fow_order="6" wickets_fallen="6" team_score="120" overs="56.5" fow_type="Out" dismissed_player_id="104825" player1_id="49247" player1_name="RA Jadeja" player2_id="104825" player2_name="K Nitish Kumar Reddy" player1_runs="15" player2_runs="0"/>
+<fow fow_order="7" wickets_fallen="7" team_score="134" overs="62.4" fow_type="Out" dismissed_player_id="49247" player1_id="49247" player1_name="RA Jadeja" player2_id="75311" player2_name="Washington Sundar" player1_runs="26" player2_runs="0"/>
+<fow fow_order="8" wickets_fallen="8" team_score="148" overs="65.6" fow_type="Out" dismissed_player_id="75311" player1_id="75311" player1_name="Washington Sundar" player2_id="84635" player2_name="M Prasidh Krishna" player1_runs="14" player2_runs="0"/>
+<fow fow_order="9" wickets_fallen="9" team_score="168" overs="68.2" fow_type="Out" dismissed_player_id="84635" player1_id="84635" player1_name="M Prasidh Krishna" player2_id="70640" player2_name="JJ Bumrah" player1_runs="3" player2_runs="12"/>
+<fow fow_order="10" wickets_fallen="10" team_score="185" overs="72.2" fow_type="Out" dismissed_player_id="70640" player1_id="70640" player1_name="JJ Bumrah" player2_id="87477" player2_name="Mohammed Siraj" player1_runs="22" player2_runs="3"/>
+</fow_summary>
+<umpire_reviews>
+<umpire_review team1_id="6" team1_name="India" set_count="3" rem_count="2" success="0" failure="1"/>
+<umpire_review team2_id="2" team2_name="Australia" set_count="3" rem_count="2" success="1" failure="1"/>
+</umpire_reviews>
+<innings_total runs="185" overs="72.2" wickets="10"/>
+<scorecard_notes>
+<note ball="11.5" day="1" text="Over 11.5: Review by Australia (Bowling), Decision Challenged - Wicket, Umpire - Sharfuddoula, Batter - Shubman Gill (Struck down)" Imp="True"/>
+<note ball="11.6" day="1" text="Drinks: India - 32/2 in 12.0 overs (Shubman Gill 9, V Kohli 8)" Imp="True"/>
+<note ball="18.5" day="1" text="India: 50 runs in 18.5 overs (115 balls), Extras 11" Imp="True"/>
+<note ball="24.6" day="1" text="Lunch: India - 57/3 in 25.0 overs (V Kohli 12)" Imp="True"/>
+<note ball="36.2" day="1" text="Drinks: India - 76/4 in 36.2 overs (RR Pant 10, RA Jadeja 3)" Imp="True"/>
+<note ball="47.5" day="1" text="India: 100 runs in 47.5 overs (290 balls), Extras 13" Imp="True"/>
+<note ball="49.6" day="1" text="Tea: India - 107/4 in 50.0 overs (RR Pant 32, RA Jadeja 11)" Imp="True"/>
+<note ball="60.6" day="1" text="Drinks: India - 125/6 in 61.0 overs (RA Jadeja 17, Washington Sundar 0)" Imp="True"/>
+<note ball="62.4" day="1" text="Over 62.4: Review by India (Batting), Decision Challenged - Wicket, Umpire - MA Gough, Batter - RA Jadeja (Struck down)" Imp="True"/>
+<note ball="65.6" day="1" text="Over 65.6: Review by Australia (Bowling), Decision Challenged - Wicket, Umpire - Sharfuddoula, Batter - Washington Sundar (Upheld)" Imp="True"/>
+<note ball="66.6" day="1" text="India: 150 runs in 66.6 overs (406 balls), Extras 17" Imp="True"/>
+<note ball="68.2" day="1" text="Drinks: India - 168/9 in 68.2 overs (JJ Bumrah 12)" Imp="True"/>
+<note ball="72.2" day="1" text="Innings Break: India - 185/10 in 72.2 overs (Mohammed Siraj 3)" Imp="True"/>
+</scorecard_notes>
+</innings>
+<innings innings_no="2" batting_team_id="2" declared="false" forfeit="false" all_out="true" complete="true" team_batting_time="0" maximum_overs="0" innings_started="true">
+<batting_card>
+<batsman batting_order="1" player_id="115587" player_name="SJ Konstas" runs="23" balls="38" fours="3" sixes="0" batting_time="57">
+<dismissal how_out="c YBK Jaiswal b Mohammed Siraj" dismissal_type="Caught" bowler_id="87477">
+<dismissal_fielders>
+<player player_id="102743" player_name="YBK Jaiswal"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="2" player_id="48671" player_name="UT Khawaja" runs="2" balls="10" fours="0" sixes="0" batting_time="17">
+<dismissal how_out="c KL Rahul b JJ Bumrah" dismissal_type="Caught" bowler_id="70640">
+<dismissal_fielders>
+<player player_id="60530" player_name="KL Rahul"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="3" player_id="78285" player_name="M Labuschagne" runs="2" balls="8" fours="0" sixes="0" batting_time="16">
+<dismissal how_out="c RR Pant b JJ Bumrah" dismissal_type="Caught" bowler_id="70640">
+<dismissal_fielders>
+<player player_id="86165" player_name="RR Pant" wicket_keeper="true"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="4" player_id="50281" player_name="SPD Smith" runs="33" balls="57" fours="4" sixes="1" batting_time="94">
+<dismissal how_out="c KL Rahul b M Prasidh Krishna" dismissal_type="Caught" bowler_id="84635">
+<dismissal_fielders>
+<player player_id="60530" player_name="KL Rahul"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="5" player_id="66190" player_name="TM Head" runs="4" balls="3" fours="1" sixes="0" batting_time="2">
+<dismissal how_out="c KL Rahul b Mohammed Siraj" dismissal_type="Caught" bowler_id="87477">
+<dismissal_fielders>
+<player player_id="60530" player_name="KL Rahul"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="6" player_id="58730" player_name="BJ Webster" runs="57" balls="105" fours="5" sixes="0" batting_time="158">
+<dismissal how_out="c YBK Jaiswal b M Prasidh Krishna" dismissal_type="Caught" bowler_id="84635">
+<dismissal_fielders>
+<player player_id="102743" player_name="YBK Jaiswal"/>
+</dismissal_fielders>
+<dismissal_fielders/>
+</dismissal>
+</batsman>
+<batsman batting_order="7" player_id="54314" player_name="AT Carey" runs="21" balls="36" fours="4" sixes="0" batting_time="46">
+<dismissal how_out="b M Prasidh Krishna" dismissal_type="Bowled" bowler_id="84635"/>
+</batsman>
+<batsman batting_order="8" player_id="64244" player_name="PJ Cummins" runs="10" balls="20" fours="1" sixes="0" batting_time="29">
+<dismissal how_out="c V Kohli b K Nitish Kumar Reddy" dismissal_type="Caught" bowler_id="104825">
+<dismissal_fielders>
+<player player_id="49752" player_name="V Kohli"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="9" player_id="53330" player_name="MA Starc" runs="1" balls="4" fours="0" sixes="0" batting_time="6">
+<dismissal how_out="c KL Rahul b K Nitish Kumar Reddy" dismissal_type="Caught" bowler_id="104825">
+<dismissal_fielders>
+<player player_id="60530" player_name="KL Rahul"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="10" player_id="50724" player_name="NM Lyon" runs="7" balls="17" fours="0" sixes="0" batting_time="23" striker="true" not_out="true"/>
+<batsman batting_order="11" player_id="61993" player_name="SM Boland" runs="9" balls="9" fours="2" sixes="0" batting_time="16">
+<dismissal how_out="b Mohammed Siraj" dismissal_type="Bowled" bowler_id="87477"/>
+</batsman>
+</batting_card>
+<bowling_card>
+<bowler player_id="70640" player_name="JJ Bumrah" maidens="1" overs="10" runs="33" wickets="2" no_balls="0" wides="0"/>
+<bowler player_id="87477" player_name="Mohammed Siraj" maidens="2" overs="16" runs="51" wickets="3" no_balls="1" wides="0" current="true"/>
+<bowler player_id="84635" player_name="M Prasidh Krishna" maidens="3" overs="15" runs="42" wickets="3" no_balls="0" wides="0" previous="true"/>
+<bowler player_id="104825" player_name="K Nitish Kumar Reddy" maidens="0" overs="7" runs="32" wickets="2" no_balls="0" wides="0"/>
+<bowler player_id="49247" player_name="RA Jadeja" maidens="0" overs="3" runs="12" wickets="0" no_balls="0" wides="0"/>
+</bowling_card>
+<extras wides="0" no_balls="1" byes="9" leg_byes="2" penalty_runs="0" extras_total="12"/>
+<fow_summary>
+<fow fow_order="1" wickets_fallen="1" team_score="9" overs="2.6" fow_type="Out" dismissed_player_id="48671" player1_id="115587" player1_name="SJ Konstas" player2_id="48671" player2_name="UT Khawaja" player1_runs="7" player2_runs="2"/>
+<fow fow_order="2" wickets_fallen="2" team_score="15" overs="6.2" fow_type="Out" dismissed_player_id="78285" player1_id="115587" player1_name="SJ Konstas" player2_id="78285" player2_name="M Labuschagne" player1_runs="11" player2_runs="2"/>
+<fow fow_order="3" wickets_fallen="3" team_score="35" overs="11.2" fow_type="Out" dismissed_player_id="115587" player1_id="115587" player1_name="SJ Konstas" player2_id="50281" player2_name="SPD Smith" player1_runs="23" player2_runs="4"/>
+<fow fow_order="4" wickets_fallen="4" team_score="39" overs="11.5" fow_type="Out" dismissed_player_id="66190" player1_id="50281" player1_name="SPD Smith" player2_id="66190" player2_name="TM Head" player1_runs="4" player2_runs="4"/>
+<fow fow_order="5" wickets_fallen="5" team_score="96" overs="27.1" fow_type="Out" dismissed_player_id="50281" player1_id="50281" player1_name="SPD Smith" player2_id="58730" player2_name="BJ Webster" player1_runs="33" player2_runs="27"/>
+<fow fow_order="6" wickets_fallen="6" team_score="137" overs="37.5" fow_type="Out" dismissed_player_id="54314" player1_id="58730" player1_name="BJ Webster" player2_id="54314" player2_name="AT Carey" player1_runs="41" player2_runs="21"/>
+<fow fow_order="7" wickets_fallen="7" team_score="162" overs="44.6" fow_type="Out" dismissed_player_id="64244" player1_id="58730" player1_name="BJ Webster" player2_id="64244" player2_name="PJ Cummins" player1_runs="55" player2_runs="10"/>
+<fow fow_order="8" wickets_fallen="8" team_score="164" overs="46.1" fow_type="Out" dismissed_player_id="53330" player1_id="58730" player1_name="BJ Webster" player2_id="53330" player2_name="MA Starc" player1_runs="56" player2_runs="1"/>
+<fow fow_order="9" wickets_fallen="9" team_score="166" overs="47.2" fow_type="Out" dismissed_player_id="58730" player1_id="58730" player1_name="BJ Webster" player2_id="50724" player2_name="NM Lyon" player1_runs="57" player2_runs="1"/>
+<fow fow_order="10" wickets_fallen="10" team_score="181" overs="50.6" fow_type="Out" dismissed_player_id="61993" player1_id="50724" player1_name="NM Lyon" player2_id="61993" player2_name="SM Boland" player1_runs="7" player2_runs="9"/>
+</fow_summary>
+<umpire_reviews>
+<umpire_review team1_id="2" team1_name="Australia" set_count="3" rem_count="3" success="0" failure="0"/>
+<umpire_review team2_id="6" team2_name="India" set_count="3" rem_count="3" success="1" failure="0"/>
+</umpire_reviews>
+<innings_total runs="181" overs="51.0" wickets="10"/>
+<scorecard_notes>
+<note ball="2.6" day="1" text="End Of Day: Australia - 9/1 in 3.0 overs (SJ Konstas 7)" Imp="True"/>
+<note ball="6.2" day="2" text="Over 6.2: Review by India (Bowling), Decision Challenged - Wicket, Umpire - Sharfuddoula, Batter - M Labuschagne (Upheld)" Imp="True"/>
+<note ball="14.6" day="2" text="Australia: 50 runs in 14.6 overs (90 balls), Extras 4" Imp="True"/>
+<note ball="15.6" day="2" text="Drinks: Australia - 58/4 in 16.0 overs (SPD Smith 17, BJ Webster 6)" Imp="True"/>
+<note ball="28.4" day="2" text="Australia: 100 runs in 28.4 overs (172 balls), Extras 5" Imp="True"/>
+<note ball="28.6" day="2" text="Lunch: Australia - 101/5 in 29.0 overs (BJ Webster 28, AT Carey 4)" Imp="True"/>
+<note ball="41.3" day="2" text="Australia: 150 runs in 41.3 overs (250 balls), Extras 12" Imp="True"/>
+<note ball="41.6" day="2" text="Drinks: Australia - 151/6 in 42.0 overs (BJ Webster 49, PJ Cummins 5)" Imp="True"/>
+<note ball="50.6" day="2" text="Tea: Australia - 181/10 in 51.0 overs (NM Lyon 7)" Imp="True"/>
+<note ball="42.1" day="2" text="BJ Webster: 50 off 92 balls (5 x 4)" Imp="True"/>
+<note ball="25.5" day="2" text="5th Wicket: 50 runs in 84 balls (SPD Smith 29, BJ Webster 23, Ex 1)" Imp="True"/>
+<note ball="2.3" day="1" text="Attendance: 47,998" Imp="True"/>
+</scorecard_notes>
+</innings>
+<innings innings_no="3" batting_team_id="6" declared="false" forfeit="false" all_out="true" complete="true" team_batting_time="0" maximum_overs="0" innings_started="true">
+<batting_card>
+<batsman batting_order="1" player_id="102743" player_name="YBK Jaiswal" runs="22" balls="35" fours="4" sixes="0" batting_time="48">
+<dismissal how_out="b SM Boland" dismissal_type="Bowled" bowler_id="61993"/>
+</batsman>
+<batsman batting_order="2" player_id="60530" player_name="KL Rahul" runs="13" balls="20" fours="2" sixes="0" batting_time="36">
+<dismissal how_out="b SM Boland" dismissal_type="Bowled" bowler_id="61993"/>
+</batsman>
+<batsman batting_order="3" player_id="95316" player_name="Shubman Gill" runs="13" balls="15" fours="2" sixes="0" batting_time="39">
+<dismissal how_out="c AT Carey b BJ Webster" dismissal_type="Caught" bowler_id="58730">
+<dismissal_fielders>
+<player player_id="54314" player_name="AT Carey" wicket_keeper="true"/>
+</dismissal_fielders>
+<dismissal_fielders/>
+</dismissal>
+</batsman>
+<batsman batting_order="4" player_id="49752" player_name="V Kohli" runs="6" balls="12" fours="1" sixes="0" batting_time="14">
+<dismissal how_out="c SPD Smith b SM Boland" dismissal_type="Caught" bowler_id="61993">
+<dismissal_fielders>
+<player player_id="50281" player_name="SPD Smith"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="5" player_id="86165" player_name="RR Pant" runs="61" balls="33" fours="6" sixes="4" batting_time="47">
+<dismissal how_out="c AT Carey b PJ Cummins" dismissal_type="Caught" bowler_id="64244">
+<dismissal_fielders>
+<player player_id="54314" player_name="AT Carey" wicket_keeper="true"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="6" player_id="49247" player_name="RA Jadeja" runs="13" balls="45" fours="2" sixes="0" batting_time="90">
+<dismissal how_out="c AT Carey b PJ Cummins" dismissal_type="Caught" bowler_id="64244">
+<dismissal_fielders>
+<player player_id="54314" player_name="AT Carey" wicket_keeper="true"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="7" player_id="104825" player_name="K Nitish Kumar Reddy" runs="4" balls="21" fours="0" sixes="0" batting_time="23">
+<dismissal how_out="c PJ Cummins b SM Boland" dismissal_type="Caught" bowler_id="61993">
+<dismissal_fielders>
+<player player_id="64244" player_name="PJ Cummins"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="8" player_id="75311" player_name="Washington Sundar" runs="12" balls="43" fours="1" sixes="0" batting_time="51">
+<dismissal how_out="b PJ Cummins" dismissal_type="Bowled" bowler_id="64244"/>
+</batsman>
+<batsman batting_order="9" player_id="87477" player_name="Mohammed Siraj" runs="4" balls="11" fours="0" sixes="0" batting_time="26">
+<dismissal how_out="c UT Khawaja b SM Boland" dismissal_type="Caught" bowler_id="61993">
+<dismissal_fielders>
+<player player_id="48671" player_name="UT Khawaja"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="10" player_id="70640" player_name="JJ Bumrah" runs="0" balls="3" fours="0" sixes="0" batting_time="8">
+<dismissal how_out="b SM Boland" dismissal_type="Bowled" bowler_id="61993"/>
+</batsman>
+<batsman batting_order="11" player_id="84635" player_name="M Prasidh Krishna" runs="1" balls="1" fours="0" sixes="0" batting_time="1" nonstriker="true" not_out="true"/>
+</batting_card>
+<bowling_card>
+<bowler player_id="53330" player_name="MA Starc" maidens="0" overs="4" runs="36" wickets="0" no_balls="0" wides="0"/>
+<bowler player_id="64244" player_name="PJ Cummins" maidens="4" overs="15" runs="44" wickets="3" no_balls="0" wides="0" previous="true"/>
+<bowler player_id="61993" player_name="SM Boland" maidens="5" overs="16.5" runs="45" wickets="6" no_balls="0" wides="0" current="true"/>
+<bowler player_id="58730" player_name="BJ Webster" maidens="1" overs="4" runs="24" wickets="1" no_balls="0" wides="0"/>
+</bowling_card>
+<extras wides="0" no_balls="0" byes="4" leg_byes="4" penalty_runs="0" extras_total="8"/>
+<fow_summary>
+<fow fow_order="1" wickets_fallen="1" team_score="42" overs="7.3" fow_type="Out" dismissed_player_id="60530" player1_id="102743" player1_name="YBK Jaiswal" player2_id="60530" player2_name="KL Rahul" player1_runs="22" player2_runs="13"/>
+<fow fow_order="2" wickets_fallen="2" team_score="47" overs="9.5" fow_type="Out" dismissed_player_id="102743" player1_id="102743" player1_name="YBK Jaiswal" player2_id="95316" player2_name="Shubman Gill" player1_runs="22" player2_runs="5"/>
+<fow fow_order="3" wickets_fallen="3" team_score="59" overs="13.1" fow_type="Out" dismissed_player_id="49752" player1_id="95316" player1_name="Shubman Gill" player2_id="49752" player2_name="V Kohli" player1_runs="11" player2_runs="6"/>
+<fow fow_order="4" wickets_fallen="4" team_score="78" overs="15.2" fow_type="Out" dismissed_player_id="95316" player1_id="95316" player1_name="Shubman Gill" player2_id="86165" player2_name="RR Pant" player1_runs="13" player2_runs="17"/>
+<fow fow_order="5" wickets_fallen="5" team_score="124" overs="22.2" fow_type="Out" dismissed_player_id="86165" player1_id="86165" player1_name="RR Pant" player2_id="49247" player2_name="RA Jadeja" player1_runs="61" player2_runs="2"/>
+<fow fow_order="6" wickets_fallen="6" team_score="129" overs="27.3" fow_type="Out" dismissed_player_id="104825" player1_id="49247" player1_name="RA Jadeja" player2_id="104825" player2_name="K Nitish Kumar Reddy" player1_runs="2" player2_runs="4"/>
+<fow fow_order="7" wickets_fallen="7" team_score="147" overs="34.4" fow_type="Out" dismissed_player_id="49247" player1_id="49247" player1_name="RA Jadeja" player2_id="75311" player2_name="Washington Sundar" player1_runs="13" player2_runs="7"/>
+<fow fow_order="8" wickets_fallen="8" team_score="156" overs="38.4" fow_type="Out" dismissed_player_id="75311" player1_id="75311" player1_name="Washington Sundar" player2_id="87477" player2_name="Mohammed Siraj" player1_runs="12" player2_runs="4"/>
+<fow fow_order="9" wickets_fallen="9" team_score="156" overs="39.3" fow_type="Out" dismissed_player_id="87477" player1_id="87477" player1_name="Mohammed Siraj" player2_id="70640" player2_name="JJ Bumrah" player1_runs="4" player2_runs="0"/>
+<fow fow_order="10" wickets_fallen="10" team_score="157" overs="39.5" fow_type="Out" dismissed_player_id="70640" player1_id="70640" player1_name="JJ Bumrah" player2_id="84635" player2_name="M Prasidh Krishna" player1_runs="0" player2_runs="1"/>
+</fow_summary>
+<umpire_reviews>
+<umpire_review team1_id="6" team1_name="India" set_count="3" rem_count="3" success="0" failure="0"/>
+<umpire_review team2_id="2" team2_name="Australia" set_count="3" rem_count="3" success="0" failure="0"/>
+</umpire_reviews>
+<innings_total runs="157" overs="39.5" wickets="10"/>
+<scorecard_notes>
+<note ball="10.6" day="2" text="Drinks: India - 48/2 in 11.0 overs (Shubman Gill 5, V Kohli 1)" Imp="True"/>
+<note ball="11.2" day="2" text="India: 50 runs in 11.2 overs (68 balls), Extras 7" Imp="True"/>
+<note ball="19.1" day="2" text="India: 100 runs in 19.1 overs (115 balls), Extras 7" Imp="True"/>
+<note ball="21.6" day="2" text="Drinks: India - 124/4 in 22.0 overs (RR Pant 61, RA Jadeja 2)" Imp="True"/>
+<note ball="31.6" day="2" text="End Of Day: India - 141/6 in 32.0 overs (RA Jadeja 8, Washington Sundar 6)" Imp="True"/>
+<note ball="35.2" day="3" text="India: 150 runs in 35.2 overs (212 balls), Extras 8" Imp="True"/>
+<note ball="39.5" day="3" text="Innings Break: India - 157/10 in 39.5 overs (M Prasidh Krishna 1)" Imp="True"/>
+<note ball="21.2" day="2" text="RR Pant: 50 off 29 balls (6 x 4, 3 x 6)" Imp="True"/>
+<note ball="29.6" day="2" text="Attendance: 47,257" Imp="True"/>
+</scorecard_notes>
+</innings>
+<innings innings_no="4" batting_team_id="2" declared="false" forfeit="false" all_out="false" complete="true" team_batting_time="0" maximum_overs="0" innings_started="true">
+<batting_card>
+<batsman batting_order="1" player_id="115587" player_name="SJ Konstas" runs="22" balls="17" fours="3" sixes="0" batting_time="20">
+<dismissal how_out="c Washington Sundar b M Prasidh Krishna" dismissal_type="Caught" bowler_id="84635">
+<dismissal_fielders>
+<player player_id="75311" player_name="Washington Sundar"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="2" player_id="48671" player_name="UT Khawaja" runs="41" balls="45" fours="4" sixes="0" batting_time="91">
+<dismissal how_out="c RR Pant b Mohammed Siraj" dismissal_type="Caught" bowler_id="87477">
+<dismissal_fielders>
+<player player_id="86165" player_name="RR Pant" wicket_keeper="true"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="3" player_id="78285" player_name="M Labuschagne" runs="6" balls="20" fours="1" sixes="0" batting_time="20">
+<dismissal how_out="c YBK Jaiswal b M Prasidh Krishna" dismissal_type="Caught" bowler_id="84635">
+<dismissal_fielders>
+<player player_id="102743" player_name="YBK Jaiswal"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="4" player_id="50281" player_name="SPD Smith" runs="4" balls="9" fours="0" sixes="0" batting_time="10">
+<dismissal how_out="c YBK Jaiswal b M Prasidh Krishna" dismissal_type="Caught" bowler_id="84635">
+<dismissal_fielders>
+<player player_id="102743" player_name="YBK Jaiswal"/>
+</dismissal_fielders>
+</dismissal>
+</batsman>
+<batsman batting_order="5" player_id="66190" player_name="TM Head" runs="34" balls="38" fours="4" sixes="0" batting_time="83" nonstriker="true" not_out="true"/>
+<batsman batting_order="6" player_id="58730" player_name="BJ Webster" runs="39" balls="34" fours="6" sixes="0" batting_time="44" striker="true" not_out="true"/>
+</batting_card>
+<bowling_card>
+<bowler player_id="87477" player_name="Mohammed Siraj" maidens="1" overs="12" runs="69" wickets="1" no_balls="1" wides="1"/>
+<bowler player_id="84635" player_name="M Prasidh Krishna" maidens="0" overs="12" runs="65" wickets="3" no_balls="0" wides="1"/>
+<bowler player_id="104825" player_name="K Nitish Kumar Reddy" maidens="0" overs="2" runs="10" wickets="0" no_balls="0" wides="0" previous="true"/>
+<bowler player_id="75311" player_name="Washington Sundar" maidens="0" overs="1" runs="11" wickets="0" no_balls="0" wides="0" current="true"/>
+</bowling_card>
+<extras wides="8" no_balls="1" byes="5" leg_byes="2" penalty_runs="0" extras_total="16"/>
+<fow_summary>
+<fow fow_order="1" wickets_fallen="1" team_score="39" overs="3.5" fow_type="Out" dismissed_player_id="115587" player1_id="115587" player1_name="SJ Konstas" player2_id="48671" player2_name="UT Khawaja" player1_runs="22" player2_runs="5"/>
+<fow fow_order="2" wickets_fallen="2" team_score="52" overs="7.6" fow_type="Out" dismissed_player_id="78285" player1_id="48671" player1_name="UT Khawaja" player2_id="78285" player2_name="M Labuschagne" player1_runs="10" player2_runs="6"/>
+<fow fow_order="3" wickets_fallen="3" team_score="58" overs="9.6" fow_type="Out" dismissed_player_id="50281" player1_id="48671" player1_name="UT Khawaja" player2_id="50281" player2_name="SPD Smith" player1_runs="12" player2_runs="4"/>
+<fow fow_order="4" wickets_fallen="4" team_score="104" overs="18.1" fow_type="Out" dismissed_player_id="48671" player1_id="48671" player1_name="UT Khawaja" player2_id="66190" player2_name="TM Head" player1_runs="41" player2_runs="16"/>
+<fow fow_order="5" wickets_fallen="4" team_score="162" overs="26.6" fow_type="NotOut" player1_id="66190" player1_name="TM Head" player2_id="58730" player2_name="BJ Webster" player1_runs="34" player2_runs="39"/>
+</fow_summary>
+<umpire_reviews>
+<umpire_review team1_id="2" team1_name="Australia" set_count="3" rem_count="3" success="0" failure="0"/>
+<umpire_review team2_id="6" team2_name="India" set_count="3" rem_count="1" success="0" failure="2"/>
+</umpire_reviews>
+<innings_total runs="162" overs="27.0" wickets="4"/>
+<scorecard_notes>
+<note ball="6.2" day="3" text="Australia: 50 runs in 6.2 overs (38 balls), Extras 13" Imp="True"/>
+<note ball="9.3" day="3" text="Over 9.3: Review by India (Bowling), Decision Challenged - Wicket, Umpire - MA Gough, Batter - SPD Smith (Struck down)" Imp="True"/>
+<note ball="12.6" day="3" text="Lunch: Australia - 71/3 in 13.0 overs (UT Khawaja 19, TM Head 5)" Imp="True"/>
+<note ball="17.5" day="3" text="Australia: 100 runs in 17.5 overs (108 balls), Extras 15" Imp="True"/>
+<note ball="20.4" day="3" text="Over 20.4: Review by India (Bowling), Decision Challenged - Wicket, Umpire - Sharfuddoula, Batter - BJ Webster (Struck down)" Imp="True"/>
+<note ball="24.6" day="3" text="Drinks: Australia - 147/4 in 25.0 overs (TM Head 32, BJ Webster 26)" Imp="True"/>
+<note ball="25.1" day="3" text="Australia: 150 runs in 25.1 overs (152 balls), Extras 16" Imp="True"/>
+<note ball="26.3" day="3" text="5th Wicket: 50 runs in 50 balls (TM Head 18, BJ Webster 31, Ex 1)" Imp="True"/>
+<note ball="26.6" day="3" text="Attendance: 46,263 Total attendance for match: 141,518 Total attendance for Border-Gavaskar Trophy: 837,879 " Imp="True"/>
+</scorecard_notes>
+</innings>
+<close_of_play>
+<day day_no="1" day_type="normal" inning_no="2" runs="9" wickets="1" overs="3.0" player1_id="115587" player1_name="SJ Konstas" player1_runs="7"/>
+<day day_no="2" day_type="normal" inning_no="3" runs="141" wickets="6" overs="32.0" player1_id="49247" player1_name="RA Jadeja" player2_id="75311" player2_name="Washington Sundar" player1_runs="8" player2_runs="6"/>
+</close_of_play>
+</match_scorecard>
